@@ -1,0 +1,53 @@
+title: Your awesome title
+name: Your Name
+email: your-email@example.com
+description: Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+
+parallax_image_one: assets/images/startup3.jpg # These are the images used for the parallax background
+parallax_image_two: assets/images/startup3.jpg
+
+project_one: "First Project"
+project_one_description: Describe your project!
+project_one_url: https://github.com/jameshamann/jekyll-material-theme
+project_one_icon: location_on
+
+project_two: Second Project
+project_two_description: Describe your project!
+project_two_url: https://github.com/jameshamann/jekyll-material-theme
+project_two_icon: photo_camera
+
+
+project_three: Third Project
+project_three_description: Describe your project!
+project_three_url: https://github.com/jameshamann/jekyll-material-theme
+project_three_icon: hotel
+
+
+project_four: Fourth Project
+project_four_description: Describe your project!
+project_four_url: https://github.com/jameshamann/jekyll-material-theme
+project_four_icon: restaurant
+
+
+project_button: Github
+
+github: https://github.com/jameshamann/jekyll-material-theme
+medium: https://medium.com
+
+baseurl: # if your site is located at /blog or /home, enter it here, otherwise leave it as '/'
+url: http://localhost:4000/ #the url of your site
+
+google_analytics_tracking_id: # This looks something like UA-000000000-0 Head over to https://analytics.google.com/ to setup.
+
+cookies_banner: show # The value "show" will show the cookies banner, the value "none" will hide the banner.
+
+cookie_accept_message: Thanks!
+
+# Build settings
+markdown: kramdown
+# theme: minima
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-assets
+  - jekyll-minifier

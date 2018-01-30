@@ -1,11 +1,25 @@
 ---
-layout: default
-title: Hank Quinlan's Blog
+layout: home-page
 ---
-	<h1>{{ page.title }}</h1>
-	<ul class="posts">
+<ol class="post-card-box clearfix">
+  {% for post in site.posts %}
+  {% if post.blog1%}
+  <li>
+    <div class="post-card">
+      <a href="{{post.url | prepend: site.baseurl}}" class="post-card-image" style="background-image: url( {{ "/assets/img/" | prepend: site.baseurl | append : post.img}} )">
+      </a>
 
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> ? <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+      <div class="post-card-body">
+        {% for tag in post.tags %}
+        <a href="{{site.baseurl}}/tags#{{tag}}" class="tag">|&#32;{{ tag }}</a>
+        {% endfor %}
+        <a href="{{post.url | prepend: site.baseurl}}" class="post-card-link"><h3 class="post-card-title">{{post.title}}</h3></a>
+      </div>
+
+    </div>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ol>
+
+	

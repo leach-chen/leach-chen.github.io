@@ -1,5 +1,4 @@
-title: My personal blog - Leach Chen
-email: your-email@domain.com
+title: Blog - Leach Chen
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -10,19 +9,23 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author settings
 author: Leach Chen # add your name
-author-pic: adam-face.jpg
-about-author: My name is Adam Neilson. I’m a full-time adventure travel blogger and photographer who’s been exploring the world for over 2 years.
+author-pic: leach-face.jpg
+about-author: I will add description latter.                                                                    
 
 # Contact links
-email: # Add your Email address
-phone: # Add your Phone number
 website: # Add your website, do not add http://
 linkedin: # Add your Linkedin handle
-github: artemsheludko # Add your Github handle
-twitter: '@artemsheludko_' # Add your Twitter handle
+twitter: # Add your Twitter handle
 facebook: # Add your Facebook handle
 instagram: # Add your Instagram handle
 pinterest: # Add your Pinterest handle
+
+email: leach.chen@gmail.com
+phone: 00000000
+github: https://github.com/leach-chen
+jianshu: https://www.jianshu.com/users/5cc3aae52717/timeline
+juejin: https://juejin.im/user/581b4a3e2e958a0054d47b57/collections
+csdn: http://blog.csdn.net/chenliqiang12345678
 
 # Newsletter
 mailchimp: # Add your MailChimp form identifier.
@@ -34,7 +37,7 @@ discus_identifier: mr-brown # Add your discus identifier
 analytics: # Google Analytics
 
 # Paginate
-paginate: 6
+paginate: 18
 paginate_path: /page:num/
 
 # Build settings

@@ -1,57 +1,34 @@
-#### liberxue.github.io preview (demo) (https://liberxue.github.io/)
+# Bef is a responsive jekyll theme
 
-`Jekyll Themes`
-----------
-[中文版帮助文档README](/ChinaREADME.md)
-## `Lightweight`  `Minimalist`  `Jekyll blog`
+Bef - Blog Enjoy Freedom is a responsive jekyll theme which created to be simple and freedom.
 
-### The first step is to click [fork][https://github.com/liberxue/liberxue.github.io/fork]
-### The second step is to modify the _config.yml in URL for your domain name
+## Demo
 
-### OK all right, it's that simple
+Check the theme in action [Demo](https://artemsheludko.github.io/bef/)
 
-#### I don't want any copyright also don't need you to donate, I only need you with a star 🌟  Thx 😄
+The main page would look like this:
 
-- [x] Automatic generation tag
-- [x] Automatic generation of JSON search
-- [x] Adaptive template
-- [x] Automatic generation of feed.xml
-- [x] Automatic paging generation
-- [x] Modify _config.yml's links for your menu
-- [x] Modify the _config.yml of paginate for how many pages you want to page
+![Main page preview](https://github.com/artemsheludko/bef/blob/master/assets/img/bef_main_page.jpg?raw=true)
 
-![uiliberxue](https://raw.githubusercontent.com/Liberxue/liberxue.github.io/master/thumbnails/ui.jpg) 
+The post page would look like this:
 
- ![archives](https://raw.githubusercontent.com/Liberxue/liberxue.github.io/master/thumbnails/archives.png) 
+![Post page preview](https://github.com/artemsheludko/bef/blob/master/assets/img/bef_post.jpg?raw=true)
 
- ![blog](https://raw.githubusercontent.com/Liberxue/liberxue.github.io/master/thumbnails/blog.png) 
+## Features
 
- ![tags](https://raw.githubusercontent.com/Liberxue/liberxue.github.io/master/thumbnails/tags.png) 
+- [Google Fonts](https://fonts.google.com/)
+- [Font Awesome](http://fontawesome.io/)
+- [Vide](http://vodkabears.github.io/vide/)
+- [Disqus](https://disqus.com/)
+- [MailChimp](https://mailchimp.com/)
+- [Formspree!](https://formspree.io/)
+- [Analytics](https://analytics.google.com/analytics/web/)
+- Share Buttons, Recent Post, Section Author, Contact and more...
 
-  ![404](https://raw.githubusercontent.com/Liberxue/liberxue.github.io/master/thumbnails/404.png) 
+## Installation:
 
- ----------
-![blog JSON search](https://raw.githubusercontent.com/Liberxue/liberxue.github.io/master/thumbnails/01.gif) 
+Fork the ``master`` branch and delete ``gh-pages`` branch in it. This is important because ``gh-pages`` branch is used here only to host the blog. You should be using the master branch as the source and create a fresh ``gh-pages`` branch.
 
-### 1.First step Click[fork](https://github.com/Liberxue/liberxue.github.io#fork-destination-box)
- 
-----
+### License
 
-![fork](https://raw.githubusercontent.com/Liberxue/liberxue.github.io/master/thumbnails/02.gif)
-  
-  
-
-
-### 2. modify _config.yml url URL for your domain
-
-![modify _config.yml url URL for your domain](https://raw.githubusercontent.com/Liberxue/liberxue.github.io/master/thumbnails/04.gif)
-  
-
-
-
-* [Issues](https://github.com/Liberxue/liberxue.github.io/issues)
- 
-* [Email](mailto:liberxue@gmail.com)
- 
-* [Twitter](https://twitter.com/liberxue).
-
+GNU General Public License v3.0

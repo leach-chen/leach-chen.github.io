@@ -1,17 +1,21 @@
 ---
-layout: main
+layout: home-page
 ---
+<ol class="post-card-box clearfix">
+  {% for post in paginator.posts %}
+  <li>
+    <div class="post-card">
+      <a href="{{post.url | prepend: site.baseurl}}" class="post-card-image" style="background-image: url( {{ "/assets/img/" | prepend: site.baseurl | append : post.img}} )">
+      </a>
 
-{% for post in paginator.posts %}
-  <div class="chapter">
-    <a href="{{post.url | prepend: site.baseurl}}">
-      {% if post.img %}
-      <img src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
-      {% endif %}
-    </a>
-    <div class="chapter_inner">
-      <p class="chapter_number">{{post.date | date: '%Y, %b %d'}}</p>
-      <h3 class="chapter_title">{{post.title}}</h3>
+      <div class="post-card-body">
+        {% for tag in post.tags %}
+        <a href="{{site.baseurl}}/tags#{{tag}}" class="tag">|&#32;{{ tag }}</a>
+        {% endfor %}
+        <a href="{{post.url | prepend: site.baseurl}}" class="post-card-link"><h3 class="post-card-title">{{post.title}}</h3></a>
+      </div>
+
     </div>
-  </div>
-{% endfor %}
+  </li>
+  {% endfor %}
+</ol>

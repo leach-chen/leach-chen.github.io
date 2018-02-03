@@ -1,9 +1,17 @@
+<footer class="main-footer">
+	<div class="footer-social">
+		<div class="footer-container clearfix">
+			<div class="social-list">
+				<a class="social github" target="blank" href="mailto:leach.chen@gmail.com">Email</a>
+				<a class="social github" target="blank" href="https://github.com/leach-chen">GitHub</a>
+				<a class="social github" target="blank" href="https://www.jianshu.com/users/5cc3aae52717/timeline">简书</a>
+				<a class="social github" target="blank" href="https://juejin.im/user/581b4a3e2e958a0054d47b57/collections">掘金</a>
+				<a class="social github" target="blank" href="http://blog.csdn.net/chenliqiang12345678">Csdn</a>
+			</div>
+		</div>
+	</div>
 
-<footer class="main_footer">
-  <div class="wrapper">
-    {% include social_footer.html %}
-    <div class="copyright">
-      <p>&copy; {{site.time | date: '%Y'}} All rights reserved. Design by <a href="https://artemsheludko.github.io" target="_blank">Artem Sheludko</a></p>
-    </div>
-  </div>
-</footer> <!-- End Section Footer -->
+	<div class="copyright">
+		<p>{{site.time | date: '%Y'}} &copy; {{site.author}}</p>
+	</div>
+</footer> <!-- End Footer -->

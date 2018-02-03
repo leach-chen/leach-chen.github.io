@@ -21,7 +21,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 });
 
 // Wait for jekyll-build, then launch the Server
-gulp.task('browser-sync', ['sass', 'img', 'fonts', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['sass', 'img', 'jekyll-build'], function() {
     browserSync({
         server: {
             baseDir: '_site'
@@ -32,7 +32,7 @@ gulp.task('browser-sync', ['sass', 'img', 'fonts', 'jekyll-build'], function() {
 
 // Compile files
 gulp.task('sass', function () {
-    return gulp.src('assets/css/sass/main.sass')
+    return gulp.src('assets/css/sass/main.scss')
         .pipe(sass({
             outputStyle: 'expanded',
             onError: browserSync.notify
@@ -56,19 +56,11 @@ gulp.task('img', function() {
     .pipe(browserSync.reload({stream:true}));
 });
 
-// Fonts
-gulp.task('fonts', function() {
-    return gulp.src('assets/fonts/**/*')
-        .pipe(gulp.dest('_site/assets/fonts'))
-        .pipe(browserSync.reload({stream:true}));
-});
-
 // Watch scss, html, img files
 gulp.task('watch', function () {
-    gulp.watch('assets/css/sass/*.*', ['sass']);
+    gulp.watch('assets/css/sass/**/*.scss', ['sass']);
     gulp.watch('assets/js/**/*.js', ['jekyll-rebuild']);
     gulp.watch('assets/img/**/*', ['img']);
-    gulp.watch('assets/fonts/**/*', ['fonts']);    
     gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_pages/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 

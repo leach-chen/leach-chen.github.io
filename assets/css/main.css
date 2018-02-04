@@ -2051,7 +2051,7 @@ pre code {
 }
 
 
-.main-header{line-height:78px;position:fixed;z-index:10;top:0;display:block;width:100%;height:80px;padding:0;text-align:right;-webkit-box-shadow:0 1px 5px rgba(0,0,0,.1);-moz-box-shadow:0 1px 5px rgba(0,0,0,.1);box-shadow:0 1px 5px rgba(0,0,0,.1);}
+.main-header{line-height:50px;top:0;display:block;width:100%;height:80px;padding:0;text-align:left;-webkit-box-shadow:0 1px 5px rgba(0,0,0,.1);-moz-box-shadow:0 1px 5px rgba(0,0,0,.1);box-shadow:0 1px 5px rgba(0,0,0,.1);}
 .main-header.animated{-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
 .main-header.animated.slideUp{-webkit-animation-name:slideUp;animation-name:slideUp;}
 .main-header.animated.slideDown{-webkit-animation-name:slideDown;animation-name:slideDown;}
@@ -2113,3 +2113,34 @@ pre code {
 .bg-ico-link{background-position:0 -280px!important;}
 .bg-ico-design{background-position:0 -320px!important;}
 .bg-ico-lock{background-position:0 -360px!important;}
+
+
+
+a:first-child h1,a:first-child h2,a:first-child h3,a:first-child h4,a:first-child h5,a:first-child h6{margin-top:0;padding-top:0;}
+a{text-decoration:none;color:#313131;outline:0;}
+ /* a:active,a:focus,a:hover{color:#eb5055;outline:0;}  */
+/* a:active,a:focus,a:hover{color:#eb5055;outline:0;} */
+a::before{
+    color: #eb5055;
+	content: attr(data-hover);
+    position: absolute;
+    outline:0;
+    white-space: nowrap;
+    opacity: 0;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	-webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+	-moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+	transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+}
+a:hover::before,
+a:focus::before {
+    outline:0;
+    white-space: nowrap;
+	-webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+	-moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+	transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+	opacity: 1;
+}   

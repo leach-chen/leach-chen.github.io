@@ -21,7 +21,8 @@
 		
 			<div class="navbar-menu">
 			   {% for link in site.links %}             
-				<a href="{{ link.url }}"  title="访问 {{  link.name }}" data-hover="{{link.name}}">{{ link.name }}</a>
+				<a href="{{ link.url }}"  data-hover="{{link.name}}">{{ link.name }}</a>  <!--title="访问 {{  link.name }}"-->
+				<!--<a href="{{ link.url }}">{{ link.name }}</a>-->
 					{% endfor %}
 			</div>
 			
@@ -30,7 +31,8 @@
 				<span class="icon-menu cross"><span class="middle"></span></span>
 				<ul>
 				   {% for link in site.links %}           
-					<li><a href="{{ link.url }}" title="访问 {{  link.name }}" data-hover="{{link.name}}">{{ link.name }}</a></li>
+					 <li><a href="{{ link.url }}"data-hover="{{link.name}}">{{ link.name }}</a></li>  <!--title="访问 {{  link.name }}"--> 
+					 <!--<li><a href="{{ link.url }}">{{ link.name }}</a></li>-->
 				   {% endfor %}
 				</ul>
 			</div>

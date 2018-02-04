@@ -2060,7 +2060,7 @@ pre code {
 
 .navbar-menu{z-index:10;display:inline-block;width:auto;padding-right:5px;float:right;}
 .navbar-menu a{font-size:14px;padding:0 15px;text-decoration: none;}
-.navbar-mobile-menu{z-index:1;display:block;width:28px;padding:0 45px 0 10px;cursor:pointer;float:right;}
+.navbar-mobile-menu{z-index:1;display:none;width:28px;padding:0 45px 0 10px;cursor:pointer;float:right;}
 .navbar-mobile-menu:active,.navbar-mobile-menu:hover{cursor:pointer;}
 .navbar-mobile-menu:active:before,.navbar-mobile-menu:hover:before{-webkit-animation:pointer-ball .3s ease 1;animation:pointer-ball .3s ease 1;-webkit-animation-timing-function:cubic-bezier(.61,.04,.17,1.32);animation-timing-function:cubic-bezier(.61,.04,.17,1.32);}
 .navbar-mobile-menu:active .icon-menu,.navbar-mobile-menu:hover .icon-menu{-webkit-transform:rotateZ(360deg);-ms-transform:rotateZ(360deg);transform:rotateZ(360deg);}
@@ -2071,6 +2071,7 @@ pre code {
 .navbar-mobile-menu li{position:relative;display:inline;margin:0;text-decoration:none;}
 .navbar-mobile-menu ul{position:absolute;z-index:1;top:100%;overflow:hidden;clip:rect(1px,1px,1px,1px);margin:0 0 0 -95px;padding:0;-webkit-transition:-webkit-transform 300ms;transition:-webkit-transform 300ms;transition:transform 300ms;-webkit-transform:translate(120px,0);-ms-transform:translate(120px,0);transform:translate(120px,0);text-indent:0;}
 .navbar-mobile-menu:hover>ul,.navbar-mobile-menu:active>ul,.navbar-mobile-menu:focus>ul{overflow:inherit;clip:inherit;-webkit-transition:-webkit-transform 300ms;transition:-webkit-transform 300ms;transition:transform 300ms;-webkit-transform:translateX(0px) translateY(0px) translateZ(0px);transform:translateX(0px) translateY(0px) translateZ(0px);}
+/*.navbar-mobile-menu ul li a{font-size:15px;line-height:2.2;display:block;width:140px;margin:0;padding:8px 25px;background-color:#eee;}*/
 
 
 
@@ -2084,6 +2085,7 @@ pre code {
    .meta-comments{display:none;}
    .post-page{padding:100px 25px 0;}
    .common-page .post-list-item{width:100%;padding:10px 20px;}
+
    .footer-meta .footer-container{height:70px;padding:0 15px;}
    .footer-meta .meta-item{width:100%;padding:0 10px;}
    .footer-meta .meta-copyright .info-text{float:right;}

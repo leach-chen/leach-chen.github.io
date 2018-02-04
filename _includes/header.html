@@ -17,11 +17,11 @@
 
 		<div class="navbar-container">
 		
-			<div class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></div>
+		<div class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></div>
 		
 			<div class="navbar-menu">
 			   {% for link in site.links %}             
-				<a href="{{ link.url }}?liberxue"  title="访问 {{  link.name }}" data-hover="{{link.name}}">{{ link.name }}</a>
+				<a href="{{ link.url }}"  title="访问 {{  link.name }}" data-hover="{{link.name}}">{{ link.name }}</a>
 					{% endfor %}
 			</div>
 			
@@ -30,10 +30,12 @@
 				<span class="icon-menu cross"><span class="middle"></span></span>
 				<ul>
 				   {% for link in site.links %}           
-					<li><a href="{{ link.url }}?liberxue" title="访问 {{  link.name }}" data-hover="{{link.name}}">{{ link.name }}</a></li>
-					 {% endfor %}
+					<li><a href="{{ link.url }}" title="访问 {{  link.name }}" data-hover="{{link.name}}">{{ link.name }}</a></li>
+				   {% endfor %}
 				</ul>
 			</div>
+			
+			
 			
 		</div>
 	

@@ -13,11 +13,37 @@
         </ul>
       </nav>
       <p class="logo"><a href="{{site.baseurl}}/">{{ site.author }}</a></p>
-      <div class="search-icon-container">
+	  
+
+		<div class="navbar-container">
+		
+			<div class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></div>
+		
+			<div class="navbar-menu">
+			   {% for link in site.links %}             
+				<a href="{{ link.url }}?liberxue"  title="访问 {{  link.name }}" data-hover="{{link.name}}">{{ link.name }}</a>
+					{% endfor %}
+			</div>
+			
+		
+			<div class="navbar-mobile-menu" onclick="">
+				<span class="icon-menu cross"><span class="middle"></span></span>
+				<ul>
+				   {% for link in site.links %}           
+					<li><a href="{{ link.url }}?liberxue" title="访问 {{  link.name }}" data-hover="{{link.name}}">{{ link.name }}</a></li>
+					 {% endfor %}
+				</ul>
+			</div>
+			
+		</div>
+	
+    <!--  <div class="search-icon-container">
 	    <a href="/" style="text-decoration: none; color: inherit;margin-right:20px;">Home</a>
 		<a href="/about" style=" text-decoration: none; color: inherit;margin-right:20px;">About</a>
         <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
-      </div>
+      </div> -->
+	  
+	  
     </div>
   </div>
 </header> <!-- End Header -->

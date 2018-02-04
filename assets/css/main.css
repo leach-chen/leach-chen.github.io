@@ -2051,7 +2051,7 @@ pre code {
 }
 
 
-.main-header{line-height:50px;top:0;display:block;width:100%;height:80px;padding:0;text-align:left;-webkit-box-shadow:0 1px 5px rgba(0,0,0,.1);-moz-box-shadow:0 1px 5px rgba(0,0,0,.1);box-shadow:0 1px 5px rgba(0,0,0,.1);}
+.main-header{line-height:78px;position:fixed;z-index:1;top:0;display:block;width:100%;height:80px;padding:0;text-align:left;-webkit-box-shadow:0 1px 5px rgba(0,0,0,.1);-moz-box-shadow:0 1px 5px rgba(0,0,0,.1);box-shadow:0 1px 5px rgba(0,0,0,.1);}
 .main-header.animated{-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
 .main-header.animated.slideUp{-webkit-animation-name:slideUp;animation-name:slideUp;}
 .main-header.animated.slideDown{-webkit-animation-name:slideDown;animation-name:slideDown;}

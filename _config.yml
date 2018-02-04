@@ -57,5 +57,5 @@ links:
     url:          /
     external:     false
   - name:         About
-    url:          /About
+    url:          /about
     external:     false

@@ -33,6 +33,9 @@ mailchimp: # Add your MailChimp form identifier.
 # Disqus
 discus_identifier: leach-chen # Add your discus identifier
 
+#intensedebate
+intensedebate_identifier: 1ce8d80a5f6d373a46f4ceaf3dff8859
+
 # Tracker
 analytics: # Google Analytics
 

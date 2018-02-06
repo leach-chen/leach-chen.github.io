@@ -65,15 +65,3 @@ links:
   - name:         About
     url:          /about
     external:     false
-    
-    
-    
-    
-links1:
-  - name:         Home1
-    url:          /
-    external:     false
-  - name:         About1
-    url:          /about
-    external:     false
-

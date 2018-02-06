@@ -7,8 +7,9 @@ permalink: ':title/'
 #baseurl: "/adam-blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Author settings
-author: Leach Chen # add your name
+# Author settings add your name
+author: Leach Chen 
+
 author-pic: leach-face.jpg
 about-author: I will add description latter.                                                                    
 
@@ -31,14 +32,14 @@ csdn: http://blog.csdn.net/chenliqiang12345678
 mailchimp: # Add your MailChimp form identifier.
 
 # Disqus
-discus_identifier: leach-chen # Add your discus identifier
+discus_identifier: leach-chen 
+# Add your discus identifier
 
 #intensedebate
 intensedebate_identifier: 1ce8d80a5f6d373a46f4ceaf3dff8859
 
-# Tracker
-analytics: # Google Analytics
-
+# Tracker Google Analytics
+google-analysis: UA-113644888-1
 baidu-analysis: 56385150d223d3a72bebe8a0d4a94e19
 
 # Paginate

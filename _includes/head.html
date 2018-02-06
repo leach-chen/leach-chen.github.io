@@ -31,10 +31,21 @@
 		var _hmt = _hmt || [];
 		(function() {
 		  var hm = document.createElement("script");
-		  hm.src = "//hm.baidu.com/hm.js?{{ site.baidu-analyisis }}";
+		  hm.src = "https://hm.baidu.com/hm.js?{{ site.baidu-analyisis }}";
 		  var s = document.getElementsByTagName("script")[0]; 
 		  s.parentNode.insertBefore(hm, s);
 		})();
+	</script>
+	
+	<!--谷歌统计-->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id="{{ site.google-analysis }}></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', '{{ site.google-analysis }}');
 	</script>
 
 </head>

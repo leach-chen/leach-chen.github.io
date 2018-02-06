@@ -39,6 +39,8 @@ intensedebate_identifier: 1ce8d80a5f6d373a46f4ceaf3dff8859
 # Tracker
 analytics: # Google Analytics
 
+baidu-analysis: 56385150d223d3a72bebe8a0d4a94e19
+
 # Paginate
 paginate: 18
 paginate_path: /page:num/

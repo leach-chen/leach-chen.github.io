@@ -1235,8 +1235,7 @@ pre code {
 
 .page-footer {
   margin-top: 30px;
-  padding-bottom: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -2050,7 +2049,7 @@ pre code {
 	float:right;
 }
 
-
+/*顶部导航适配手机*/
 .main-header{line-height:50px;z-index:1;top:0;display:block;width:100%;height:80px;padding:0;text-align:left;-webkit-box-shadow:0 1px 5px rgba(0,0,0,.1);-moz-box-shadow:0 1px 5px rgba(0,0,0,.1);box-shadow:0 1px 5px rgba(0,0,0,.1);}
 .main-header.animated{-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
 .main-header.animated.slideUp{-webkit-animation-name:slideUp;animation-name:slideUp;}
@@ -2115,7 +2114,7 @@ pre code {
 .bg-ico-lock{background-position:0 -360px!important;}
 
 
-
+/*文字移入效果*/
 a:first-child h1,a:first-child h2,a:first-child h3,a:first-child h4,a:first-child h5,a:first-child h6{margin-top:0;padding-top:0;}
 a{text-decoration:none;color:#313131;outline:0;}
  /* a:active,a:focus,a:hover{color:#eb5055;outline:0;}  */
@@ -2144,3 +2143,85 @@ a:focus::before {
 	transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 	opacity: 1;
 }   
+
+
+
+
+
+
+/*上一页下一页*/
+/*pager start----------------*/
+.post-container 
+.pager li{ 
+
+  width:48%
+}
+.next{
+
+  float:right
+}
+.previous{
+
+  float:left
+}
+.pager li>a{
+  width:100%;
+  padding: 10px 10px;  
+}
+
+.pager li>a>span{
+  padding-right: 10px;
+  color:gray;
+  padding: 10px 10px;  
+}
+
+.pager li>span {
+  margin-top: 40px;
+  line-height:1.7;
+  text-transform:uppercase;
+  font-size:13px;
+  font-weight:800;
+  padding:10px;
+  background-color:#fff;
+  border-radius:0;
+}
+.pager li>a {
+  color:#404040
+}
+.pager li>a:hover,
+.pager li>a:focus { 
+  color:#fff;
+  background-color:#B9D3EE;
+}
+.pager li>a:hover>span,
+.pager li>a:focus>span{
+  color:#fff;
+}
+::-moz-selection { 
+  color:#fff;
+  text-shadow:none;
+  background:#a0b3d6;
+  }
+::selection {
+    color:#fff;
+    text-shadow:none;
+    background:#666666;
+  }
+img::selection {
+  color:#fff;
+  background:0 0
+}
+img::-moz-selection {
+  color:#fff;
+  background:0 0
+}
+
+@media all and (max-width: 600px) {
+  .next{
+    float:left;
+  }
+  .previous{
+    float:left;
+  }
+}
+/*pager end----------------*/

@@ -11,7 +11,9 @@ layout: default
       <div class="page-content">
         <div class="header-page">
           <h1 class="page-title">{{page.title}}</h1>
-          <div class="page-date"><time datetime="{{page.date}}">{{page.date | date: '%Y, %b %d'}}</time></div>
+          <div class="page-date"><time datetime="{{page.date}}">{{page.date | date: '%Y, %b %d'}}</time>
+		  <span id="busuanzi_container_page_pv"> | 访问量：<span id="busuanzi_value_page_pv"></span> 次</span>
+		  </div>
         </div>
         {{page.content | markdownify}}
         <div class="page-footer">
@@ -27,7 +29,11 @@ layout: default
             <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google+" rel="nofollow" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
           </div><!-- End Share -->
+		  
+		  {% include new-old.html %}
         </div>
+		
+		
         {% include author-box.html %}
         {% include recent-post.html %}
         {% include newsletter.html %}

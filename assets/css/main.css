@@ -2164,7 +2164,8 @@ a:focus::before {
 
   float:left
 }
-.pager li>a{
+
+/*.pager li>a{
   width:100%;
   padding: 10px 10px;  
 }
@@ -2173,6 +2174,12 @@ a:focus::before {
   padding-right: 10px;
   color:gray;
   padding: 10px 10px;  
+}*/
+
+.pager li>a>span{
+
+  color:gray;
+
 }
 
 .pager li>span {

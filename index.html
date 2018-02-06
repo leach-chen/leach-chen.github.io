@@ -1,8 +1,25 @@
 ---
 layout: home-page
 ---
+
+<!--<p>aaa:{{ site.posts | size }}</p>   </span>aa:{{ site.categories | size }}</span>
+{% assign year = 3 %}
+{% for category in site.categories %}
+	{% assign year = year | plus: 1 %}
+	<p>aaa:{{year}}</p>
+{% endfor %}
+-->
+{% assign count = 0 %}
 <ol class="post-card-box clearfix">
   {% for post in paginator.posts %}
+  
+   {% if post.test1%}
+   
+   {% assign count = count | plus: 1 %}
+	<p>aaa:{{count}}</p>
+   
+   {% endif %}
+   
   <li>
     <div class="post-card">
 

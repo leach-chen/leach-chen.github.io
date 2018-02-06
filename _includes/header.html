@@ -7,15 +7,21 @@
       <nav class="main-nav">
         <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
         <ul style="height:800px;overflow-y:scroll;overflow-y:auto;">
-		{% assign count = 0 %}
-		 {% for post in paginator.posts %}
+		 {% assign count = 0 %}
+		 {% for post in site.posts %}
 		   {% if post.test%}
 			{% assign count = count | plus: 1 %}
 		  {% endif %}
 		  {% endfor %}
           <li><a href="{{site.baseurl}}/">Blog({{count}})</a></li>
 		   
-          <li style="margin-bottom:200px;"><a href="{{site.baseurl}}/about">About</a></li>
+		    {% assign count = 0 %}
+		 {% for post in site.posts %}
+		   {% if post.test%}
+			{% assign count = count | plus: 1 %}
+		  {% endif %}
+		  {% endfor %}
+          <li style="margin-bottom:200px;"><a href="{{site.baseurl}}/about">About({{count}})</a></li>
         </ul>
       </nav>
       <p class="logo"><a href="{{site.baseurl}}/">{{ site.author }}</a></p>

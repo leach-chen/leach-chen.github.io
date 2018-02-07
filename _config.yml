@@ -60,7 +60,6 @@ include: [_pages]
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 
 
-
 links:
   - name:         Home
     url:          /
@@ -68,3 +67,47 @@ links:
   - name:         About
     url:          /about
     external:     false
+    
+#添加分类步骤：
+#1：在_config.yml links1及blog_中添加对应内容
+#2：在_includes里面headr.html中添加对应内容
+#3：在根目录blog文件中创建对应内容
+
+    
+links1:
+  - name:         最近
+    url:          /
+    type:         recent
+    external:     false
+  - name:         随笔
+    url:          /blog/essays
+    type:         essays
+    external:     false
+  - name:         Jekyll
+    url:          /blog/jekyll
+    type:         jekyll
+    external:     false
+  - name:         Android原创
+    url:          /blog/androidoriginal
+    type:         androidoriginal
+    external:     false    
+    
+blog_1:    recent
+blog_2:    essays   
+blog_3:    jekyll   
+blog_4:    androidoriginal   
+blog_5:       
+blog_6:       
+blog_7:       
+blog_8:       
+blog_9:       
+blog_10:      
+blog_11:      
+blog_12:      
+blog_13:      
+blog_14:      
+blog_15:       
+blog_16:           
+    
+    
+#permalink: /:year/:month/:day/:title.html    

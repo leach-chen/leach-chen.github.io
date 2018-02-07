@@ -7,21 +7,41 @@
       <nav class="main-nav">
         <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
         <ul style="height:800px;overflow-y:scroll;overflow-y:auto;">
-		 {% assign count = 0 %}
-		 {% for post in site.posts %}
-		   {% if post.test%}
-			{% assign count = count | plus: 1 %}
-		  {% endif %}
-		  {% endfor %}
-          <li><a href="{{site.baseurl}}/">Blog({{count}})</a></li>
-		   
-		    {% assign count = 0 %}
-		 {% for post in site.posts %}
-		   {% if post.test%}
-			{% assign count = count | plus: 1 %}
-		  {% endif %}
-		  {% endfor %}
-          <li style="margin-bottom:200px;"><a href="{{site.baseurl}}/about">About({{count}})</a></li>
+		 {% for link in site.links1 %}      
+			 {% assign count = 0 %}
+			 {% if link.type == site.blog_1 %}
+				 {% for post in site.posts %}
+				   {% assign count = count | plus: 1 %}
+				 {% endfor %}
+			 {% endif %}	 
+			 
+			 {% if link.type == site.blog_2 %}  
+				 {% for post in site.posts %}
+				   {% if post.essays%}
+						{% assign count = count | plus: 1 %}
+				   {% endif %}
+				 {% endfor %}
+			 {% endif %}
+			 
+			 {% if link.type == site.blog_3 %}  
+				{% for post in site.posts %}
+				   {% if post.jekyll%}
+						{% assign count = count | plus: 1 %}
+				   {% endif %}
+				 {% endfor %}
+			 {% endif %}
+			 
+			 {% if link.type == site.blog_4 %}  
+				{% for post in site.posts %}
+				   {% if post.androidoriginal%}
+						{% assign count = count | plus: 1 %}
+				   {% endif %}
+				 {% endfor %}
+			 {% endif %}
+			 
+			 <li><a  href="{{ link.url }}"  data-hover="{{link.name}}">{{ link.name }}({{count}})</a></li>
+		 {% endfor %}
+          <!--<li style="margin-bottom:200px;"><a href="{{site.baseurl}}/about">About({{count}})</a></li>-->
         </ul>
       </nav>
       <p class="logo"><a href="{{site.baseurl}}/">{{ site.author }}</a></p>

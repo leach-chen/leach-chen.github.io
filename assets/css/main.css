@@ -951,11 +951,12 @@ pre code {
   display: block;
   padding: 15px 0;
   text-decoration: none;
-  text-transform: uppercase;
   font-weight: 400;
   font-size: 16px;
   color: #311e3e;
 }
+ /*text-transform: uppercase;*/
+
 
 .main-nav ul li a:hover {
   opacity: .8;

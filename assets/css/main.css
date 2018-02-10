@@ -1140,9 +1140,9 @@ pre code {
 .post-card .post-card-body .tag {
   text-decoration: none;
   font-size: 10px;
-  text-transform: uppercase;
   color: #fff;
 }
+/*text-transform: uppercase;*/
 
 .post-card .post-card-body .tag:hover {
   text-decoration: underline;
@@ -2233,3 +2233,12 @@ img::-moz-selection {
   }
 }
 /*pager end----------------*/
+
+.post-card-title
+{
+	width: 300px;
+    overflow:hidden;
+    text-overflow:ellipsis; 
+    white-space: nowrap;/*加宽度width属来兼容部分浏览*/
+	padding-right: 30px;
+}

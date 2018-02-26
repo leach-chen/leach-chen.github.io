@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Android 自定义view之API
+title: Android 自定义view之基本绘制
 date:  2018-02-26 16:35:00 +0900 
-description: Android 自定义view之API
+description: Android 自定义view之基本绘制
 img: post-3.jpg # Add image post (optional)
 tags: [自定义view]
 author: # Add name author (optional)
 jekyll: androidoriginal
 ---
-（Paint，Path.........）敬请期待.................
+（原型，矩形，扇形，三角形）敬请期待.................

@@ -6,6 +6,6 @@ description: Android 自定义view之基本绘制
 img: post-3.jpg # Add image post (optional)
 tags: [自定义view]
 author: # Add name author (optional)
-jekyll: androidoriginal
+androidoriginal: true
 ---
-（原型，矩形，扇形，三角形）敬请期待.................
+（原型，矩形，圆角矩形，扇形，三角形）敬请期待.................

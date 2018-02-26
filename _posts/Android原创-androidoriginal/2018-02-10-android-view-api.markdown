@@ -6,6 +6,6 @@ description: Android 自定义view之API
 img: post-3.jpg # Add image post (optional)
 tags: [自定义view]
 author: # Add name author (optional)
-jekyll: androidoriginal
+androidoriginal: true
 ---
 （Paint，Path.........）敬请期待.................

@@ -5,7 +5,7 @@ title: 开发工具
 date:  2018-02-27 16:40:00 +0900 
 description: 开发工具
 img: post-3.jpg # Add image post (optional)
-tags: [自定义view]
+tags: [tools]
 author: # Add name author (optional)
 androidoriginal: true
 ---
@@ -28,11 +28,7 @@ androidoriginal: true
 <br><br>
 - **Astrill**	不错的国外的VPN客户端
 <br><br>
-- **jmeter、tsung**	压力测试工具
-<br><br>
-- **appium**	自动化测试
-<br><br>
-- **Uiautomator**	UI自动化测试的工具
+- **jmeter、tsung、appium、Uiautomator**	压力测试工具，自动化测试工具
 <br><br>
 - **uiautomatorviewer**	用来扫描和分析Android应用程序的UI控件的工具。
 

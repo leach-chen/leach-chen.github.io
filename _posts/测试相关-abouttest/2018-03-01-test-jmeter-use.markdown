@@ -43,7 +43,7 @@ abouttest: true
 <img src="/assets/img/blog/abouttest/jmeter2/json_create_detail.jpg" height = "300px"/><br>
 **Names of created variables**里面定义一个变量名，可随便取名,我这里就取名为accessToken<br>
 **JSON Path expressions**里面为截取上面json里面的accessToken字段<br>
-假设登录接口url为/login?accessToken=,那么我们这样写/login?accessToken=${accessToken}，这样在执行登录接口的时候就自动会获取到授权接口返回的accessToken值<br><br>
+假设登录接口url为/login?accessToken=,那么我们这样写/login?accessToken=${accessToken}，这样在执行登录接口的时候就自动会获取到授权接口返回的accessToken值进行登录接口请求<br><br>
 **7.添加断言**<br><br>
 断言有多种，这里以响应断言为例子，就是判断这个接口是否执行成功，若不成功，则在察看结果树里面会看到该接口标记为红色，若断言放在线程组目录下，则对所有接口断言，若放在单个接口下面，则对该接口断言<br>
 <img src="/assets/img/blog/abouttest/jmeter2/assert_create.jpg" height = "300px"/>

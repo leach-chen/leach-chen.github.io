@@ -35,7 +35,7 @@ abouttest: true
 假设授权接口返回数据为{"code":"0","message":"success","data":{"accessToken":"123"}}<br><br>
 **6.登录接口获取授权接口返回值**<br><br>
 按照步骤4添加一个登录接口，登录接口请求的时候需要传入上面的accessToken值123，那么如果获取到这个token值呢？<br>
-可以通过正则方式或者json方式去获取到授权接口的这个返回值，我们这里用json方式。<br>采用json方式需要先下载个插件：
+可以通过正则方式或者json方式去获取到授权接口的这个返回值，我们这里用json方式。<br>采用json方式需要先下载个插件,
 下载地址为：<a href="https://jmeter-plugins.org/wiki/JSONPathExtractor/" style="text-decoration: none;" target="_blank"  title="点击前往">https://jmeter-plugins.org/wiki/JSONPathExtractor/</a>
 下载完成后，将下载的jar包放到jmeter安装目录下lib\ext里面，重启jmeter。
 此时可以添加一个Json Extractor<br>

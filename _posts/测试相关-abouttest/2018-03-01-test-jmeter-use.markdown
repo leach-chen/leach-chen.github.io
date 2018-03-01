@@ -49,7 +49,12 @@ abouttest: true
 <img src="/assets/img/blog/abouttest/jmeter2/assert_create.jpg" height = "300px"/>
 <img src="/assets/img/blog/abouttest/jmeter2/assert_create_detail.jpg" height = "300px"/><br>
 上图的意思就是如果接口返回值里面包含"message":"success"文本，则断言成功，否则失败。下图是断言后执行效果，绿色是断言成功，红色是断言失败<br>
-<img src="/assets/img/blog/abouttest/jmeter2/assert_result.jpg" height = "300px"/>
-
+<img src="/assets/img/blog/abouttest/jmeter2/assert_result.jpg" height = "300px"/><br><br>
+**8.接口并执行设置**<br><br>
+<img src="/assets/img/blog/abouttest/jmeter2/yali_test.jpg" height = "300px"/><br>
+选中左侧线程组后，如上图中:<br>
+**线程数**，代表同时执行接口请求的线程个数<br>
+**Ramp-Up Period(in-seconds)**代表线程隔多长时间执行，0代表同时并发<br>
+**循环次数**表示循环调用接口的次数<br>
 
 

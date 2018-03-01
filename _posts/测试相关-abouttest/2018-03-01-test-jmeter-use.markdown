@@ -16,8 +16,8 @@ abouttest: true
 为什么要添加这个呢？若要测试多个接口，每个接口都要去设置域名，端口等信息，那么会比较麻烦，我们可以设置一个默认的http请求，这样所有接口都能公用。<br>  
 <img src="/assets/img/blog/abouttest/jmeter2/默认HTTP请求添加.jpg" height = "300px"/>
 <img src="/assets/img/blog/abouttest/jmeter2/默认HTTP请求.jpg" height = "300px"/><br>
-若是http请求，则在协议里面填入http，服务器名称或IP里面填入域名，端口号填80
-若是https请求，则在协议里面填入https，服务器名称或IP里面填入域名，端口号填443,并且还需要添加证书
+若是http请求，则在协议里面填入http，服务器名称或IP里面填入域名，端口号填80<br>
+若是https请求，则在协议里面填入https，服务器名称或IP里面填入域名，端口号填443,并且还需要添加证书<br>
 点击选项-->SSL管理器->在弹出框里面找到你的证书-->点击Open<br><br>
 **3.信息头管理器添加**<br><br>
 若你请求的接口为post方式，且post的参数为json格式，则要配置HTTP信息头，否则接口会调用失败。添加<br>**Content-Type:application/json,charset:UTF-8**<br>

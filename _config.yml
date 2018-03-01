@@ -75,7 +75,7 @@ links:
 
     
 links1:
-  - name:         最近
+  - name:         所有
     url:          /
     type:         recent
     external:     false
@@ -91,12 +91,15 @@ links1:
     url:          /blog/androidoriginal
     type:         androidoriginal
     external:     false    
-    
+  - name:         测试相关
+    url:          /blog/abouttest
+    type:         abouttest
+    external:     false    
 blog_1:    recent
 blog_2:    essays   
 blog_3:    jekyll   
 blog_4:    androidoriginal   
-blog_5:       
+blog_5:    abouttest   
 blog_6:       
 blog_7:       
 blog_8:       

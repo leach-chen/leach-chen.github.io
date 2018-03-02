@@ -67,6 +67,9 @@
             <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">上一篇：  <span>{{page.next.title}}</span>
             </a>
         </li>
+		
+		<br><br>
+		
         {% endif %}
         {% if page.previous.url %}
         <li class="next">

@@ -2157,10 +2157,10 @@ a:focus::before {
 
   width:48%
 }
-.next{
+/*.next{
 
   float:right
-}
+}*/
 .previous{
 
   float:left
@@ -2225,9 +2225,9 @@ img::-moz-selection {
 }
 
 @media all and (max-width: 600px) {
-  .next{
+  /*.next{
     float:left;
-  }
+  }*/
   .previous{
     float:left;
   }

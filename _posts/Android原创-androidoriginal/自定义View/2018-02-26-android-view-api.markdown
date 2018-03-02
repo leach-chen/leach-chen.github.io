@@ -326,7 +326,3 @@ path.op(path2, Path.Op.XOR);  <br>
 canvas.drawPath(path, paint);  <br>
 
 1. <a href="http://blog.csdn.net/u012702547/article/details/52454406" style="text-decoration: none;" target="_blank" >参考</a>
-
-
-
-

@@ -13,6 +13,7 @@ author: Leach Chen
 author-pic: leach-face.jpg
 about-author: I will add description latter.                                                                    
 
+#修改成你自己的
 # Contact links
 website: # Add your website, do not add http://
 linkedin: # Add your Linkedin handle
@@ -21,6 +22,7 @@ facebook: # Add your Facebook handle
 instagram: # Add your Instagram handle
 pinterest: # Add your Pinterest handle
 
+#修改成你自己的
 email: leach.chen@gmail.com
 phone: 00000000
 github: https://github.com/leach-chen
@@ -31,14 +33,14 @@ csdn: http://blog.csdn.net/chenliqiang12345678
 # Newsletter
 mailchimp: # Add your MailChimp form identifier.
 
-# Disqus
+# Disqus修改成你自己的
 discus_identifier: leach-chen 
 # Add your discus identifier
 
-#intensedebate
-intensedebate_identifier: 1ce8d80a5f6d373a46f4ceaf3dff8859
+#intensedebate修改成你自己的
+intensedebate_identifier: 1ce8d80a5f6d373a46f4ceaf3dff8859      
 
-# Tracker Google Analytics
+# Tracker Google Analytics修改成你自己的
 google-analysis: UA-113644888-1
 baidu-analysis: 56385150d223d3a72bebe8a0d4a94e19
 

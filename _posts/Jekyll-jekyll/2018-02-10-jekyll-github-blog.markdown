@@ -8,7 +8,7 @@ tags: [Jekyll,GitHub]
 author: # Add name author (optional)
 jekyll: true
 ---
-GitHub搭建个人网站，大家在网上一搜能搜到一大把的教程，但是大部分都讲的差不多，并不能满足自己想搭建的网站详细需求。我之前在搭建本站的时候也是查了较多资料，学习了下jekyll语法，参考了几个主题模板，才把符合我需求网站搭建出来。那么今天我将详细介绍下本站从**github代码托管，jekyll安装，jekyll主题选择，jekyll目录结构，jekyll基本语法，jekyll主题修改，网站留言，访问量统计等子功能整入**的详细过程。顺便当作自己记录下吧，防止以后忘记了。
+GitHub搭建个人网站，大家在网上一搜能搜到一大把的教程，但是大部分都讲的差不多，并不能满足自己想搭建的网站详细需求。我之前在搭建本站的时候也是查了较多资料，学习了下jekyll语法，参考了几个主题模板，才把符合我需求网站搭建出来。那么今天我将详细介绍下本站从**github代码托管，jekyll安装，jekyll主题选择，jekyll目录结构，jekyll基本语法，jekyll主题修改，网站留言，访问量统计等子功能整入**的详细过程。顺便当作自己记录下吧，防止以后忘记了。也欢迎大家<a href="https://github.com/leach-chen/leach-chen.github.io/" style="text-decoration: none;" target="_blank" title="代码托管">star本站源码</a>改造成属于你自己的喜好的个人网站。
 
 GitHub搭建个人网站可基于jekyll或者hexo或者其它的，我看官方提供的主题jekyll更多，样式也更好看，而且能直接链接到源码主页，所以我选择的基于jekyll搭建的，若不明白jekyll是什么东西，别急，后面会解释到，下面开始讲解本站的搭建过程。
 

@@ -21,30 +21,14 @@ JMeter是Apache组织开发的基于Java的压力测试工具,下面主要记录
 
 **可能遇到问题**<br><br>
 
-#language=en
+1. WIN10下启动失败 not able to find Java executable or version.Please check your java installation <br>
+<a href="http://blog.csdn.net/dragonzard/article/details/77340399" style="text-decoration: none;" target="_blank"  title="点击前往">参考连接</a>
 
-language=zh_CN
+2. 启动提示 系统找不到文件C:\ProgramData\Oracle\Java\javapath\java.exe,
+打开环境变量设置，打开Path，将C:\ProgramData\Oracle\Java\javapath放到%JAVA_HOME%\bin后面，<a href="http://blog.csdn.net/u012506661/article/details/52903613" style="text-decoration: none;" target="_blank"  title="点击前往">参考连接</a>
 
-jmeter.properties
-
-
-
-http://blog.csdn.net/beauty_shimei/article/details/53784531  用法
-
-http://blog.csdn.net/fvafuc/article/details/49761237  添加证书
-
-https://www.cnblogs.com/liyuhang/p/6694442.html 设置支持post json数据
-
-https://www.cnblogs.com/liyuanhong/p/7087401.html http://www.cnblogs.com/liyuanhong/articles/7082998.html http://blog.csdn.net/dreamtl/article/details/68957122 https://my.oschina.net/u/3748347/blog/1619775上一个接口返回值作为下一个接口的请求参数
-
-
-https://www.cnblogs.com/LiangHu/p/6229864.html  http://blog.csdn.net/github_27109687/article/details/71968662断言
-
-
-http://blog.csdn.net/github_27109687/article/details/71968662 综合用法
-
-
-https://www.cnblogs.com/by-dream/p/5611555.html  http://blog.csdn.net/sunwangdian/article/details/50738870 https://zhidao.baidu.com/question/365092914594067132.html https://www.cnblogs.com/wangcp-2014/p/4934728.html压测
+3. 修改jmeter修改语言
+jmeter目录下找到jmeter.properties，打开找到#language=en，修改成language=zh_CN，重新启动jmeter
 
 
   

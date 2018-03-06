@@ -11,7 +11,7 @@ androidoriginal: true
 ## **配置** ##
 
 **1. 修改项目module名称**<br>
-新建项目TestProject->app上右键Refactor->Rename,重命名为TestView,在项目根目录下打开settings.gradle，将include ':app'，改成include ':TestView'
+新建项目TestProject->app上右键Refactor->Rename,选择Rename directory重命名为TestView,在项目根目录下打开settings.gradle，将include ':app'，改成include ':TestView',或者直接选择Rename module重命名为TestView
 
 **2. 将项目module名移至文件夹下**<br>
 在上一步中，TestProject->右键New->Directory,输入名称samples，将TestView项目拖入samples文件夹下，在项目根目录下打开settings.gradle，将include ':TestView'改成include ':samples:TestView'

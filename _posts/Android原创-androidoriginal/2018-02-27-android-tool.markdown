@@ -31,4 +31,4 @@ androidoriginal: true
 <br><br>
 - **uiautomatorviewer**	用来扫描和分析Android应用程序的UI控件的工具。
 
-
+- **Atom，NotePad++、UltraEdit** 文件编辑器，atom是Github的一款文件编辑器，可以导入文件夹结构，很好用，界面看着也舒服

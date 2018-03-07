@@ -15,7 +15,7 @@ GPS格式可阅读[这篇博客](https://leach-chen.github.io/GPS-file/ "点击�
 
 ![](/assets/img/blog/androidoriginal/gps/gpsparase.gif)
 
-**世界坐标转火星坐标系**<br>
+**世界坐标转系火星坐标系**<br>
 往往设备记录下来的坐标是原始坐标系，这是国际公认的世界标准坐标体系，我们地图上要绘制的时候一般要先转换为火星坐标系，通过下面代码中**transform(double wgLat, double wgLon)**，传入经纬度，便可得到转换后的经纬度信息了。
 
 	public class EvilTransform {

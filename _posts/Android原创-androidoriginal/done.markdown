@@ -25,3 +25,5 @@ androidoriginal: true
 .ffmpeg
 .jni
 .opengl
+.滤镜
+.appium

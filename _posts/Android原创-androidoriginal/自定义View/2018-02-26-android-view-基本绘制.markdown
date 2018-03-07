@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android自定义View之基本绘制
-date:  2018-02-26 16:35:00 +0900 
+date:  2018-02-26 16:35:00 +0900
 description: Android自定义View之基本绘制
 img: post-7.jpg # Add image post (optional)
 tags: [Android,自定义view]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android自定义View之带箭头文本
-date:  2018-03-02 13:36:00 +0900 
+date:  2018-03-02 13:36:00 +0900
 description: Android自定义View之带箭头文本
 img: post-11.jpg # Add image post (optional)
 tags: [Android,自定义view]
@@ -19,7 +19,7 @@ androidoriginal: true
 2. 上图中TextView区域实际为颜色灰色的区域，我们需要框定出一个圆角矩形的文本显示区域，可用如下方式：
 
     canvas.drawRoundRect(new RectF(getPaddingLeft() - 20,getPaddingTop() - 20,width - getPaddingRight() + 20,height - getPaddingBottom()+20),30,30,paint);
-	
+
 	其中加20，-20是让文本在圆角矩形内缩进，否则文本是紧贴着圆角矩形边框的；
 
 3. 三角指示器绘制，我们需要在布局里给该文本设置内边距，该边距要能放下三角指示器，否则圆角矩形填满TextView，三角指示器就没有空间显示了，然后利用Path进行描点绘制三角指示器就可以了；

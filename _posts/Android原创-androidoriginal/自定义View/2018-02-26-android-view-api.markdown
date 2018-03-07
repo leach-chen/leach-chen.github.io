@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android自定义View之API
-date:  2018-02-26 16:35:00 +0900 
+date:  2018-02-26 16:35:00 +0900
 description: Android自定义View之API
 img: post-3.jpg # Add image post (optional)
 tags: [Android,自定义view]
@@ -43,7 +43,7 @@ androidoriginal: true
 设置文本粗体
 
 1. **setFilterBitmap(boolean filter)**  <br>
-对位图进行滤波处理，如果该项设置为true，则图像在动画进行中会滤掉对Bitmap图像的优化操作，加快显示 
+对位图进行滤波处理，如果该项设置为true，则图像在动画进行中会滤掉对Bitmap图像的优化操作，加快显示
 
 1. **setColor(int color)**  <br>
 设置画笔颜色
@@ -79,7 +79,7 @@ androidoriginal: true
 设置字体样式，可以是Typeface设置的样式，也可以通过Typeface的createFromAsset(AssetManager mgr, String path)方法加载样式
 
 1. **setShadowLayer(float radius, float dx, float dy, int shadowColor)** <br>
-设置阴影效果，radius为阴影角度，dx和dy为阴影在x轴和y轴上的距离，color为阴影的颜色 
+设置阴影效果，radius为阴影角度，dx和dy为阴影在x轴和y轴上的距离，color为阴影的颜色
 
 1. **setTextLocale(Locale locale)** <br>
 设置地理位置，比如显示中文，日文，韩文等，默认的显示Locale.getDefault()即可，
@@ -188,13 +188,13 @@ androidoriginal: true
 参数3：扫过的角度 <br>
 参数4：是否和中心连线 <br>
 参数5：画笔对象 <br>
-  
+
 1. **canvas.drawRect(100,100, 200, 200, p) <span style= "color:#033FA1">画矩形</span>** <br>
 参数1：float left  <br>
 参数2：float top <br>
 参数3：float right <br>
 参数4：float bottom <br>
-**canvas.drawRoundRect(oval3, 20, 5, p) 画圆角矩形**  <br> 
+**canvas.drawRoundRect(oval3, 20, 5, p) 画圆角矩形**  <br>
 RectF oval3 = new RectF(80, 260, 200, 300);// 设置个新的长方形    
 canvas.drawRoundRect(oval3, 20, 5, p);//第二个参数是x半径，第三个参数是y半径
 
@@ -212,7 +212,7 @@ canvas.drawPath(path, p);<br>
 p.setStyle(Style.STROKE);  <br>
 Path path2=new Path();     <br>
 path2.moveTo(100, 100);//设置Path的起点    <br>
-path2.quadTo(300, 100, 400, 400); //设置贝塞尔曲线的控制点坐标和终点坐标。<br> 参数1、2：x1，y1为控制点的坐标值，参数3、4：x2，y2为终点的坐标值<br> 
+path2.quadTo(300, 100, 400, 400); //设置贝塞尔曲线的控制点坐标和终点坐标。<br> 参数1、2：x1，y1为控制点的坐标值，参数3、4：x2，y2为终点的坐标值<br>
 path2.quadTo(500, 700, 800, 800);   <br>
 canvas.drawPath(path2, p);//画出贝塞尔曲线  <br>
 
@@ -228,7 +228,7 @@ canvas.drawBitmap(bitmap, 200,300, p); <br>
 参数1：bitmap对象 <br>
 参数2：图像左边坐标点 <br>
 参数3：图像上边坐标点 <br>
-  
+
 1. <a href="https://www.jianshu.com/p/f69873371763" style="text-decoration: none;" target="_blank" >参考</a>
 
 ## **Path** ##

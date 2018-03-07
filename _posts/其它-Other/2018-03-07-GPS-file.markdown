@@ -6,7 +6,7 @@ description: GPS数据格式
 img: post-8.jpg # Add image post (optional)
 tags: [GPS]
 author: # Add name author (optional)
-abouttest: true
+other: true
 ---
 
 该协议信息包括 GGA 位置测定系统的定位资料、GSV 导航卫星资料、RMC 导航卫星特定精简资料、VTG 方向及速度等相关资料。这里以接收 GGA 数据为例，给出的格式如下：<br>

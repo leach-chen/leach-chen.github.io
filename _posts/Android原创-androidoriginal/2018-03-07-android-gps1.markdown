@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android GPS解析
-date:  2018-03-07 15:09:00 +0900  
+date:  2018-03-07 18:24:00 +0900  
 description: Android GPS解析
 img: post-8.jpg # Add image post (optional)
 tags: [Android,GPS]
@@ -9,11 +9,8 @@ author: # Add name author (optional)
 androidoriginal: true
 ---
 
-在做轨迹相关功能时经常需要GPS解析，从GPS文件中我们可以提取出经纬度信息，速度，方向，时间等信息。<br>
-GPS格式可阅读[这篇博客](https://leach-chen.github.io/GPS-file/ "点击前往")。
-把GPS文件中的经纬度信息提取出来，我们就可以在地图上绘制轨迹信息了。这里有个GPS格式文件的[解析库](https://github.com/eantoranz/gps-parser "点击前往")，可解析出**经纬度，速度，方向，时间**等信息，具体用法可以在看文章底部提供的源码。
-
-![](/assets/img/blog/androidoriginal/gps/gpsparase.gif)
+在做轨迹相关功能时经常需要GPS解析，从GPS文件中我们可以提取出经纬度信息，速度，方向，时间等信息，GPS格式可阅读[这篇博客](http://www.baidu.com "点击前往")。<br>
+把GPS文件中的经纬度信息提取出来，我们就可以在地图上绘制轨迹信息了。这里有个GPS格式文件的[解析库](https://github.com/eantoranz/gps-parser "点击前往")，具体用法可以在看文章底部提供的源码。
 
 **世界坐标转火星坐标系**<br>
 往往设备记录下来的坐标是原始坐标系，这是国际公认的世界标准坐标体系，我们地图上要绘制的时候一般要先转换为火星坐标系，通过下面代码中**transform(double wgLat, double wgLon)**，传入经纬度，便可得到转换后的经纬度信息了。
@@ -109,8 +106,7 @@ GPS格式可阅读[这篇博客](https://leach-chen.github.io/GPS-file/ "点击�
 	    }
 	}
 
-**获取轨迹距离**<br>
+**获取轨迹距离**
 获取一段轨迹的距离，我们可以依次计算相邻两个轨迹点之间的距离，再累加起来，便可以得到这段轨迹的距离了，通过上面代码中**GetShortDistance(double lon1, double lat1, double lon2,double lat2)**函数，前两个参数是前一个点的经纬度，后两个参数是后一个点的经纬度。
 
-<h1><a href="https://github.com/leach-chen/TestProject/tree/master/samples/TestGps" style="text-decoration: none;" target="_blank" title="源码下载">源码下载</a>
-<h1>
+<h1><a href="https://github.com/leach-chen/TestProject/tree/master/samples/TestView" style="text-decoration: none;" target="_blank" title="源码下载">源码下载</a><h1>

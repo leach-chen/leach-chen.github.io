@@ -3,7 +3,7 @@ layout: post
 title: Android JNI之函数用法
 date:  2018-03-07 18:22:00 +0900  
 description: Android JNI之函数用法
-img: post-3.jpg # Add image post (optional)
+img: post-6.jpg # Add image post (optional)
 tags: [Android,JNI]
 author: # Add name author (optional)
 androidoriginal: true

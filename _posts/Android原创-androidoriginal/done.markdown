@@ -2,7 +2,7 @@
 ---
 layout: post
 title: 待写的
-date:  2018-02-27 16:40:00 +0900 
+date:  2018-02-27 16:40:00 +0900
 description: 待写的
 img: post-3.jpg # Add image post (optional)
 tags: [自定义view]
@@ -22,4 +22,6 @@ androidoriginal: true
 .项目中需要注意的问题摘记（项目经验积累）
 .抢红包插件
 .RxJava，MVP
-.
+.ffmpeg
+.jni
+.opengl

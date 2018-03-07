@@ -8,10 +8,10 @@ permalink: ':title/'
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author settings add your name
-author: Leach Chen 
+author: Leach Chen
 
 author-pic: leach-face.jpg
-about-author: I will add description latter.                                                                    
+about-author: I will add description latter.
 
 #修改成你自己的
 # Contact links
@@ -34,11 +34,11 @@ csdn: http://blog.csdn.net/chenliqiang12345678
 mailchimp: # Add your MailChimp form identifier.
 
 # Disqus修改成你自己的
-discus_identifier: leach-chen 
+discus_identifier: leach-chen
 # Add your discus identifier
 
 #intensedebate修改成你自己的
-intensedebate_identifier: 1ce8d80a5f6d373a46f4ceaf3dff8859      
+intensedebate_identifier: 1ce8d80a5f6d373a46f4ceaf3dff8859
 
 # Tracker Google Analytics修改成你自己的
 google-analysis: UA-113644888-1
@@ -69,13 +69,13 @@ links:
   - name:         About
     url:          /about
     external:     false
-    
+
 #添加分类步骤：
 #1：在_config.yml links1及blog_中添加对应内容
 #2：在_includes里面headr.html中添加对应内容
 #3：在根目录blog文件中创建对应内容
 
-    
+
 links1:
   - name:         所有
     url:          /
@@ -92,27 +92,31 @@ links1:
   - name:         Android原创
     url:          /blog/androidoriginal
     type:         androidoriginal
-    external:     false    
+    external:     false
   - name:         测试相关
     url:          /blog/abouttest
     type:         abouttest
-    external:     false    
+    external:     false
+  - name:         其它
+    url:          /blog/other
+    type:         other
+    external:     false
 blog_1:    recent
-blog_2:    essays   
-blog_3:    jekyll   
-blog_4:    androidoriginal   
-blog_5:    abouttest   
-blog_6:       
-blog_7:       
-blog_8:       
-blog_9:       
-blog_10:      
-blog_11:      
-blog_12:      
-blog_13:      
-blog_14:      
-blog_15:       
-blog_16:           
-    
-    
-#permalink: /:year/:month/:day/:title.html    
+blog_2:    essays
+blog_3:    jekyll
+blog_4:    androidoriginal
+blog_5:    abouttest
+blog_6:    other
+blog_7:
+blog_8:
+blog_9:
+blog_10:
+blog_11:
+blog_12:
+blog_13:
+blog_14:
+blog_15:
+blog_16:
+
+
+#permalink: /:year/:month/:day/:title.html

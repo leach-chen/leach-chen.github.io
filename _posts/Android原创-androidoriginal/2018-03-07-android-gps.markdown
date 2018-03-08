@@ -112,5 +112,6 @@ GPS格式可阅读[这篇博客](https://leach-chen.github.io/GPS-file/ "点击�
 **获取轨迹距离**<br>
 获取一段轨迹的距离，我们可以依次计算相邻两个轨迹点之间的距离，再累加起来，便可以得到这段轨迹的距离了，通过上面代码中**GetShortDistance(double lon1, double lat1, double lon2,double lat2)**函数，前两个参数是前一个点的经纬度，后两个参数是后一个点的经纬度。
 
+源码参考samples里面的TestGps
 <h1><a href="https://github.com/leach-chen/TestProject/tree/master/samples/TestGps" style="text-decoration: none;" target="_blank" title="源码下载">源码下载</a>
 <h1>

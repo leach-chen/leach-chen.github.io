@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Android JNI(一)——项目配置及用法
+title: Android JNI(一)—项目配置及用法
 date:  2018-03-07 18:18:00 +0900  
-description: Android JNI——项目配置及用法
+description: Android JNI—项目配置及用法
 img: post-1.jpg # Add image post (optional)
 tags: [Android,JNI]
 author: # Add name author (optional)
 androidoriginal: true
 ---
-主要记录下Android Studio下JNI项目搭建**配置方法、C++支持方式、静态动态注册**。
+主要记录下Android Studio下JNI项目搭建**配置方法、C++支持方式、函数静态动态注册,打印LOG到控制台**。
 
 ## 项目支持JNI配置 ##
 
@@ -128,6 +128,24 @@ androidoriginal: true
 		}
 		return JNI_VERSION_1_4;//必须返回这个值
 	}
+
+## 打印LOG到控制台 ##
+
+1. 首先在Android要加上LOCAL_LDLIBS += -llog -lz -landroid，log支持库
+>![](/assets/img/blog/androidoriginal/jni/jniconfig/log_config.jpg)
+
+2. 定义如下宏定义，可定义在c,cpp或者.h头文件里
+  >#include <android/log.h><br>
+  >#define TAG "MYFFMPEG" // 这个是自定义的LOG的标识<br>
+  >#define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG,TAG ,__VA_ARGS__) // 定义LOGD类型<br>
+  >#define LOGI(...) __android_log_print(ANDROID_LOG_INFO,TAG ,__VA_ARGS__) // 定义LOGI类型<br>
+  >#define LOGW(...) __android_log_print(ANDROID_LOG_WARN,TAG ,__VA_ARGS__) // 定义LOGW类型<br>
+  >#define LOGE(...) __android_log_print(ANDROID_LOG_ERROR,TAG ,__VA_ARGS__) // 定义LOGE类型<br>
+  >#define LOGF(...) __android_log_print(ANDROID_LOG_FATAL,TAG ,__VA_ARGS__) // 定义LOGF类型<br>
+
+3. 调用方式: LOGE("get java value:%s",value);
+
+
 
 源码参考samples里面的TestJni
 <h1><a href="https://github.com/leach-chen/TestProject/tree/master/samples/TestJni" style="text-decoration: none;" target="_blank" title="源码下载">源码下载</a>

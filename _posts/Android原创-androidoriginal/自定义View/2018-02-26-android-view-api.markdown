@@ -8,7 +8,6 @@ tags: [Android,自定义view]
 author: # Add name author (optional)
 androidoriginal: true
 ---
-记录自定义View相关函数，持续更新...
 
 ## **Paint** ##
 

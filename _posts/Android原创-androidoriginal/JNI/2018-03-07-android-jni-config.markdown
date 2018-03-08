@@ -60,10 +60,10 @@ androidoriginal: true
 
 **动态注册方式**(指定包名路径，然后可以自定义函数名称与native名称映射):
 
-1: 指定native函数的路径#define CLASS_PATH_NAME	 "com/leachchen/testjni/MainActivity";<br>
+1: 指定java里面的native方法所在类的路径#define CLASS_PATH_NAME	 "com/leachchen/testjni/MainActivity";<br>
 2: 重写JNI_OnLoad方法:<br>
-3: 在JNINativeMethod里面将native及jni里面的方法映射;<br>
-4: 实现java调用的方法jstring testJniMethod(JNIEnv *env, jobject instance, jstring name_)；
+3: 在JNINativeMethod里面将java里面的native方法及jni里面的方法映射;<br>
+4: 实现java要调用的方法jstring testJniMethod(JNIEnv *env, jobject instance, jstring name_)；
 
 	#include <stdio.h>
 	#include <jni.h>
@@ -100,11 +100,11 @@ androidoriginal: true
 
 	//注册Java端的方法以及本地相对应的方法
 	JNINativeMethod method[]={
-			{
-				  "testMethod", //Java中native函数的函数名
-				  "(Ljava/lang/String;)Ljava/lang/String;", // Java中的native对应的native签名
-				  (void *)testJniMethod //native 中的方法指针
-			 }
+		{
+			  "testMethod", //Java中native函数的函数名
+			  "(Ljava/lang/String;)Ljava/lang/String;", // Java中的native对应的native签名
+			  (void *)testJniMethod //native 中的方法指针
+		 }
 	};
 
 	//注册相应的类以及方法

@@ -65,6 +65,7 @@ androidoriginal: true
 3: 在JNINativeMethod里面将java里面的native方法及jni里面的方法映射;<br>
 4: 实现java要调用的方法jstring testJniMethod(JNIEnv *env, jobject instance, jstring name_)；
 
+	//testjni.cpp
 	#include <stdio.h>
 	#include <jni.h>
 	#include <iostream>

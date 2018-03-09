@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android自定义View之带箭头文本
+title: Android自定义View—带箭头文本
 date:  2018-03-02 13:36:00 +0900
 description: Android自定义View之带箭头文本
 img: post-11.jpg # Add image post (optional)

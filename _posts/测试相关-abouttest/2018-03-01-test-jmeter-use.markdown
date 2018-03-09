@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jmeter教程二（Jmeter用法）
+title: Jmeter教程—Jmeter用法
 date:  2018-03-01 11:40:00 +0900  
 description: Jmeter教程二（Jmeter用法）
 img: post-6.jpg # Add image post (optional)
@@ -73,5 +73,3 @@ abouttest: true
 **线程数**，代表同时执行接口请求的线程个数<br>
 **Ramp-Up Period(in-seconds)**代表线程隔多长时间执行，0代表同时并发<br>
 **循环次数**表示循环调用接口的次数<br>
-
-

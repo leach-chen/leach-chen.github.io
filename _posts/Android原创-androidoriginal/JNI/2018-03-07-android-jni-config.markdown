@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android JNI(一)—项目配置及用法
+title: Android JNI—项目配置及用法
 date:  2018-03-07 18:18:00 +0900  
 description: Android JNI—项目配置及用法
 img: post-1.jpg # Add image post (optional)
@@ -29,7 +29,7 @@ androidoriginal: true
 >     }<br>
 >}<br>
 ![](/assets/img/blog/androidoriginal/jni/jniconfig/build_config.jpg)<br>
-这样项目便支持JNI了，如果c文件里鼠标放上去代码不提示，尝试选择build->Refresh Linked C++ Projects
+这样项目便支持JNI了，如果编写jni代码时，没有代码提示，尝试选择build->Refresh Linked C++ Projects
 
 
 4. 创建对应的native方法，可以用命令行方式去创建也可以直接鼠标放在native方法上按下alt+enter(eclipse快捷键方式)

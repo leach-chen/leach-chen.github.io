@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android自定义View之API
+title: Android自定义View—API
 date:  2018-02-26 16:35:00 +0900
 description: Android自定义View之API
 img: post-3.jpg # Add image post (optional)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jmeter教程一（安装及遇到的问题）
+title: Jmeter教程—安装及遇到的问题
 date:  2018-03-01 11:40:00 +0900  
 description: Jmeter教程一（安装及遇到的问题）
 img: post-5.jpg # Add image post (optional)
@@ -29,6 +29,3 @@ JMeter是Apache组织开发的基于Java的压力测试工具,下面主要记录
 
 3. 修改jmeter修改语言
 jmeter目录下找到jmeter.properties，打开找到#language=en，修改成language=zh_CN，重新启动jmeter
-
-
-  

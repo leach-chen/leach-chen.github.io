@@ -12,3 +12,4 @@ abouttest: true
 2:tsung;
 3:monkey;
 4:appium;
+5:emmagee;

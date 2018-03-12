@@ -2242,3 +2242,18 @@ img::-moz-selection {
     white-space: nowrap;/*加宽度width属来兼容部分浏览*/
 	padding-right: 30px;
 }
+
+
+
+
+ table{
+    border-left:1px solid #000000;border-top:1px solid #000000;
+    width: 100%;
+    word-wrap:break-word; word-break:break-all;
+  }
+  table th{
+  text-align:center;
+  }
+  table th,td{
+    border-right:1px solid #000000;border-bottom:1px solid #000000;
+  }

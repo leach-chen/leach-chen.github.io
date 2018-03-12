@@ -10,7 +10,7 @@ androidoriginal: true
 ---
 主要记录下Android Studio下JNI项目搭建**配置方法、C++支持方式、函数静态动态注册,打印LOG到控制台**。
 
-Google官方JNI Demo <a href="https://github.com/googlesamples/android-ndk/tree/master/other-builds/ndkbuild" style="text-decoration: none;" target="_blank"  title="点击前往">Android.mk方式</a>,JNI Demo <a href="https://github.com/googlesamples/android-ndk" style="text-decoration: none;" target="_blank"  title="点击前往">CMakeLists.txt方式</a>,目前NDK支持Android.mk,CMakeLists.txt编译方式，CMakeLists.txt是谷歌后面推出的编译方式，也是谷歌目前推荐的编译方式。我们先以Android.mk方式讲解学习，后面再介绍CMakeLists.txt方式。
+Google官方JNI Demo <a href="https://github.com/googlesamples/android-ndk/tree/master/other-builds/ndkbuild" style="text-decoration: none;" target="\_blank"  title="点击前往">Android.mk方式</a>,JNI Demo <a href="https://github.com/googlesamples/android-ndk" style="text-decoration: none;" target="\_blank"  title="点击前往">CMakeLists.txt方式</a>,目前NDK支持Android.mk,CMakeLists.txt编译方式，CMakeLists.txt是谷歌后面推出的编译方式，也是谷歌目前推荐的编译方式。我们先以Android.mk方式讲解学习，后面再介绍CMakeLists.txt方式。
 
 ## 项目支持JNI配置 ##
 

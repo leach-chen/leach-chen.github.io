@@ -1,22 +1,22 @@
 ---
 layout: post
 title: Github+Jekyll 搭建个人网站详细教程
-date:  2018-02-10 12:54:00 +0900 
+date:  2018-02-10 12:54:00 +0900
 description: Hello World！
 img: post-2.jpg # Add image post (optional)
 tags: [Jekyll,GitHub]
 author: # Add name author (optional)
 jekyll: true
 ---
-GitHub搭建个人网站，大家在网上一搜能搜到一大把的教程，但是大部分都讲的差不多，并不能满足自己想搭建的网站详细需求。我之前在搭建本站的时候也是查了较多资料，学习了下jekyll语法，参考了几个主题模板，才把符合我需求网站搭建出来。那么今天我将详细介绍下本站从**github代码托管，jekyll安装，jekyll主题选择，jekyll目录结构，jekyll基本语法，jekyll主题修改，网站留言，访问量统计等子功能整入**的详细过程。顺便当作自己记录下吧，防止以后忘记了。<br>也欢迎大家<a href="https://github.com/leach-chen/leach-chen.github.io/" style="text-decoration: none;" target="_blank" title="点击前往">star本站源码</a>改造成属于你自己喜欢的个人网站。
+GitHub搭建个人网站，大家在网上一搜能搜到一大把的教程，但是大部分都讲的差不多，并不能满足自己想搭建的网站详细需求。我之前在搭建本站的时候也是查了较多资料，学习了下jekyll语法，参考了几个主题模板，才把符合我需求网站搭建出来。那么今天我将详细介绍下本站从**github代码托管，jekyll安装，jekyll主题选择，jekyll目录结构，jekyll基本语法，jekyll主题修改，网站留言，访问量统计等子功能整入**的详细过程。顺便当作自己记录下吧，防止以后忘记了。<br>也欢迎大家<a href="https://github.com/leach-chen/leach-chen.github.io/" style="text-decoration: none;" target="\_blank" title="点击前往">star本站源码</a>改造成属于你自己喜欢的个人网站。
 
-这里推荐下Git代码管理工具用<a href="https://desktop.github.com/" style="text-decoration: none;" target="_blank" title="点击前往">Desktop</a>，文档编辑工具用<a href="https://atom.io/" style="text-decoration: none;" target="_blank" title="点击前往">ATOM</a>，atom它是Github的一款文件编辑器，可关联git仓库，可预览Markdown文件，可以导入文件夹结构，很好用，界面看着也舒服
+这里推荐下Git代码管理工具用<a href="https://desktop.github.com/" style="text-decoration: none;" target="\_blank" title="点击前往">Desktop</a>，文档编辑工具用<a href="https://atom.io/" style="text-decoration: none;" target="\_blank" title="点击前往">ATOM</a>，atom它是Github的一款文件编辑器，可关联git仓库，可预览Markdown文件，可以导入文件夹结构，很好用，界面看着也舒服
 
 GitHub搭建个人网站可基于jekyll或者hexo或者其它的，我看官方提供的主题jekyll更多，样式也更好看，而且能直接链接到源码主页，所以我选择的基于jekyll搭建的，若不明白jekyll是什么东西，别急，后面会解释到，下面开始讲解本站的搭建过程。
 
 ## **第一步 网站托管**<br> ##
 我们知道，一个网站要能够在任何地方都能够被访问，那么需要部署到服务器上。其实github就提供了这样的功能，只要按照github格式要求，新建一个仓库，把你的网站代码上传到里面，那么就可以在任何时候任何地方都能够访问了，那么如何搭建这个代码托管仓库呢？<br>
-可参考<a href="https://pages.github.com/" style="text-decoration: none;" target="_blank" title="代码托管">官方链接</a>，我这也把步骤写出来。<br><br>
+可参考<a href="https://pages.github.com/" style="text-decoration: none;" target="\_blank" title="代码托管">官方链接</a>，我这也把步骤写出来。<br><br>
 **1.**首先你要到<a href="https://github.com/" style="text-decoration: none;" target="_blank" title="点击前往">GitHub</a>上注册一个账号,例如我注册的用户名为：leach-chen（用户名可以在设置里改）<br><br>
 **2.**点击New repository-->输入仓库名称格式为：用户名.github.io(如：leach-chen.github.io)->点击Create repository<br>
 <img src="/assets/img/blog/jekyll/jekyll_github/1.png" width = "300px" height = "300px" style="float:left"/>
@@ -91,7 +91,7 @@ jekyll是将分散在各个目录下的html文件拼接起来运行。<br>
 
 1. **{**% for post in paginator.posts %**} {**% endfor %**}**表示一个for循环,百分号之间的语句为要执行的语句，该段代码表示分页输出文章，分页数量在_config.yml中配置，**注意：分页只在根目录下的index.html中有效**
 
- 
+
 1. **{** site.自定义字段名称 **}** 表示获取_config.yml里面的自定义字段名称的值
 
 
@@ -161,14 +161,14 @@ intensedebate_identifier: 1ce8d80a5f6d373a46f4ceaf3dff8859，intensedebate_ident
 <img src="/assets/img/blog/jekyll/jekyll_github/class_part4.png" height = "200px"/><br>
 **3. 添加文章统计功能：**<br>
 我这里添加百度统计，添加谷歌统计因为被墙了，会影响文章的访问速度，添加也需要先去百度统计网站注册账户，申请key，申请到key后类似上一步定义在_config.yml中，同时会得到一段代码，把它添加到_includes目录下的head.html中,这样统计功能就添加完成
-	
+
 	<!--百度统计-->
     <script>
     	var _hmt = _hmt || [];
     	(function() {
     	  var hm = document.createElement("script");
     	  hm.src = "https://hm.baidu.com/hm.js?{{ site.baidu-analysis }}";
-    	  var s = document.getElementsByTagName("script")[0]; 
+    	  var s = document.getElementsByTagName("script")[0];
     	  s.parentNode.insertBefore(hm, s);
     	})();
     </script>
@@ -176,7 +176,7 @@ intensedebate_identifier: 1ce8d80a5f6d373a46f4ceaf3dff8859，intensedebate_ident
 **4. 添加文章访问量功能：**<br>
 在_includes目录下的head.html中添加
 
-    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script> 
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 在_includes目录下的footer.html中添加如下代码，这样文章底部有了统计访问量功能
 

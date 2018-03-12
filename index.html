@@ -8,18 +8,18 @@ layout: home-page
 	{% assign year = year | plus: 1 %}
 	<p>aaa:{{year}}</p>
 {% endfor %}
--->
+--> 
 {% assign count = 0 %}
 <ol class="post-card-box clearfix">
   {% for post in paginator.posts %}
-  
+
    <!--{% if post.test1%}
-   
+
    {% assign count = count | plus: 1 %}
 	<p>aaa:{{count}}</p>
-   
+
    {% endif %}-->
-   
+
   <li>
     <div class="post-card">
 
@@ -34,7 +34,7 @@ layout: home-page
         <!--<a href="{{site.baseurl}}/tags#{{tag}}" class="tag">|&#32;{{ tag }}</a>-->
 		<a href="{{site.baseurl}}/tags#{{tag}}" class="tag">{{ tag }}&#32;</a>
         {% endfor %}
-		
+
         <a href="{{post.url | prepend: site.baseurl}}" class="post-card-link"><h3 class="post-card-title">{{post.title}}</h3></a>
       </div>
 

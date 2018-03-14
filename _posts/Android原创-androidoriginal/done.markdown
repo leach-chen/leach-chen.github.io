@@ -27,3 +27,4 @@ androidoriginal: true
 .opengl
 .滤镜
 .appium
+.reactnative

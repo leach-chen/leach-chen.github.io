@@ -89,8 +89,8 @@ links1:
     url:          /blog/jekyll
     type:         jekyll
     external:     false
-  - name:         Android原创
-    url:          /blog/androidoriginal
+  - name:         Android
+    url:          /blog/android
     type:         androidoriginal
     external:     false
   - name:         测试相关

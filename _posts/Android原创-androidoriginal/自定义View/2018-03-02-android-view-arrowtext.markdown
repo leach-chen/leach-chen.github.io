@@ -64,7 +64,6 @@ androidoriginal: true
         canvas.drawPath(path, paint);
         super.onDraw(canvas);
     }
-
 }
 
 **布局代码：**

@@ -32,7 +32,8 @@ androidoriginal: true
 
 
 
-
+学习
 .unity3d
 .UE4
-.Android 虚拟现实
+.Android 虚拟现实，人工智能
+.ffmpeg+nginx+html5

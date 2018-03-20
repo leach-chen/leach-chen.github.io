@@ -28,6 +28,7 @@ androidoriginal: true
 .滤镜
 .appium
 .reactnative
+.动画（ValueAnimator path）
 
 
 

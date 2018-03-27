@@ -27,7 +27,6 @@ androidoriginal: true
 .opengl
 .滤镜
 .appium
-.reactnative
 .动画（ValueAnimator path）
 
 
@@ -38,3 +37,5 @@ androidoriginal: true
 .Android 虚拟现实，人工智能
 .ffmpeg+nginx+html5
 Python+人工智能+大数据分析
+flutter
+react native

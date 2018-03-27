@@ -22,6 +22,9 @@ other: true
 **Google Android开发者网址**<br>
 <a href="https://developer.android.com/about/versions/oreo/index.html?hl=zh-CN" style="text-decoration: none;" target="\_blank" title="">https://developer.android.com/about/versions/oreo/index.html?hl=zh-CN</a>
 
+**Google Android API网址（添加Android SDK Search可查看对应类源码）**<br>
+<a href="https://developer.android.com/reference/packages.html" style="text-decoration: none;" target="\_blank" title="">https://developer.android.com/reference/packages.html</a>
+
 **Google Maps 文档网址**<br>
 <a href="https://developers.google.com/maps/" style="text-decoration: none;" target="\_blank" title="">https://developers.google.com/maps/</a>
 

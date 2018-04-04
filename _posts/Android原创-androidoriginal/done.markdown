@@ -15,7 +15,7 @@ androidoriginal: true
 .ijkplayer用法封装
 .谷歌地图用法
 .自定义view api
-.自定义view TestView里面的例子（收藏里面的实战的）
+.自定义view TestView里面的例子（收藏里面的实战的，computeScroll，VelocityTracker）
 .绘制圆形进度条，刻度尺,手势缩放图片，下拉刷新，view手势下拉
 .简书里面记录的
 .GPS解析及库
@@ -24,11 +24,10 @@ androidoriginal: true
 .RxJava，MVP
 .ffmpeg
 .jni
-.opengl
 .滤镜
-.appium
 .动画（ValueAnimator path）
-
+.material design(Behavior)
+.图片手势退出
 
 
 学习
@@ -36,6 +35,8 @@ androidoriginal: true
 .UE4
 .Android 虚拟现实，人工智能
 .ffmpeg+nginx+html5
-Python+人工智能+大数据分析
-flutter
-react native
+.Python+人工智能+大数据分析
+.flutter
+.react native
+.appium
+.opengl

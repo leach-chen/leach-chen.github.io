@@ -25,9 +25,10 @@ androidoriginal: true
 .ffmpeg
 .jni
 .滤镜
-.动画（ValueAnimator path）
+.动画（ValueAnimator path，对勾动画，贝塞尔曲线动画，path动画，收藏夹动画例子）
 .material design(Behavior)
 .图片手势退出
+.Activity fragment生命周期
 
 
 学习

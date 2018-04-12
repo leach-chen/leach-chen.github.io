@@ -17,10 +17,10 @@ androidoriginal: true
 事件分发函数，return false事件向下分发，return true，事件不向下，也不向上分发了，到该层控件的onTouchEvent（反复执行）
 
 **2. onInterceptTouchEvent**<br>
-事件拦截函数，return false 不拦截事件，事件继续向下传递，return true拦截事件，事件不向下传递，从该层控件开始向上传递，直到Activity的onTouchEvent（反复执行）
+负责事件是否向下传递，事件拦截函数，return false 不拦截事件，事件继续向下传递，return true拦截事件，事件不向下传递，从该层控件开始向上传递，直到Activity的onTouchEvent（反复执行）
 
 **3. onTouchEvent**<br>
-return false事件继续向下传递,最终到Activity的onTouchEvent，return true消费事件，事件不继续向上传递及向下传递，反复循环执行该控件的onTouchEvent
+负责事件是否向上传递，return false事件继续向下传递,最终到Activity的onTouchEvent，return true消费事件，事件不继续向上传递及向下传递，反复循环执行该控件的onTouchEvent
 
 
 如下，在布局里第一层放了一个LinearLayout，第二层也放了一个LinearLayout，第三层放了个TextView
@@ -79,6 +79,59 @@ return false事件继续向下传递,最终到Activity的onTouchEvent，return t
 **d.onTouchEvent 返回true**
 
 <img src="/assets/img/blog/androidoriginal/view/eventpass/four.jpg" height = "300px"/>
+
+
+
+```
+    @Override
+   public boolean onInterceptTouchEvent(MotionEvent ev) {
+       Log.e("mytestt","..........MyLinearLayout onInterceptTouchEvent run");
+
+       switch (ev.getAction())
+       {
+           case MotionEvent.ACTION_DOWN:
+               Log.e("mytestt","MotionEvent.ACTION_DOWN");
+              return true;
+           case MotionEvent.ACTION_MOVE:
+               Log.e("mytestt","MotionEvent.ACTION_MOVE");
+               return false;
+           case MotionEvent.ACTION_UP:
+               Log.e("mytestt","MotionEvent.ACTION_UP");
+               return false;
+       }
+
+       boolean value =  super.onInterceptTouchEvent(ev);
+       Log.e("mytest","MyLinearLayout onInterceptTouchEvent:"+value);
+       return true;
+   }
+
+   @Override
+   public boolean onTouchEvent(MotionEvent event) {
+       Log.e("mytestt","..........MyLinearLayout onTouchEvent run");
+
+       switch (event.getAction())
+       {
+           case MotionEvent.ACTION_DOWN:
+               Log.e("mytestt","onTouchEvent MotionEvent.ACTION_DOWN");
+               return true;
+           case MotionEvent.ACTION_MOVE:
+               Log.e("mytestt","onTouchEvent MotionEvent.ACTION_MOVE");
+               return false;
+           case MotionEvent.ACTION_UP:
+               Log.e("mytestt","onTouchEvent MotionEvent.ACTION_UP");
+               return false;
+       }
+
+       boolean value =  super.onTouchEvent(event);
+       Log.e("mytest","MyLinearLayout onTouchEvent:"+value);
+       return value;
+   }
+```
+
+在上述代码在MyLinearLayout中，onInterceptTouchEvent在ACTION_DOWN时return true，则事件向下传不到MyLinearLayoutOther,若在ACTION_MOVE或者ACTION_UP中return true，则不起作用，事件依然向下传递。<br>
+onTouchEvent在ACTION_DOWN时return true，则事件向上传不到MainActivity,若在ACTION_MOVE或者ACTION_UP中return true，则不起作用，事件依然向上传递。
+
+
 
 
 源码参考samples里面的TestEventPass

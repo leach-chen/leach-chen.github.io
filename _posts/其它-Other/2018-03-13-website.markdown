@@ -20,17 +20,23 @@ other: true
 <a href="https://www.seeseed.com/daily/13" style="text-decoration: none;" target="\_blank" title="">https://www.seeseed.com/daily/13</a>
 
 
-**Android Studio ICON 插件**<br>
-<a href="https://github.com/konifar/android-material-design-icon-generator-plugin" style="text-decoration: none;" target="\_blank" title="">https://github.com/konifar/android-material-design-icon-generator-plugin</a>
-
 **Android 矢量图网址（Iconfont）**<br>
 <a href="http://iconfont.cn/" style="text-decoration: none;" target="\_blank" title="">http://iconfont.cn/</a>
 
-**Android Asset Studio（在线图标制作工具）**<br>
+
+**Android Studio ICON 插件（可直接创建 Material图标）**<br>
+<a href="https://github.com/konifar/android-material-design-icon-generator-plugin" style="text-decoration: none;" target="\_blank" title="">https://github.com/konifar/android-material-design-icon-generator-plugin</a>
+
+**Android Asset Studio（可在线编辑 Material图标）**<br>
 <a href="http://romannurik.github.io/AndroidAssetStudio/" style="text-decoration: none;" target="\_blank" title="">http://romannurik.github.io/AndroidAssetStudio/</a>
 
-**Material**<br>
+**Material图标**<br>
 <a href="https://material.io/icons/" style="text-decoration: none;" target="\_blank" title="">https://material.io/icons/</a>
+
+
+
+
+
 
 
 

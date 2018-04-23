@@ -29,8 +29,6 @@ other: true
 **Android Asset Studio（在线图标制作工具）**<br>
 <a href="http://romannurik.github.io/AndroidAssetStudio/" style="text-decoration: none;" target="\_blank" title="">http://romannurik.github.io/AndroidAssetStudio/</a>
 
-
-
 **Material**<br>
 <a href="https://material.io/icons/" style="text-decoration: none;" target="\_blank" title="">https://material.io/icons/</a>
 

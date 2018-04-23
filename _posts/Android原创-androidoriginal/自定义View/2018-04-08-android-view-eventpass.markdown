@@ -14,10 +14,12 @@ androidoriginal: true
 事件传递机制，简洁概括如下，建议代码里面打log看调用顺序。
 
 **1. dispatchTouchEvent**<br>
-事件分发函数，return false事件向下分发，return true，事件不向下，也不向上分发了，到该层控件的onTouchEvent（反复执行）
+事件分发函数，return false事件向下分发，return true，事件不向下，也不向上分发了，到该层控件的onTouchEvent（反复执行）<br>
+重写该函数的话需要调用super，否则事件不会分发出去
 
 **2. onInterceptTouchEvent**<br>
-负责事件是否向下传递，事件拦截函数，return false 不拦截事件，事件继续向下传递，return true拦截事件，事件不向下传递，从该层控件开始向上传递，直到Activity的onTouchEvent（反复执行）
+负责事件是否向下传递，事件拦截函数，return false 不拦截事件，事件继续向下传递，return true拦截事件，事件不向下传递，从该层控件开始向上传递，直到Activity的onTouchEvent（反复执行）<br>
+那这个函数一般什么时候用呢？一般是在一个可以滑动的列表里，有时事件需要让子控件处理时（requestDisallowInterceptTouchEvent），就要用到
 
 **3. onTouchEvent**<br>
 负责事件是否向上传递，return false事件继续向下传递,最终到Activity的onTouchEvent，return true消费事件，事件不继续向上传递及向下传递，反复循环执行该控件的onTouchEvent

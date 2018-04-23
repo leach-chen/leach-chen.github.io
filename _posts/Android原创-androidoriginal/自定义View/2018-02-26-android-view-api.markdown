@@ -116,7 +116,7 @@ androidoriginal: true
 1. **getTextBounds(String text, int start, int end, Rect bounds) ，getTextBounds(char[] text, int index, int count, Rect bounds)** <br>
 得到文本的边界，上下左右，提取到bounds中，可以通过这计算文本的宽和高
 
-1. <a href="http://blog.csdn.net/abcdef314159/article/details/51720686" style="text-decoration: none;" target="_blank" >参考</a>
+1. <a href="http://blog.csdn.net/abcdef314159/article/details/51720686" style="text-decoration: none;" target="\_blank" >参考</a>
 
 ## **Canvas** ##
 
@@ -228,7 +228,7 @@ canvas.drawBitmap(bitmap, 200,300, p); <br>
 参数2：图像左边坐标点 <br>
 参数3：图像上边坐标点 <br>
 
-1. <a href="https://www.jianshu.com/p/f69873371763" style="text-decoration: none;" target="_blank" >参考</a>
+1. <a href="https://www.jianshu.com/p/f69873371763" style="text-decoration: none;" target="\_blank" >参考</a>
 
 ## **Path** ##
 1. **moveTo** <br>
@@ -324,4 +324,13 @@ path2.addRect(200, 200, 300, 300, Path.Direction.CCW);  <br>
 path.op(path2, Path.Op.XOR);  <br>
 canvas.drawPath(path, paint);  <br>
 
-1. <a href="http://blog.csdn.net/u012702547/article/details/52454406" style="text-decoration: none;" target="_blank" >参考</a>
+1. <a href="http://blog.csdn.net/u012702547/article/details/52454406" style="text-decoration: none;" target="\_blank" >参考</a>
+
+
+## **其它** ##
+1. **最小滑动距离值,大于该值则认为是滑动**
+ViewConfiguration configuration = ViewConfiguration.get(context);<br>
+int touchSlop = ViewConfigurationCompat.getScaledPagingTouchSlop(configuration);<br>
+
+1. **requestDisallowInterceptTouchEvent**
+当用户按下的时候，我们告诉父组件，不要拦截我的事件（这个时候子组件是可以正常响应事件的），拿起之后就会告诉父组件可以阻止。

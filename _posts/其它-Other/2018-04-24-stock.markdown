@@ -1,0 +1,40 @@
+---
+layout: post
+title: 股票心得
+date:  2018-04-24 19:50:00 +0900  
+description: GPS数据格式
+img: post-8.jpg # Add image post (optional)
+tags: [股票]
+author: # Add name author (optional)
+other: true
+---
+
+1. 压力位，支撑位，均线支撑
+
+1. 回补缺口
+
+1. 成交量
+
+1. 大单成交
+
+1. 探底回升，金针探底
+
+1. 大盘整体形态走势，股票整体形态走势（日周月K线整体走势）
+
+1. 消息面
+
+1. 筑底
+
+1. 洗盘
+
+1. 止盈止损
+
+1. 补仓
+
+1. 尾盘拉涨停，可涨一两次，不是很给力，封单老破
+
+1. 偏离均线太多需要回踩回来
+
+1. Macd, kdj形态
+
+1. 筹码分布

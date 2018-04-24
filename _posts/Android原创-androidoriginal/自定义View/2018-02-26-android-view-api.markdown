@@ -78,7 +78,7 @@ androidoriginal: true
 设置字体样式，可以是Typeface设置的样式，也可以通过Typeface的createFromAsset(AssetManager mgr, String path)方法加载样式
 
 1. **setShadowLayer(float radius, float dx, float dy, int shadowColor)** <br>
-设置阴影效果，radius为阴影角度，dx和dy为阴影在x轴和y轴上的距离，color为阴影的颜色
+设置阴影效果，radius为阴影角度，dx和dy为阴影在x轴和y轴上的距离，color为阴影的颜色。注:在用该方法之前需要调用setLayerType( LAYER_TYPE_SOFTWARE , null);关闭硬件加速
 
 1. **setTextLocale(Locale locale)** <br>
 设置地理位置，比如显示中文，日文，韩文等，默认的显示Locale.getDefault()即可，

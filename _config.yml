@@ -97,7 +97,7 @@ links1:
     url:          /blog/abouttest
     type:         abouttest
     external:     false
-  - name:         测试相关
+  - name:         股票
     url:          /blog/stock
     type:         stock
     external:     false
@@ -110,7 +110,7 @@ blog_2:    essays
 blog_3:    jekyll
 blog_4:    androidoriginal
 blog_5:    abouttest
-blog_6:    stock 
+blog_6:    stock
 blog_7:    other
 blog_8:
 blog_9:

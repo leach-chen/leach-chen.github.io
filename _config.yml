@@ -97,6 +97,10 @@ links1:
     url:          /blog/abouttest
     type:         abouttest
     external:     false
+  - name:         测试相关
+    url:          /blog/stock
+    type:         stock
+    external:     false
   - name:         其它
     url:          /blog/other
     type:         other
@@ -106,8 +110,8 @@ blog_2:    essays
 blog_3:    jekyll
 blog_4:    androidoriginal
 blog_5:    abouttest
-blog_6:    other
-blog_7:
+blog_6:    stock 
+blog_7:    other
 blog_8:
 blog_9:
 blog_10:

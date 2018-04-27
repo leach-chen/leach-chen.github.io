@@ -6,7 +6,7 @@ description: GPS数据格式
 img: post-8.jpg # Add image post (optional)
 tags: [股票]
 author: # Add name author (optional)
-other: true
+stock: true
 ---
 https://baike.baidu.com/item/%E5%9D%87%E7%BA%BF%E5%BC%BA%E5%8A%9B%E6%94%AF%E6%92%91/8283190?fr=aladdin
 

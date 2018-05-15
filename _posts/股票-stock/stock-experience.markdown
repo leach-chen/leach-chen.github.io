@@ -13,12 +13,14 @@ https://baike.baidu.com/item/%E5%9D%87%E7%BA%BF%E5%BC%BA%E5%8A%9B%E6%94%AF%E6%92
 https://baike.baidu.com/item/%E6%94%AF%E6%92%91%E4%BD%8D/6248266?fr=aladdin
 https://jingyan.baidu.com/article/fcb5aff7a05d36edab4a7173.html
 https://wapbaike.baidu.com/item/%E8%82%A1%E7%A5%A8%E7%BC%BA%E5%8F%A3/1874904?fr=aladdin
+http://blog.sina.com.cn/s/blog_150bd105f0102xhg0.html（成交量）
+http://www.360doc.com/content/15/1227/18/12010725_523499732.shtml
 
 
 技术：
 1. 支撑位，均线支撑，压力位
 1. 缺口
-1. 成交量
+1. 成交量（放大，萎缩）
 1. 探底回升，金针探底
 1. 大盘整体形态走势，股票整体形态走势（日周月K线整体走势）
 1. 消息面
@@ -71,3 +73,4 @@ https://wapbaike.baidu.com/item/%E8%82%A1%E7%A5%A8%E7%BC%BA%E5%8F%A3/1874904?fr=
 
 参考经验：
 1. 下跌趋势出现反弹
+1. 因此，当你握有一只强势股的时候，最好是紧紧盯住股价日K线图。在日K线一直保持在十日均线之上，可以一路持有；一旦股价以长影线或盘势跌破十日均线，应立即出货，考虑换股操作。

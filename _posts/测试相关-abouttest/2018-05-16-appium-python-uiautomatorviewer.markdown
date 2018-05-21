@@ -31,8 +31,8 @@ Appium支持Selenium WebDriver支持的所有语言，如java、Object-C、JavaS
 (1)编辑->变量名PATH，变量值 C:\Python27  https://www.jianshu.com/p/21589ff62871 https://www.jianshu.com/p/2912482dba0b <br>
 
 
-## uiautomatorviewer ##
-uiautomatorviewer是android SDK自带的工具。通过截屏并分析XML布局文件的方式，为用户提供控件信息查看服务，可以获取到界面上控件的id或者位置。该工具位于SDK目录下的tools\bin子目录下。可以看到，它是通过bat文件启动的。
+## Uiautomatorviewer ##
+Uiautomatorviewer是android SDK自带的工具。通过截屏并分析XML布局文件的方式，为用户提供控件信息查看服务，可以获取到界面上控件的id或者位置。该工具位于SDK目录下的tools\bin子目录下。可以看到，它是通过bat文件启动的。
 
 ## 开始例子（Python） ##
 1. 打开windows的命令行，输入appium，显示成功启动<br>

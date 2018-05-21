@@ -3,7 +3,7 @@ layout: post
 title: Selenium+Python Web自动化测试
 date:  2018-05-21 18:22:00 +0900  
 description: 测试相关摘记
-img: post-8.jpg # Add image post (optional)
+img: post-2.jpg # Add image post (optional)
 tags: [测试]
 author: # Add name author (optional)
 abouttest: true

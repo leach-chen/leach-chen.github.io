@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appium+Python+uiautomatorviewer 自动化测试
+title: Appium+Python+uiautomatorviewer 移动端自动化测试
 date:  2018-05-16 17:08:00 +0900  
 description: 测试相关摘记
 img: post-8.jpg # Add image post (optional)
@@ -28,7 +28,7 @@ Appium支持Selenium WebDriver支持的所有语言，如java、Object-C、JavaS
 (1)编辑->变量名PATH，变量值 D:\Program Files (x86)\Appium\node_modules\.bin; 输入node -v，查看node安装版本,输入appium-doctor检查appium的安装环境是否成功
 1. **appium lib**，下载地址：http://appium.io/downloads.html  选择Python版本的Lib: Appium-Python-Client-0.22.tar.gz,由于Appium依赖于Selemium,所以还要下载 Selemium Lib: selenium-2.53.2.tar.gz https://pypi.python.org/pypi/selenium
 1. **python**, 下载地址：https://www.python.org/， 下载2.X 的版本,配置环境变量： <br>
-(1)编辑->变量名PATH，变量值 C:\Python27  https://www.jianshu.com/p/21589ff62871 https://www.jianshu.com/p/2912482dba0b <br>
+(1)编辑->变量名PATH，变量值 C:\Python27  https://www.jianshu.com/p/21589ff62871 https://www.jianshu.com/p/2912482dba0b https://blog.csdn.net/azsx02/article/details/68947429<br>
 
 
 ## Uiautomatorviewer ##

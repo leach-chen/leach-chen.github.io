@@ -6,7 +6,7 @@ description: 开发工具
 img: post-4.jpg # Add image post (optional)
 tags: [Android,tools]
 author: # Add name author (optional)
-androidoriginal: true
+other: true
 ---
 
 **主要记录一些工具：**

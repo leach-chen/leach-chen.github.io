@@ -44,4 +44,4 @@ MySQL Workbench，可视化的，有界面 <br>
 
 ## MySql可视化操作 ##
 
-可下载工具 Navicat for MySQL 主机名localhost，端口3306，用户名root，密码不用输入，点击连接测试，若成功，点确定，即可在列表中出现localhost_3306，里面即可看到上面命令行创建的leachchen数据库
+可下载工具 **Navicat for MySQL** 主机名localhost，端口3306，用户名root，密码不用输入，点击连接测试，若成功，点确定，即可在列表中出现localhost_3306，里面即可看到上面命令行创建的leachchen数据库

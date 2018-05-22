@@ -15,20 +15,20 @@ Appium支持Selenium WebDriver支持的所有语言，如java、Object-C、JavaS
 
 
 ## Appium环境搭建（Android） ##
-1. **java jdk** 下载地址:http://www.oracle.com/technetwork/java/javase/downloads/index.html, 配置环境变量:<br>
-(1)新建->变量名JAVA_HOME，变量值C:\Java\jdk1.8.0_05（即JDK的安装路径） <br>
+1. **java jdk** 下载地址:http://www.oracle.com/technetwork/java/javase/downloads/index.html, 假设安装至D:\Software\ ，配置环境变量:<br>
+(1)新建->变量名JAVA_HOME，变量值D:\Software\Java\jdk1.8.0_05（即JDK的安装路径） <br>
 (2)编辑->变量名Path，在原变量值的最后面加上;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin <br>
 (3)新建->变量名CLASSPATH,变量值.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar <br>
-1. **android SDK**，下载地址：http://developer.android.com/sdk/index.html，下载sdk tools，可能需要FQ，提供一个国内下载地址：http://www.androiddevtools.cn/ 配置环境变量:<br>
-(1)新建->变量名ANDROID_HOME，变量值D:\ProgramFiles (x86)\Android\android-sdk <br>
+1. **android SDK**，下载地址：http://developer.android.com/sdk/index.html，下载sdk tools，可能需要FQ，提供一个国内下载地址：http://www.androiddevtools.cn/ ,假设安装至D盘，配置环境变量:<br>
+(1)新建->变量名ANDROID_HOME，变量值D:\Software\Android\android-sdk <br>
 (2)编辑->变量名PATH，变量值 %ANDROID_HOME%\platform-tools;%ANDROID_HOME%\tools; <br>
 1. **appium**，下载地址：http://appium.io/, 配置环境变量： <br>
-(1)编辑->变量名PATH，变量值 D:\Program Files (x86)\Appium\node_modules\.bin;  <br>
+(1)编辑->变量名PATH，假设安装至D盘，变量值 D:\Software\Appium\node_modules\.bin;  <br>
 1. **nodejs**，下载地址：https://nodejs.org/en/, 配置环境变量:  <br>
-(1)编辑->变量名PATH，变量值 D:\Program Files (x86)\Appium\node_modules\.bin; 输入node -v，查看node安装版本,输入appium-doctor检查appium的安装环境是否成功
+(1)编辑->变量名PATH，假设安装至D盘，变量值 D:\Software\Appium\node_modules\.bin; 输入node -v，查看node安装版本,输入appium-doctor检查appium的安装环境是否成功
 1. **appium lib**，下载地址：http://appium.io/downloads.html  选择Python版本的Lib: Appium-Python-Client-0.22.tar.gz,由于Appium依赖于Selemium,所以还要下载 Selemium Lib: selenium-2.53.2.tar.gz https://pypi.python.org/pypi/selenium
-1. **python**, 下载地址：https://www.python.org/， 下载2.X 的版本,配置环境变量： <br>
-(1)编辑->变量名PATH，变量值 C:\Python27  https://www.jianshu.com/p/21589ff62871 https://www.jianshu.com/p/2912482dba0b https://blog.csdn.net/azsx02/article/details/68947429<br>
+1. **python**, 下载地址：https://www.python.org/， 下载2.X 的版本,假设安装至D盘，配置环境变量： <br>
+(1)编辑->变量名PATH，变量值 D:\Software\Python27  https://www.jianshu.com/p/21589ff62871 https://www.jianshu.com/p/2912482dba0b https://blog.csdn.net/azsx02/article/details/68947429<br>
 
 
 ## Uiautomatorviewer ##

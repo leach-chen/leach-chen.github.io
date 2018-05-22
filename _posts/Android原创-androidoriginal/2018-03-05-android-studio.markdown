@@ -33,5 +33,3 @@ File->New->Import Module...->选择要导入的项目module位置，clean，rebu
 **2. SDK manager无法更新问题**<br>
 按如下图设置,<a href="http://blog.csdn.net/lvxiangan/article/details/71425186?utm_source=itdadao&utm_medium=referral" style="text-decoration: none;" target="_blank"  title="点击前往">参考网址</a>:<br>
 <img src="/assets/img/blog/androidoriginal/androidstudio/sdkupdate.jpg" height = "300px"/>
-
-

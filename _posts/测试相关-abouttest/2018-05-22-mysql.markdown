@@ -40,7 +40,7 @@ MySQL Workbench，可视化的，有界面 <br>
 
 1. 查看数据库 **show databases;**
 
-1. 使用数据库 **use leachchen**
+1. 使用数据库 **use leachchen;**
 
 1. 创建表 **create table test (name varchar(25),password varchar(25));**
 

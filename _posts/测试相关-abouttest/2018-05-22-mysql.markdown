@@ -22,14 +22,14 @@ MySQL Workbench，可视化的，有界面 <br>
 将下载的安装包解压到你想放的目录下，如：E:\SoftwareInstall\StudySoftware\mysql-5.7.22-winx64 <br>
 
 **3.配置环境变量** <br>
-我的电脑右键->属性->高级系统设置->环境变量->下面那个编辑->变量名PATH，变量值 **E:\SoftwareInstall\StudySoftware\mysql-5.7.22-winx64** <br>
+我的电脑右键->属性->高级系统设置->环境变量->下面那个编辑->变量名PATH，变量值 **E:\SoftwareInstall\StudySoftware\mysql-5.7.22-winx64\bin;** <br>
 
 **4.初始化** <br>
 1. 进入到bin目录 cd E:\SoftwareInstall\StudySoftware\mysql-5.7.22-winx64\bin，执行 **mysqld –install**，命令行必须右键以管理员身份启动，否则会报Install/Remove of the Service Denied!，安装成功会提示Service successfully installed
 
-2. 执行 **net start mysql** ,若提示 “服务报告没有任何错误”，则执行在mysql的bin目录下执行 **mysqld  --initialize-insecure**
+2. 执行 **net start mysql** ,若提示 “MySql服务无法启动，服务报告没有任何错误”，则在mysql的bin目录下执行 **mysqld  --initialize-insecure**
 
-3. 上诉都没问题则再执行 **net start mysql** 启动MySql 服务
+3. 上述都没问题则再执行 **net start mysql** 启动MySql 服务
 
 
 ## MySql使用 ##
@@ -39,6 +39,8 @@ MySQL Workbench，可视化的，有界面 <br>
 1. 创建数据库 **CREATE DATABASE leachchen;**
 
 1. 查看数据库 **show databases;**
+
+1. 使用数据库 **use leachchen**
 
 1. 创建表 **create table test (name varchar(25),password varchar(25));**
 

@@ -11,7 +11,7 @@ abouttest: true
 
 ## MySql安装 ##
 **1.下载** <br>
-<a href="http://www.jb51.net/article/89224.htm" style="text-decoration: none;" target="\_blank"  title="">MySql下载地址</a>：https://dev.mysql.com/downloads/mysql/ 选择 Windows (x86, 64-bit), ZIP Archive 版本进行下载 <br>
+<a href="http://www.jb51.net/article/89224.htm" style="text-decoration: none;" target="\_blank"  title="">MySql下载地址</a>：https://dev.mysql.com/downloads/mysql/ 选择 Windows (x86, 64-bit), ZIP Archive  (mysql-5.7.22-winx64.zip)版本进行下载 <br>
 下载的时候可能会看到多个版本的mysql可下载，<br>
 MySQL Community Server，这个不要钱！<br>
 MySQL Enterprise 这个要掏钱，不过可以打电话咨询问题，也就是电话技术支持。<br>

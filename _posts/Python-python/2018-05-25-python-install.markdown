@@ -20,19 +20,23 @@ python: true
 
 下载地址：https://www.jetbrains.com/pycharm/download/#section=windows
 
-安装这两个东西就可以进行python开发了，Python开发还要依赖各种库，可以在Pycharm开发工具File->settings->project->Project Interpreter里面进行下载
+安装这两个东西就可以进行python开发了，Python开发还要依赖各种库，可以在Pycharm开发工具File->settings->project->Project Interpreter里面进行下载 或者在命令行里通过pip下载
 
 
 
 ## 问题 ##
 
-1. import MySQLdb 报错 ImportError: No module named MySQLdb
+A. import MySQLdb 报错
+```
+ImportError: No module named MySQLdb <br>
+```
 **解决办法:** pip install mysql-python or pip install mysqlclient
 
-1. Python3.4 安装mysqlClient提示 Microsoft Visual C++ 10.0 is required (Unable to find vcvarsall.bat).错误的解决 <br>
+B. Python3.4 安装mysqlClient提示 Microsoft Visual C++ 10.0 is required (Unable to find vcvarsall.bat).错误的解决 <br>
 **解决办法下载：** https://www.microsoft.com/en-us/download/details.aspx?id=44266
 
-1. pip install MySQL-python 报错
+C. pip install MySQL-python 报错 <br>
+
 ```
 _mysql.c(42) : fatal error C1083: Cannot open include file: 'config-win.h': No s
 uch file or directory
@@ -40,6 +44,7 @@ uch file or directory
 error: command 'C:\\Program Files (x86)\\Common Files\\Microsoft\\Visual C++ for
  Python\\9.0\\VC\\Bin\\cl.exe' failed with exit status 2
 ```
+
 **解决办法参考：** https://blog.csdn.net/yxwb1253587469/article/details/53310803    https://blog.csdn.net/fr4world/article/details/79615744
 
 

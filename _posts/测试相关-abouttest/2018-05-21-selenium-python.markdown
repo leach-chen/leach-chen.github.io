@@ -14,7 +14,7 @@ Selenium主要是用来做自动化测试，支持多种浏览器
 
 
 ## Selenium环境配置(Windows) ##
-1. **python**, 下载地址：https://www.python.org/， 下载2.X 的版本,假设解压至D盘，D:\Software\Python27,配置环境变量： <br>
+1. **python**, 下载地址：https://www.python.org/，下载2.X 的版本(Windows x86-64 MSI installer),假设安装至D盘，D:\Software\Python27,配置环境变量： <br>
 (1)编辑->变量名PATH，变量值 D:\Software\Python27,变量值 D:\Software\Python27\Scripts <br>
 
 1. **Selenium**，下载地址：selenium-3.12.0.tar.gz https://pypi.org/project/selenium/#files <br>

@@ -63,6 +63,14 @@
          {% endfor %}
        {% endif %}
 
+       {% if link.type == site.blog_8 %}
+        {% for post in site.posts %}
+           {% if post.python%}
+            {% assign count = count | plus: 1 %}
+           {% endif %}
+         {% endfor %}
+       {% endif %}
+
 			 <li><a  href="{{ link.url }}"  data-hover="{{link.name}}">{{ link.name }}({{count}})</a></li>
 		 {% endfor %}
           <!--<li style="margin-bottom:200px;"><a href="{{site.baseurl}}/about">About({{count}})</a></li>-->

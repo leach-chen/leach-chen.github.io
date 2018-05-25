@@ -27,7 +27,7 @@ Appium支持Selenium WebDriver支持的所有语言，如java、Object-C、JavaS
 1. **nodejs**，下载地址：https://nodejs.org/en/, 配置环境变量:  <br>
 (1)编辑->变量名PATH，假设安装至D盘，变量值 D:\Software\Appium\node_modules\.bin; 输入node -v，查看node安装版本,输入appium-doctor检查appium的安装环境是否成功
 1. **appium lib**，下载地址：http://appium.io/downloads.html  选择Python版本的Lib: Appium-Python-Client-0.22.tar.gz,由于Appium依赖于Selemium,所以还要下载 Selemium Lib: selenium-2.53.2.tar.gz https://pypi.python.org/pypi/selenium
-1. **python**, 下载地址：https://www.python.org/， 下载2.X 的版本,假设安装至D盘，配置环境变量： <br>
+1. **python**, 下载地址：https://www.python.org/，  下载2.X 的版本(Windows x86-64 MSI installer),假设安装至D盘，D:\Software\Python27,配置环境变量： <br>
 (1)编辑->变量名PATH，变量值 D:\Software\Python27  https://www.jianshu.com/p/21589ff62871 https://www.jianshu.com/p/2912482dba0b https://blog.csdn.net/azsx02/article/details/68947429<br>
 
 

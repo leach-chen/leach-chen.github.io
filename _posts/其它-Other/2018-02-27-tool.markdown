@@ -34,3 +34,5 @@ other: true
 - **Atom，NotePad++、UltraEdit** 文件编辑器，**强烈推荐Atom**，它是Github的一款文件编辑器，可关联git仓库，可预览Markdown文件，可以导入文件夹结构，很好用，界面看着也舒服
 
 - **禅道，JIRA** bug管理平台
+
+- **<a href="https://github.com/Genymobile/scrcpy" style="text-decoration: none;" target="_blank"  title="">scrcpy</a>** 手机屏幕可以实时投射到电脑，且电脑上可以直接控制手机的一款软件

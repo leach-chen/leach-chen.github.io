@@ -100,14 +100,6 @@ other: true
 <a href="http://market.sj.91.com/" style="text-decoration: none;" target="\_blank" title="">http://market.sj.91.com/</a>
 
 
-## API平台 ##
-
-**百度API**<br>
-<a href="http://developer.baidu.com/platform/s38" style="text-decoration: none;" target="\_blank" title="">http://developer.baidu.com/platform/s38</a>
-
-**聚合API**<br>
-<a href="https://www.juhe.cn/docs" style="text-decoration: none;" target="\_blank" title="">https://www.juhe.cn/docs</a>
-
 
 ## 云服务 ##
 

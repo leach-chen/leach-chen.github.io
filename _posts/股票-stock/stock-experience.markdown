@@ -15,6 +15,7 @@ https://jingyan.baidu.com/article/fcb5aff7a05d36edab4a7173.html
 https://wapbaike.baidu.com/item/%E8%82%A1%E7%A5%A8%E7%BC%BA%E5%8F%A3/1874904?fr=aladdin
 http://blog.sina.com.cn/s/blog_150bd105f0102xhg0.html（成交量）
 http://www.360doc.com/content/15/1227/18/12010725_523499732.shtml
+https://baike.baidu.com/item/%E8%A1%A5%E8%B7%8C/1342718?fr=aladdin（补跌）
 
 
 技术：
@@ -35,6 +36,7 @@ http://www.360doc.com/content/15/1227/18/12010725_523499732.shtml
 1. 大单成交
 1. 大资金流入流出情况
 1. 盘口
+1. 补跌
 
 如何判断洗盘吸筹？
 
@@ -60,12 +62,14 @@ http://www.360doc.com/content/15/1227/18/12010725_523499732.shtml
    9.有利好股，财富赢推荐的<br>
    10.阴跌时间较久后出现大跌<br>
    11.前期涨幅和后期跌幅波段大致对称时<br>
+   12.观察主力资金近几日为流入状态为佳
 
 买入：
 1. 大盘个股点位较低的时候买入
 看分时线：日分时，120分钟，60分钟分时线，位置低，趋势向上，站稳均线，有支持位附近（或筹码密集区）或者突破站稳压力位
 1. 在近几日低点位置附近买入
 1. 股价在筹码密集区买入
+1. 观察主力资金近几日为流入状态买入为佳
 
 
 

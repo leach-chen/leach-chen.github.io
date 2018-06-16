@@ -44,4 +44,4 @@ Ijkplayer 官方网址:<a href="https://github.com/Bilibili/ijkplayer" style="te
 compile 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8'
 compile 'tv.danmaku.ijk.media:ijkplayer-exo:0.8.8'
 ```
-3. 讲android/ijkplayer/ijkplayer-example,里面widget目录里面的文件放入我们的项目中便可使用了。
+3. 将android/ijkplayer/ijkplayer-example,里面widget目录里面的文件放入我们的项目中便可使用了。

@@ -71,6 +71,30 @@
          {% endfor %}
        {% endif %}
 
+       {% if link.type == site.blog_9 %}
+        {% for post in site.posts %}
+           {% if post.flutter%}
+            {% assign count = count | plus: 1 %}
+           {% endif %}
+         {% endfor %}
+       {% endif %}
+
+       {% if link.type == site.blog_10 %}
+        {% for post in site.posts %}
+           {% if post.ffmpeg%}
+            {% assign count = count | plus: 1 %}
+           {% endif %}
+         {% endfor %}
+       {% endif %}
+
+       {% if link.type == site.blog_11 %}
+        {% for post in site.posts %}
+           {% if post.opengl%}
+            {% assign count = count | plus: 1 %}
+           {% endif %}
+         {% endfor %}
+       {% endif %}
+
 			 <li><a  href="{{ link.url }}"  data-hover="{{link.name}}">{{ link.name }}({{count}})</a></li>
 		 {% endfor %}
           <!--<li style="margin-bottom:200px;"><a href="{{site.baseurl}}/about">About({{count}})</a></li>-->

@@ -93,6 +93,18 @@ links1:
     url:          /blog/android
     type:         androidoriginal
     external:     false
+  - name:         Flutter
+    url:          /blog/flutter
+    type:         flutter
+    external:     false
+  - name:         FFmpeg
+    url:          /blog/ffmpeg
+    type:         ffmpeg
+    external:     false
+  - name:         OpenGL
+    url:          /blog/opengl
+    type:         opengl
+    external:     false
   - name:         Python
     url:          /blog/python
     type:         python
@@ -117,9 +129,9 @@ blog_5:    abouttest
 blog_6:    stock
 blog_7:    other
 blog_8:    python
-blog_9:
-blog_10:
-blog_11:
+blog_9:    flutter
+blog_10:   ffmpeg
+blog_11:   opengl
 blog_12:
 blog_13:
 blog_14:

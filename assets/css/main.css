@@ -1971,7 +1971,7 @@ pre code {
     -webkit-border-radius: 0.3rem;
             border-radius: 0.3rem;
   }
-  
+
   .social_footer {
   padding: 3rem 0;
   list-style: none;
@@ -2031,19 +2031,19 @@ pre code {
   display:none;
 }
 
-.post-card:hover .post-card-stricp{  
+.post-card:hover .post-card-stricp{
   display:block;
-}  
+}
 
 
 /*鼠标放上去图片变大动画*/
 .post-card-image {
-  cursor: pointer;  
-  transition: all 0.6s;  
+  cursor: pointer;
+  transition: all 0.6s;
 }
 
 .post-card:hover .post-card-image{
-   transform: scale(1.4);  
+   transform: scale(1.4);
 }
 
 .search-icon{
@@ -2143,7 +2143,7 @@ a:focus::before {
 	-moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 	transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 	opacity: 1;
-}   
+}
 
 
 
@@ -2152,8 +2152,8 @@ a:focus::before {
 
 /*上一页下一页*/
 /*pager start----------------*/
-.post-container 
-.pager li{ 
+.post-container
+.pager li{
 
   width:48%
 }
@@ -2168,13 +2168,13 @@ a:focus::before {
 
 /*.pager li>a{
   width:100%;
-  padding: 10px 10px;  
+  padding: 10px 10px;
 }
 
 .pager li>a>span{
   padding-right: 10px;
   color:gray;
-  padding: 10px 10px;  
+  padding: 10px 10px;
 }*/
 
 .pager li>a>span{
@@ -2197,7 +2197,7 @@ a:focus::before {
   color:#404040
 }
 .pager li>a:hover,
-.pager li>a:focus { 
+.pager li>a:focus {
   color:#fff;
   background-color:#B9D3EE;
 }
@@ -2205,7 +2205,7 @@ a:focus::before {
 .pager li>a:focus>span{
   color:#fff;
 }
-::-moz-selection { 
+::-moz-selection {
   color:#fff;
   text-shadow:none;
   background:#a0b3d6;
@@ -2238,7 +2238,7 @@ img::-moz-selection {
 {
 	width: 300px;
     overflow:hidden;
-    text-overflow:ellipsis; 
+    text-overflow:ellipsis;
     white-space: nowrap;/*加宽度width属来兼容部分浏览*/
 	padding-right: 30px;
 }

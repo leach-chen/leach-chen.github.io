@@ -178,7 +178,7 @@ class RandomWordsState extends State<RandomWords> {
 }
 ```
 
-c. 通过下面高亮显示的代码，将生成单词对代的码从MyApp移动到RandomWordsState中
+**d.** 通过下面高亮显示的代码，将生成单词对代的码从MyApp移动到RandomWordsState中
 
 ```
 class MyApp extends StatelessWidget {

@@ -10,6 +10,8 @@ flutter: true
 ---
 主要介绍下如何用Flutter创建一个应用程序，程序一步步由简单到复杂，操作步骤来自官方，我觉得官方的已经写得挺好的了，我这里就搬过来，方便阅读，先查看下应用程序运行效果：
 
+<img src="/assets/img/blog/flutter/firstapplication/0.gif" />
+
 
 ## 第1步: 创建 Flutter app ##
 **a.** 创建一个简单的、基于模板的Flutter应用程序，按照创建您的第一个Flutter应用中的指南的步骤， 然后将项目命名为startup_namer（而不是myapp)，接下来你将会修改这个应用来完成最终的APP。

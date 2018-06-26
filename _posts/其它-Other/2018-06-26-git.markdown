@@ -40,10 +40,18 @@ Git命令行比打开客户端操作更快捷，持续更新。
 1. 推送远程仓库
 >$ git push [remoteName] [localBranchName]
 
-1. 免密码（还有其它几种方式，我没有试验过，这个试了可以）
->git remote set-url origin https://yourname:password@bitbucket.org/leach-chen/leach-chen.github.io.git
+1. <a href="https://www.jianshu.com/p/7182b2faab84" style="text-decoration: none;" target="\_blank"  title="">免密码</a>
+>方式一：<br>
+git remote set-url origin https://yourname:password@leach-chen/leach-chen.github.io.git @后面是仓库地址<br> <br>
+>方式二：<br>
+ 在Git bash命令行里面输入：touch .git-credentials <br>
+ 然后会在 ：C:\Users\你的用户名 目录下生成.git-credentials文件，打开该文件 <br>
+ 输入：https://yourname:password@github.com,@后面跟的是域名<br>
+ 然后执行：git config --global credential.helper store <br>
+ 记住密码（默认15分钟）：git config --global credential.helper cache <br>
+ 自定义存储时间：git config credential.helper 'cache --timeout=3600' <br>
 
-1. 这只用户名及邮箱
+1. 设置用户名及邮箱
 >git config --global user.name "Your Name"
 >git config --global user.email you@example.com
 

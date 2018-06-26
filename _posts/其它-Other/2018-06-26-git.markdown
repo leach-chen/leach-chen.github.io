@@ -52,7 +52,7 @@ git remote set-url origin https://yourname:password@leach-chen/leach-chen.github
  自定义存储时间：git config credential.helper 'cache --timeout=3600' <br>
 
 1. 设置用户名及邮箱
->git config --global user.name "Your Name"
+>git config --global user.name "Your Name" <br>
 >git config --global user.email you@example.com
 
 

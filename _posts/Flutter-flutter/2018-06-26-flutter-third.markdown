@@ -8,7 +8,7 @@ tags: [Flutter]
 author: # Add name author (optional)
 flutter: true
 ---
-记录用Flutter开发的客户端项目,持续更新。。。
+记录用Flutter开发的客户端项目,持续更新...
 
 Android Studio 导入Flutter第三方项目时，选择File->Open,找到项目打开
 

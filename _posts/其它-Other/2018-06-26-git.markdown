@@ -41,7 +41,12 @@ Git命令行比打开客户端操作更快捷，持续更新。
 >$ git push [remoteName] [localBranchName]
 
 1. 免密码（还有其它几种方式，我没有试验过，这个试了可以）
-git remote set-url origin https://yourname:password@bitbucket.org/leach-chen/leach-chen.github.io.git
+>git remote set-url origin https://yourname:password@bitbucket.org/leach-chen/leach-chen.github.io.git
+
+1. 这只用户名及邮箱
+>git config --global user.name "Your Name"
+>git config --global user.email you@example.com
+
 
 ## 分支(branch)操作相关命令 ##
 

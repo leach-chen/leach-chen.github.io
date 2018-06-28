@@ -39,7 +39,7 @@ CrossAxisAlignment.center   //假设有1-2-3三个图片,居中及靠左，图�
 ```
 
 
-**TextDirection**
+**TextDirection （排列方式）**
 
 ```
 
@@ -48,6 +48,85 @@ TextDirection.ltr   //假设有1-2-3三个图片,图片排列方式为1-2-3
 TextDirection.rtr   //假设有1-2-3三个图片,图片排列方式为3-2-1
 
 ```
+
+**alignment （对齐方式）**
+
+```
+Alignment.topLeft   //假设一张图片,在一个比图大的布局里，则在布局里，靠左及顶部排列
+Alignment.topCenter   //假设一张图片,在一个比图大的布局里，则在布局里，居中及顶部排列
+Alignment.topRight   //假设一张图片,在一个比图大的布局里，则在布局里，靠右及顶部排列
+...
+```
+
+**fit （图片填充方式）**
+
+```
+BoxFit.cover //中间部分填满布局
+BoxFit.fill //整张图填满
+BoxFit.fitWidth //宽度填满
+BoxFit.fitHeight //等比缩放适配高度
+
+```
+
+**decoration （描述如何绘制容器）**
+
+```
+BoxDecoration({
+   this.color,  //颜色   color: Colors.amberAccent
+   this.image,  //背景图 image: new DecorationImage(image: new ExactAssetImage('images/mozi.jpeg'),fit: BoxFit.cover,)
+   this.border, //边框颜色  border: new Border.all(  color: Colors.red,//边框颜色 width: 2.0,//边框宽度)
+   this.borderRadius, //边框圆角
+   this.boxShadow, //阴影
+   this.gradient, //渐变
+   this.shape: BoxShape.rectangle //矩形，BoxShape.circle  //圆形
+ })
+
+
+ return new Center(
+  child: new Container(
+    width: 50.0,
+    height: 50.0,
+    decoration: new BoxDecoration(
+      //背景色
+      color: const Color(0xff7c94b6),
+      //没有图片的小伙,注释掉image这个，用color背景也是可以看效果的
+      image: new DecorationImage(
+        image: new ExactAssetImage('images/lake.jpg'),
+        fit: BoxFit.cover,
+      ),
+      //shape类型：rectangle|circle
+      shape: BoxShape.rectangle,
+      //边框颜色
+      border: new Border.all(
+        color: Colors.red,//边框颜色
+        width: 2.0,//边框宽度
+      ),
+    ),
+  ),
+);
+
+```
+
+**margin （外边距）**
+
+```
+EdgeInsets.fromLTRB(this.left, this.top, this.right, this.bottom) //各个角边距
+EdgeInsets.all(double value) //边距
+```
+
+**padding (内边距)**
+
+```
+EdgeInsets.fromLTRB(this.left, this.top, this.right, this.bottom) //各个角边距
+EdgeInsets.all(double value) //边距
+
+new Padding(
+  padding: new EdgeInsets.all(8.0),
+  child: const Card(child: const Text('Hello World!')),
+)
+```
+
+
 
 ## 其它 ##
 

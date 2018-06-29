@@ -49,7 +49,16 @@ TextDirection.rtr   //假设有1-2-3三个图片,图片排列方式为3-2-1
 
 ```
 
-**alignment （对齐方式）**
+
+**Text----->overflow （排列方式）**
+
+```
+TextOverflow.ellipsis   //结尾省略号
+```
+
+
+
+**Container----->alignment （对齐方式）**
 
 ```
 Alignment.topLeft   //假设一张图片,在一个比图大的布局里，则在布局里，靠左及顶部排列
@@ -58,7 +67,7 @@ Alignment.topRight   //假设一张图片,在一个比图大的布局里，则�
 ...
 ```
 
-**fit （图片填充方式）**
+**Image----->fit （图片填充方式）**
 
 ```
 BoxFit.cover //中间部分填满布局
@@ -68,14 +77,14 @@ BoxFit.fitHeight //等比缩放适配高度
 
 ```
 
-**decoration （描述如何绘制容器）**
+**Container----->decoration （描述如何绘制容器）**
 
 ```
 BoxDecoration({
    this.color,  //颜色   color: Colors.amberAccent
    this.image,  //背景图 image: new DecorationImage(image: new ExactAssetImage('images/mozi.jpeg'),fit: BoxFit.cover,)
    this.border, //边框颜色  border: new Border.all(  color: Colors.red,//边框颜色 width: 2.0,//边框宽度)
-   this.borderRadius, //边框圆角
+   this.borderRadius, //边框圆角,new BorderRadius.all(new Radius.circular(50.0))
    this.boxShadow, //阴影
    this.gradient, //渐变
    this.shape: BoxShape.rectangle //矩形，BoxShape.circle  //圆形
@@ -107,14 +116,14 @@ BoxDecoration({
 
 ```
 
-**margin （外边距）**
+**Container----->margin （外边距）**
 
 ```
 EdgeInsets.fromLTRB(this.left, this.top, this.right, this.bottom) //各个角边距
 EdgeInsets.all(double value) //边距
 ```
 
-**padding (内边距)**
+**Container----->padding (内边距)**
 
 ```
 EdgeInsets.fromLTRB(this.left, this.top, this.right, this.bottom) //各个角边距
@@ -126,7 +135,16 @@ new Padding(
 )
 ```
 
+**ListView----->scrollDirection（ListView 排列方向）**
 
+```
+Axis.horizontal  //水平排列
+Axis.vertical //垂直排列
+```
+
+
+Container->Column->Expanded,导致均分右边有外边距 <br>
+Column->Expanded,均分正常
 
 ## 其它 ##
 

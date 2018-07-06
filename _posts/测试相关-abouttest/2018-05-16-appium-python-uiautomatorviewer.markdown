@@ -42,6 +42,7 @@ Uiautomatorviewer是android SDK自带的工具。通过截屏并分析XML布局�
 创建文件test.py , 编辑内容：<br>
 
 ```
+# -*- coding:UTF-8 -*-
 import time
 
 from appium import webdriver
@@ -64,7 +65,7 @@ for i in range(10):	#循环执行下面代码10次
 
 	wd.tap(([6,441],[358,795]), 200)   #点击指定区域
 	time.sleep(2);	#睡眠3S
-	wd.find_element_by_id(com.leachchen.autotest:id/ll_title_left").click();   #找到id为ll_title_left的控件并进行点击
+	wd.find_element_by_id("com.leachchen.autotest:id/ll_title_left").click();   #找到id为ll_title_left的控件并进行点击
 	#上面的id可以通过uiautomatorviewer获取到对应APP的控件的id
 ```
 

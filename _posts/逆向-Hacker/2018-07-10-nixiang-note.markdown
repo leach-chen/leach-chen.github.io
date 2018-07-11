@@ -46,3 +46,73 @@ testapk.apk表示未签名 的APK
 
 test..keystore表示密钥的别名
 ```
+
+**生成Dex**
+
+```
+javac Hello.javac
+
+dx --dex --output=Hello.dex Hello.class
+
+这样很可能生成不出dex文件来
+
+出现：
+trouble processing:
+bad class file magic (cafebabe) or version (0034.0000)
+...while parsing D:/MyPart/NiXiang/other/Hello.class
+...while processing D:/MyPart/NiXiang/other/Hello.class
+1 warning
+no classfiles specified
+
+解决办法：javac -source 1.6 -target 1.6 Hello.java
+
+出现：
+trouble processing:
+class name (Hello) does not match path (D:/MyPart/NiXiang/other/Hello.class)
+...while parsing D:/MyPart/NiXiang/other/Hello.class
+...while processing D:/MyPart/NiXiang/other/Hello.class
+1 warning
+no classfiles specified
+
+解决办法：如果我们使用javac -source 1.6 -target 1.6 D:\Android\sdkme\build-tools\25.0.1\Hello.java生成class文件并且有警告未设置引导类路径时，生成dex时使用class的相对路径如果我们是用Javac Hello.java生成的class文件，用dx.dat时就要用绝对路径来生成dex文件
+
+出现：
+UNEXPECTED TOP-LEVEL EXCEPTION:
+java.lang.RuntimeException: Hello.class: file not found
+        at com.android.dx.util.FileUtils.readFile(FileUtils.java:55)
+        at com.android.dx.cf.direct.ClassPathOpener.processOne(ClassPathOpener.j
+ava:134)
+        at com.android.dx.cf.direct.ClassPathOpener.process(ClassPathOpener.java
+:109)
+        at com.android.dx.command.dexer.Main.processOne(Main.java:422)
+        at com.android.dx.command.dexer.Main.processAllFiles(Main.java:333)
+        at com.android.dx.command.dexer.Main.run(Main.java:209)
+        at com.android.dx.command.dexer.Main.main(Main.java:174)
+        at com.android.dx.command.Main.main(Main.java:91)
+1 error; aborting
+
+解决办法：指定dx.bat路径为指定的版本的
+
+
+完整生成命令：
+javac -source 1.6 -target 1.6 Hello.java
+
+E:\AndroidStudio\sdk\build-tools\25.0.0\dx.bat --dex --output=D:\MyPart\NiXiang\other\Hello.dex Hello.class
+
+```
+
+**反编译dex成smali**
+
+```
+之前是用一直报错：java -jar baksmali.jar -o baksmali classes.dex
+
+Exception in thread "main" com.beust.jcommander.MissingCommandException: Expecte
+d a command, got -o
+        at com.beust.jcommander.JCommander.parseValues(JCommander.java:725)
+        at com.beust.jcommander.JCommander.parse(JCommander.java:304)
+        at com.beust.jcommander.JCommander.parse(JCommander.java:287)
+        at org.jf.baksmali.Main.main(Main.java:90)
+
+解决方案：baksmali.jar disassemble Hello.dex
+
+```

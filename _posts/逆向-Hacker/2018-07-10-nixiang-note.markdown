@@ -104,7 +104,7 @@ E:\AndroidStudio\sdk\build-tools\25.0.0\dx.bat --dex --output=D:\MyPart\NiXiang\
 **反编译dex成smali**
 
 ```
-之前是用一直报错：java -jar baksmali.jar -o baksmali classes.dex
+之前是用一直报错：java -jar baksmali.jar -o baksmali Hello.dex
 
 Exception in thread "main" com.beust.jcommander.MissingCommandException: Expecte
 d a command, got -o

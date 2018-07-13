@@ -37,4 +37,8 @@ other: true
 
 - **<a href="https://github.com/Genymobile/scrcpy" style="text-decoration: none;" target="_blank"  title="">scrcpy</a>** 手机屏幕可以实时投射到电脑，且电脑上可以直接控制手机的一款软件
 
-- **WinHex** 二进制查看
+逆向相关
+
+- **WinHex** 二进制查看器，可查看磁盘及文件
+
+- **Androidkiller，IDA Pro** 反编译工具

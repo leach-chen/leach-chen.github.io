@@ -4,9 +4,9 @@ title: 逆向笔记
 date:  2018-07-10 20:10:00 +0900
 description: 逆向笔记
 img: post-1.jpg # Add image post (optional)
-tags: [随笔]
+tags: [逆向]
 author: # Add name author (optional)
-essays: true
+hacker: true
 ---
 
 **反编译**  <br>

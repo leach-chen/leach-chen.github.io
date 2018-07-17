@@ -93,6 +93,10 @@ links1:
     url:          /blog/android
     type:         androidoriginal
     external:     false
+  - name:         逆向笔记
+    url:          /blog/hacker
+    type:         hacker
+    external:     false
   - name:         Flutter
     url:          /blog/flutter
     type:         flutter
@@ -132,7 +136,7 @@ blog_8:    python
 blog_9:    flutter
 blog_10:   ffmpeg
 blog_11:   opengl
-blog_12:
+blog_12:   hacker
 blog_13:
 blog_14:
 blog_15:

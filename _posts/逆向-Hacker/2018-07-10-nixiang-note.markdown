@@ -9,14 +9,29 @@ author: # Add name author (optional)
 hacker: true
 ---
 
-**反编译**  <br>
+**概念**  <br>
 ```
+反编译后生成smali格式的反编译代码，然后阅读smali文件的代码来理解程序的运行机制，找到突破口，进行修改，最后使用APKTool重新编译生成APK文件，并签名。
+
+使用apktool反编译后所有的索引值保存在string.xml文件同目录下的public.xml文件中
+
+Smali是Dalvik的寄存器语言
+
+Java 虚拟机运行的是Java字节码，Dalvik虚拟机运行的是Dalvik字节码，传统java程序经过编译，生成java字节码保存在class文件中，java虚拟机通过解码class文件中的内容来运行程序，而Dalvik虚拟机运行的是Dalvik字节码，所有的Dalvik字节码由java字节码转换而来，被打包到一个Dex可执行文件中，Dalvik虚拟机通过解释DEX文件来执行这些字节码。
+
+```
+
+
+**apktool-反编译**  <br>
+```
+apktool 地址：https://ibotpeaches.github.io/Apktool/
+
 apktool d -f apk路径 -o 输出路径
 
-apktool d -f D:\test.apk D:\MyPart\nixiang\fanbianyi\test
+apktool d -f D:\test.apk -o D:\MyPart\nixiang\fanbianyi\test
 ```
 
-**回编**  <br>
+**apktool-回编**  <br>
 ```
 apktool b 反编译出来的包路径 -o 输出路径的apk路径
 
@@ -34,9 +49,9 @@ keytool -genkey -alias test.keystore -keyalg RSA -validity 20000 -keystore  test
 
 **签名**  <br>
 ```
-jarsigner -verbose -keystore test.keystore -signedjar testapk_signed.apk testapk.apk  test.keystore
+jarsigner -verbose -keystore test.keystore -signedjar testapk_signed.apk testapk.apk  test.keystore的别名（alias）
 
-jarsigner -verbose -keystore D:\test.key  -signedjar testapk_signed.apk D:\MyPart\nixiang\fanbianyi\a.apk test
+jarsigner -verbose -keystore D:\test.key  -signedjar D:\testapk_signed.apk D:\MyPart\nixiang\fanbianyi\a.apk test
 
 -verbose表示显示出签名详细信息
 -keystore表示使用当前目录中的test.keystore签名证书文件。

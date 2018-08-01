@@ -218,3 +218,94 @@ checkdexex FF F7 55 FD 地址起始位置：00244CE
 <img src="/assets/img/blog/hacker/actualoperation1/6.jpg" height = "300px"/>
 
 破解了这个之后，就可以在你想要继续破解的地方修改代码就可以了，目前我还没有去尝试，有些应用加了壳的话要先脱壳，拿到真正的dex，才能进入到下面一步
+
+11.**开启debug模式**
+
+在反编译出来的AndroidManifest.xml中将android:debuggable="false"改成android:debuggable="true"，如果没有这项则加上android:debuggable="true"
+
+```
+<application android:debuggable="true" android:hasCode="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.ubisoft.OnyxEngine.OnyxApplication">
+```
+
+12.**将程序里的log日志打出来**
+log日志封装在com.ourpalm.tools.android.logs中，打开Logs.smali
+
+```
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .prologue
+    const/4 v0, 0x0
+
+    .line 10
+    sput-boolean v0, Lourpalm/tools/android/logs/Logs;->isShowLog:Z
+
+    .line 11
+    sput-boolean v0, Lourpalm/tools/android/logs/Logs;->isShowLog_1:Z
+
+    return-void
+.end method
+
+
+将  const/4 v0, 0x0改成  const/4 v0, 0x1，这样日志就可以输出来了，sput-boolean的解释是Puts boolean value in vx into a static field.
+```
+13.**支付破解**
+
+在OnyxActivity.smali onCreate里面,进入 mOurpalmChannel.Init(this)代码，我们看到 Ourpalm_Entry.getInstance(mActivity).Ourpalm_Init("2", "1.0", "1.0", mListener);
+一般支付都是回调回来的，我们进去mListener里面看是什么
+
+```
+class OurpalmIAPListener
+    extends Ourpalm_PaymentCallBack
+    implements Ourpalm_CallBackListener
+  {
+     ...
+     public void Ourpalm_OrderSuccess(int paramInt, String paramString1, String paramString2)
+   {
+     Logs.i("MAIN", "Ourpalm_OrderSuccess, code = " + paramInt + " ,ssid = " + paramString1 + " ,pbid = " + paramString2);
+     OurpalmChannel.PayResultCallBackNative(false);
+   }
+
+   public void Ourpalm_PaymentFail(int paramInt, String paramString1, String paramString2)
+   {
+     Logs.i("MAIN", "Ourpalm_PaymentFail, code = " + paramInt + " ,ssid = " + paramString1 + " ,pbid = " + paramString2);
+     OurpalmChannel.PayResultCallBackNative(false);
+   }
+
+   public void Ourpalm_PaymentSuccess(int paramInt, String paramString1, String paramString2)
+   {
+     Logs.i("MAIN", "Ourpalm_PaymentSuccess, code = " + paramInt + " ,ssid = " + paramString1 + " ,pbid = " + paramString2);
+     OurpalmChannel.PayResultCallBackNative(true);
+     if (OurpalmChannel.sPayIndentifier_Track.contains("com.ubisoft.rabbids.plungerx"))
+     {
+       int i = Integer.parseInt(OurpalmChannel.sPayIndentifier_Track.replace("com.ubisoft.rabbids.plungerx", ""));
+       Tracking.Pay_Coin(OurpalmChannel.sItemPrice_Track / 100.0F, i, OurpalmChannel.sPayIndentifier_Track);
+       return;
+     }
+     Tracking.Pay_Item(OurpalmChannel.sItemPrice_Track / 100.0F, OurpalmChannel.sItemname_Track, 1, 1.0F, OurpalmChannel.sPayIndentifier_Track);
+   }
+     ...
+  }
+```
+可以看到里面有支付相关的回调，支付成功失败区别是OurpalmChannel.PayResultCallBackNative(true); OurpalmChannel.PayResultCallBackNative(false)，我们要找到点击支付的位置，然后点击支付直接设置OurpalmChannel.PayResultCallBackNative(true)为支付成功，那我们打开OurpalmChannel.smali，可以找到public static void Pay(String paramString, float paramFloat, int paramInt)，可以在里面加入toast代码，发现点击支付确实是调用的该函数，那么我们把正在支付注释掉，直接设置支付成功,这样就可以随便买什么东西了，亲测有效
+
+```
+sget-object v9, Lcom/ubisoft/OnyxEngine/OurpalmChannel;->mListener:Lcom/ubisoft/OnyxEngine/OurpalmChannel$OurpalmIAPListener;
+
+   const-string v10, ""
+
+   const-string v11, ""
+
+
+   #****************modify start
+   #invoke-virtual/range {v0 .. v11}, #Lourpalm/android/pay/Ourpalm_Entry;->Ourpalm_Pay(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lourpalm/android/callback/Ourpal#m_PaymentCallBack;Ljava/lang/String;Ljava/lang/String;)V
+
+  const/4 v0, 0x1
+  invoke-static {v0}, Lcom/ubisoft/OnyxEngine/OurpalmChannel;->PayResultCallBackNative(Z)V
+  #****************modify end
+
+   .line 233
+   sput-object p0, Lcom/ubisoft/OnyxEngine/OurpalmChannel;->sPayIndentifier_Track:Ljava/lang/String;
+
+```

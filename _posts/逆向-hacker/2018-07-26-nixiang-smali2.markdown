@@ -176,3 +176,8 @@ invoke-virtual {v1}, Lcom/leachchen/testnixiang/Tree;->go()V  相当于调用Tre
 ```
 如果vA小于等于0则跳转到:cond_**
 ```
+
+1. **sput-boolean**
+```
+Puts boolean value in vx into a static field.
+```

@@ -20,3 +20,5 @@ hacker: true
 1. **AndroidKiller 反编译工具**
 
 1. **PowerCmd 命令行工具在一个窗口可多开可保存历史记录，可多个窗口同时排列**
+
+1. **unluac 一个lua反编译器开源项目**

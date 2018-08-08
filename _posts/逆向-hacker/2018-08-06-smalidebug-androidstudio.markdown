@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Smail动态调试之Android Studio
+title: Smali动态调试之Android Studio
 date:  2018-08-06 17:18:00 +0900
-description: Smail动态调试之Android Studio
+description: Smali动态调试之Android Studio
 img: post-2.jpg # Add image post (optional)
 tags: [逆向]
 author: # Add name author (optional)
@@ -26,11 +26,26 @@ hacker: true
 adb shell am start -D -n com.example/.start.StartupActivity
 ```
 
-**4.启动DDMS**
+**4.启动DDMS获取端口号**
 
-DDMS可以在开发工具里找到，找不到去到你的Android SDK安装目录tools/ddms.bat,双击ddms.bat启动DDMS，记下红色选择的端口7697,8700
+DDMS可以在开发工具里找到,启动的时候最好关闭Android Studio，找不到去到你的Android SDK安装目录tools/ddms.bat,双击ddms.bat启动DDMS，记下红色选择的端口7697,8700
 
 <img src="/assets/img/blog/hacker/smaliandroidstudio/1.jpg" height = "300px"/>
+
+
+记得要关闭DDMS再执行该命令，否则会提示端口被占用
+
+不启动DDMS也可以获取端口号执行如下命令（若debug的时候无效，则需要先关）：
+
+```
+adb shell
+top | grep apk包名关键字
+```
+
+<img src="/assets/img/blog/hacker/smaliandroidstudio/5.jpg" height = "300px"/>
+
+
+**若android studio debug的时候无效，则需要先关闭android studio，再从头开始执行上面的步骤**
 
 **5.进行端口转发**
 
@@ -39,8 +54,6 @@ DDMS可以在开发工具里找到，找不到去到你的Android SDK安装目�
 ```
 adb forward tcp:8700 jdwp:7697
 ```
-
-记得要关闭DDMS再执行该命令，否则会提示端口被占用
 
 **6.Android Studio导入Smali源码**
 

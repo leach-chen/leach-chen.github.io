@@ -22,11 +22,17 @@ Android Studio 导入Flutter第三方项目时，选择File->Open,找到项目�
 
 <img src="/assets/img/blog/flutter/third/1.png" width = "180px"/>
 
+
+**<a href="https://github.com/wtus/flutter_kaiyan" style="text-decoration: none;" target="\_blank"  title="https://juejin.im/post/5b4f40e3e51d451907696604">使用 Flutter 仿开眼视频App</a>**
+
+<img src="/assets/img/blog/flutter/third/5.jpg" width = "180px"/>
+
+
+**<a href="https://github.com/yubo725/flutter-tetris" style="text-decoration: none;" target="\_blank"  title="https://juejin.im/post/5b695517518825195f49ba52">基于Flutter的俄罗斯方块小游戏</a>**
+
+<img src="/assets/img/blog/flutter/third/7.png" width = "180px"/>
+
+
 **<a href="https://github.com/TheMelody/Flutter_PenguinSports01" style="text-decoration: none;" target="\_blank"  title="">企鹅电竞app首页</a>**
 
-<img src="/assets/img/blog/flutter/third/2.gif" width = "180px"/>
-
-
-**<a href="https://github.com/WuXiaolong/flutter_movie" style="text-decoration: none;" target="\_blank"  title="">flutter_movie</a>**
-
-<img src="/assets/img/blog/flutter/third/2.gif" width = "180px"/>
+<img src="/assets/img/blog/flutter/third/2.jpg" width = "180px"/>

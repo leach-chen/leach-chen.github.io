@@ -26,6 +26,14 @@ MainAxisAlignment.end       //假设有1-2-3三个图片,居中及靠右，图�
 
 MainAxisAlignment.center   //假设有1-2-3三个图片,居中，图片间距为0
 
+new Center(
+  child: new Column(
+    mainAxisAlignment: MainAxisAlignment.center,  //需要依赖外层的Center，否则不生效
+    children: <Widget>[
+    new Text("you click:"),
+    new Text('$count'),
+  ],),
+),
 ```
 
 **CrossAxisAlignment**
@@ -152,3 +160,7 @@ Column->Expanded,均分正常
 
 print(),debugPrint()
 在命令行里执行flutter run 或者 flutter logs 在控制台可以看到日志，也可以用adb logcat 进行日志查看及过滤
+
+
+
+Container，Padding均可让子控件获得padding属性

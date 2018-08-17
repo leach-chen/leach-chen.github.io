@@ -10,9 +10,69 @@ flutter: true
 ---
 记录用Flutter开发一些基本用法，基于Android Studio,持续更新...
 
+## 控件、布局 ##
+
+**Contain**
+
+```
+new Container(
+      alignment: Alignment.center,
+      margin: new EdgeInsets.only(top: 83.0),
+      padding: new EdgeInsets.only(top: 14.0, left: 22.0, bottom: 14.0, right: 22.0),
+      child: new Text(
+        "Register/Login",
+        style: new TextStyle(
+          fontSize: 16.0,
+          color: const Color(0xffffffff),
+        ),
+      ),
+      decoration: new BoxDecoration(
+        color: const Color(0xFF03BEFD),
+        borderRadius: BorderRadius.circular(100.0),
+      ),
+)
+```
+
+**Row**
+
+```
+new Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    crossAxisAlignment: CrossAxisAlignment.center,
+    children: <Widget>[
+    ],
+)
+```
+
+
+**Column**
+
+**Stack**
+
+**Padding**
+
+**Text**
+
+```
+new Text(
+    "Register/Login",
+    style: new TextStyle(
+      fontSize: 16.0,
+      color: const Color(0xffffffff),
+    ),
+)
+```
+
+
+**Image**
+
+
+
+
+
 ## 函数、参数 ##
 
-**MainAxisAlignment**
+**Row,Column->MainAxisAlignment**
 ```
 MainAxisAlignment.spaceBetween  //假设有1-2-3三个图片,居中，左边到1的间距，3到右边的间距为0，1-2,2-3之间间距相同
 
@@ -36,7 +96,7 @@ new Center(
 ),
 ```
 
-**CrossAxisAlignment**
+**Row,Column->CrossAxisAlignment**
 ```
 CrossAxisAlignment.start       //假设有1-2-3三个图片,靠左及顶部，图片间距为0
 
@@ -161,6 +221,53 @@ Column->Expanded,均分正常
 print(),debugPrint()
 在命令行里执行flutter run 或者 flutter logs 在控制台可以看到日志，也可以用adb logcat 进行日志查看及过滤
 
-
-
 Container，Padding均可让子控件获得padding属性
+
+flutter upgrade
+
+
+**问题**
+
+**1：ListView放在Colum或者Row里面报错**
+
+```
+
+Widget _bulidMyCenter(BuildContext context) {
+  return new Container(
+    child: new Column(
+      children: <Widget>[
+        new ListView.builder(
+          itemCount:listData.length,
+          itemBuilder: (context, i) => rendUI(context, i),
+        ),
+      ],
+    )
+  );
+}
+
+I/flutter (29754): The following assertion was thrown during performResize():
+I/flutter (29754): Vertical viewport was given unbounded height.
+I/flutter (29754): Viewports expand in the scrolling direction to fill their container.In this case, a vertical
+I/flutter (29754): viewport was given an unlimited amount of vertical space in which to expand. This situation
+I/flutter (29754): typically happens when a scrollable widget is nested inside another scrollable widget.
+I/flutter (29754): If this widget is always nested in a scrollable widget there is no need to use a viewport because
+I/flutter (29754): there will always be enough vertical space for the children. In this case, consider using a Column
+I/flutter (29754): instead. Otherwise, consider using the "shrinkWrap" property (or a ShrinkWrappingViewport) to size
+I/flutter (29754): the height of the viewport to the sum of the heights of its children.
+
+解决方案：
+
+Widget _bulidMyCenter(BuildContext context) {
+  return new Container(
+    child: new Column(
+      children: <Widget>[
+        new Flexible(child: new ListView.builder(
+          itemCount:listData.length,
+          itemBuilder: (context, i) => rendUI(context, i),
+        ),),
+      ],
+    )
+  );
+}
+
+```

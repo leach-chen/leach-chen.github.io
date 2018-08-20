@@ -12,9 +12,10 @@ python: true
 ## Python下载配置 ##
 
 **python**, 下载地址：https://www.python.org/， 下载2.X 的版本(Windows x86-64 MSI installer),假设安装至D盘，D:\Software\Python27,配置环境变量： <br>
-(1)编辑->变量名PATH，变量值 D:\Software\Python27
+(1)编辑->变量名PATH，变量值 D:\Software\Python27<br>
 (2)编辑->变量名PATH，变量值 D:\Software\Python27\Scripts <br>
 
+或者安装最新版，勾选添加到Path选项就不用配置环境变量
 
 ## Pycharm 开发工具下载安装 ##
 

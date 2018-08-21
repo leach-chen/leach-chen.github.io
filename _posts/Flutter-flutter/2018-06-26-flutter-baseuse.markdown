@@ -51,6 +51,34 @@ new Row(
 
 **Padding**
 
+**Expanded**
+
+```
+An Expanded widget must be a descendant of a Row, Column, or Flex, and the path from the Expanded widget to its enclosing Row, Column, or Flex must contain only StatelessWidgets or StatefulWidgets (not other kinds of widgets, like RenderObjectWidgets).
+
+Row(
+  children: <Widget>[
+    Container( /// 此组件在主轴方向占据48.0逻辑像素
+      width: 48.0
+    ),
+    Expanded(
+      child: Container() /// 此组件会填满Row在主轴方向的剩余空间，撑开Row
+    )
+  ]
+)
+```
+
+See also:
+
+不强制子组件填满可用空间的Flexible。
+布局组件目录。
+
+
+**SingleChildScrollView**
+```
+类似ScrollView
+```
+
 **Text**
 
 ```
@@ -62,9 +90,24 @@ new Text(
     ),
 )
 ```
+**TextField**
+
+```
+new TextField(
+  style: new TextStyle(color: Colors.white),
+  decoration: InputDecoration(
+      hintText: "Enter your email",
+      hintStyle:new TextStyle(fontSize: 12.0,color: Colors.grey),
+      border: InputBorder.none, //去掉边框
+     /* labelText: "Email",  //编辑框对应的标签名称，就是点击编辑框，文字会上浮的那个
+      labelStyle:new TextStyle(color: const Color(0xFF424242)),*/
+  )
+)
+```
 
 
 **Image**
+
 
 
 
@@ -94,6 +137,8 @@ new Center(
     new Text('$count'),
   ],),
 ),
+
+垂直方向
 ```
 
 **Row,Column->CrossAxisAlignment**
@@ -104,6 +149,7 @@ CrossAxisAlignment.end       //假设有1-2-3三个图片,靠左及底部，图�
 
 CrossAxisAlignment.center   //假设有1-2-3三个图片,居中及靠左，图片间距为0
 
+水平方向
 ```
 
 
@@ -270,4 +316,42 @@ Widget _bulidMyCenter(BuildContext context) {
   );
 }
 
+```
+
+**2.TextField放在Row里面报错**
+
+```
+
+new Row(
+ children: <Widget>[
+   new Container(
+     child: new TextField(
+       decoration: InputDecoration(
+           border: InputBorder.none,
+           hintText: 'Please enter a search term'),
+     ),
+   )
+ ],
+)
+
+I/flutter (12955): The following assertion was thrown during performLayout():
+I/flutter (12955): BoxConstraints forces an infinite width.
+I/flutter (12955): These invalid constraints were provided to RenderOpacity's layout() function by the following
+I/flutter (12955): function, which probably computed the invalid constraints in question:
+I/flutter (12955):   _RenderDecoration._layout.layoutLineBox (package:flutter/src/material/input_decorator.dart:750:11)
+I/flutter (12955): The offending constraints were:
+I/flutter (12955):   BoxConstraints(w=Infinity, 0.0<=h<=Infinity)
+
+解决方案：
+new Row(
+  children: <Widget>[
+    new Expanded(
+      child: new TextField(
+        decoration: InputDecoration(
+            border: InputBorder.none,
+            hintText: 'Please enter a search term'),
+      ),
+    )
+  ],
+)
 ```

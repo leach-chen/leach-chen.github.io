@@ -23,6 +23,11 @@ Android Studio 导入Flutter第三方项目时，选择File->Open,找到项目�
 <img src="/assets/img/blog/flutter/third/1.png" width = "180px"/>
 
 
+**<a href="https://github.com/dongjunkun/flutter_gank" style="text-decoration: none;" target="\_blank"  title="https://www.jianshu.com/p/2c783b20925f">flutter_gank</a>**
+
+<img src="/assets/img/blog/flutter/third/8.jpg" width = "180px"/>
+
+
 **<a href="https://github.com/wtus/flutter_kaiyan" style="text-decoration: none;" target="\_blank"  title="https://juejin.im/post/5b4f40e3e51d451907696604">使用 Flutter 仿开眼视频App</a>**
 
 <img src="/assets/img/blog/flutter/third/5.jpg" width = "180px"/>

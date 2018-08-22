@@ -13,7 +13,7 @@ flutter: true
 Android Studio 导入Flutter第三方项目时，选择File->Open,找到项目打开,如果有问题，可以先在Flutter根目录运行一下命令：flutter run来完善项目环境，然后重新导入。
 
 
-**<a href="https://github.com/flutter/flutter" style="text-decoration: none;" target="\_blank"  title="">flutter</a>**
+**<a href="https://github.com/flutter/flutter" style="text-decoration: none;" target="\_blank"  title="">flutter(官方Demo)</a>**
 
 <img src="/assets/img/blog/flutter/third/3.jpg" width = "180px"/>
 

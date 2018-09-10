@@ -29,3 +29,5 @@ hacker: true
 代码混淆
 
 取消接口json打印
+
+反调试

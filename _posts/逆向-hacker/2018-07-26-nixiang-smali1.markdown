@@ -3,7 +3,7 @@ layout: post
 title: Smali 语法一
 date:  2018-07-26 10:30:00 +0900
 description: Smali 语法一
-img: post-2.jpg # Add image post (optional)
+img: post-7.jpg # Add image post (optional)
 tags: [逆向]
 author: # Add name author (optional)
 hacker: true

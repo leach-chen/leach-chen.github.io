@@ -9,6 +9,48 @@ author: # Add name author (optional)
 androidoriginal: true
 ---
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Activity ##
 
 ### **1. Activity生命周期** ###

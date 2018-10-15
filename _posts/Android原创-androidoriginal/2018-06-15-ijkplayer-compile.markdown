@@ -3,7 +3,7 @@ layout: post
 title: Ijkplayer 编译支持Https及用法
 date:  2018-06-15 16:10:00 +0900  
 description: Ijkplayer 编译支持Https及用法
-img: post-1.jpg # Add image post (optional)
+img: post-4.jpg # Add image post (optional)
 tags: [Ijkplayer]
 author: # Add name author (optional)
 androidoriginal: true

@@ -3,7 +3,7 @@ layout: post
 title: Git 命令行
 date:  2018-06-26 09:41:00 +0900  
 description:  Git 命令行
-img: post-3.jpg # Add image post (optional)
+img: post-8.jpg # Add image post (optional)
 tags: [Other]
 author: # Add name author (optional)
 other: true

@@ -10,3 +10,13 @@ hacker: true
 ---
 
 主要记录常用的一些adb shell 命令，持续更新...
+
+1. **显示当前任务栈中的Activity**
+
+adb shell dumpsys activity
+
+2. **查看进程**
+
+adb shell ps | grep 包名
+
+3. 

@@ -8,25 +8,102 @@ tags: [Android]
 author: # Add name author (optional)
 androidoriginal: true
 ---
+1. **Activity生命周期**
+
+ onCreate(Activity正在被创建，此时可以做些初始化工作，如加载布局，初始化数据)
+
+ onRestart（Activity正在重新启动）
+
+ onStart（Activty正在被启动，Activity已经可见，但还在后台，还无法与用户交互）
+
+    onRestoreInstanceState（Activity重新启动时调用该方法，Bundle会传给该方法及onCreate）
+
+ onResume（Activity已经可见，并且出现在前台，可与用户进行交互）
+
+ onPause（Activity正在停止，必须onPause执行完，新的Activity才会执行onResume，不能在里面做耗时的工作，尽量在onStop中操作）
+
+    onSaveInstanceState（可能在onPause之前也可能在之后，异常时调用该方法并保存Bundle，Activity需要重建时。系统会默认为Activity的视图结构，如控件位置数据等）
+
+ onStop（Activity即将停止）
+
+ onDestroy（Activity即将被销毁）
+
+ onCreate 和 onDestroy 配对，onStart 和 onStop 配对，onResume 和 onPause 配对
+
+ 简单理解，启动Activity请求由Instrumentation来处理，然后它通过Binder向AMS发请求，AMS内部维护着一个ActivityStack并负责栈内的Activity的状态同步，AMS通过ActivityThread去同步Activity的状态从而完成生命周期方法的调用。
+
+ 2. **onSaveInstanceState、onRestoreInstanceState**
+
+这两个方法在Activity异常时才会被调用，onSaveInstanceState可能在onPause之前也可能在之后，在异常时会将数据保存至一个Bundle，Activity重启时会将该Bundle传给onCreate及onRestoreInstanceState(onRestoreInstanceState在onStart之后)，Activity需要重建时。系统会默认为Activity的视图结构，如控件位置及一些数据等，每个View都有这两个方法，异常时Activity委托Window去保存数据，Window再委托它上面的顶层容器去保存数据，顶层容器是个ViewGroup，一般来说是DecorView,然后顶层容器再一一通知它的子元素来保存数据。恢复也是如此。
+
+没有依赖四大组件执行的程序很容易被系统杀死
+
+3. **Activity启动模式**
+Activity入栈为启动它的任务所属的栈，ApplicationContext不能启动Activity是因为它没有任务栈，可以给Activity加上FLAG_ACTIVITY_NEW_TASK标记位，这样启动的时候就会为它创建一个新的任务栈，这个时候Activity启动是以singleTask模式启动的。
+
+standard，标准模式
+
+singleTop，栈顶的Activity复用，Activity不会重新被创建，同时它的onNewIntent方法会被回调，但是onCreate，onStart不会被调用，因为没有重新被创建
+
+singleTask，栈内复用,Activity不会重新被创建,它的onNewIntent方法会被回调,启动时，会把该Activity之上的Activity都出栈
+
+singleInstance，它是加强的singleTask，除了具有singleTask的所有特性外，具有这种模式的Activity只能单独的位于一个任务栈中
+
+4. **IntentFilter过滤**
+IntentFilter（intent-filter）过滤信息有action、category、data，这些子项可以有多个，必须要完全匹配这些子项才能启动Activity（action中匹配任意一项,category所有的都要匹配或者不设置也可匹配（默认匹配的是android。intent。category。DEFAULT）,data中匹配任意一项），intent-filter也可以有多个，但是只能匹配其中任意一项。
+
+data由mimeType和URI组成，mimeType如image/jpeg,URL格式为<scheme>://<host>:<port>/[<path>|<pathPrefix>|<pathPattern>]  http://www.baidu.com/search, 若data里面没有指定URI，则默认是content或file如Uri.parse("file://abc")或Uri.parse("content://abc")写成Uri.parse("http://abc")就会报错，Service和BroadcastReceiver同样有这种过滤方式，但是系统建议启动Service尽量显示启动
+
+5. **进程**
+
+android:process：
+
+  在配置文件里面以android:process=":name",冒号代表包名，以冒号开头的进程为私有进程，其它应用的组件不可以和它跑在同一个进程，而不以冒号开头的进程属于全局进程，其它应用可以通过ShareUID方式可以和它跑在同一个进程中，Android会为每个进程分配UID，UID相同的应用才能共享数据。两个应用通过ShareUID跑在同一个进程需要这两个应用有相同的ShareUID且签名要相同。
+
+Android给每个应用（进程）分配了一个虚拟机，不同的虚拟机在内存分配上有不同的地址空间，
+
+跨进程通信方式：Intent，文件，sharepreferenceces，广播，基于Binder的Messenger，AIDL，socket，网络
+
+6. **View移动**
+
+View移动的几种方式，scrollTo/scrollBy,动画，改变布局参数,setX/setY,改变控件位置
+
+匀速滑动，自定义view里面scroll，属性动画里面scroll，定时执行
+
+7. **事件分发机制**
+
+先给Activity，Activity再给Window，Widnow再给DecorView（setContentView所设置的View的父容器），DecorView是个FrameLayout，再由DevorView分发给子View
+
+领导A，领导B，程序员C
+领导A接收项目（dispatchOnTouchEvent），自己判断是否自己处理（onIntentceptTouchEvent），return false自己不处理，给下级处理，
+
+a.领导A接收项目（dispatchOnTouchEvent），自己判断是否自己处理（onIntentceptTouchEvent），return true自己处理，则onTouchEvent进行处理，处理的时候发现处理不来，onTouchEvent的ACTION_DOWN return false，则交回领导A处理，onTouchEvent进行处理，处理的来则onTouchEvent的ACTION_DOWN return true
+
+b。领导A接收项目（dispatchOnTouchEvent），自己判断是否自己处理（onIntentceptTouchEvent），return false自己不处理，则交回领导A处理，onTouchEvent进行处理，处理不来则onTouchEvent的ACTION_DOWN return false,此时交给老板Activity处理
+
+ViewGroup决定拦截事件后就不会再调用onIntentceptTouchEvent，最终子view处理后onTouchEvent return true，会不停调用父view dispatchOnTouchEvent->onIntentceptTouchEvent,子view dispatchOnTouchEvent->onIntentceptTouchEvent(return true的话只会调用一次，因为为false的时候就还要判断要不要拦截，所有false的时候一直执行)->onTouchEvent，最终子view不处理onTouchEvent return false，则一直执行Activity的onTouchEvent，若只有一个父view，没有子view，则dispatchOnTouchEvent->onIntentceptTouchEvent->onTouchEvent() return true)时，一直执行dispatchOnTouchEvent->onTouchEvent
+
+view消费了ACTION_DOWN后才会接到后续事件，若后续事件不消费最终会传给Activity去消费
+View的onTouchEvent默认都会消耗事件return true（click、longclick为false则为return false，如TextView），如果view不消除ACTION_DOWN以外的事件，则这个点击事件会消失，不会给父类处理，消失的事件直接交给Activity处理，但该View可以持续收到后续事件。若DOWN返回false，同一事件序列中其接下来的MOVE，UP，也是接收不到的，
+
+ViewGroup里面的dispatchOnTouchEvent有以下两种情况判断是否要拦截当前事件，当ACTION_DOWN或者mFirstTouchTarget ！= null时判断事件是否拦截，当事件由ViewGroup成功处理时，mFirstTouchTarget会被赋值并指向子元素，就是交给子元素去处理，此时MOVE,UP到来拦截函数也不会再被调用，当然还有一种特殊情况，就是FLAG_DISALLOW_INTERCEPT标记位，这个标记位是通过requestDisallowInterceptTouchEvent来设置的，一般用于子View中，该标志位一旦被设定，则ViewGroup无法拦截除了ACTION_DOWN以外的其它点击事件，因为如果是ACTION_DOWN事件FLAG_DISALLOW_INTERCEPT标记位就会被重置。
 
 
+dispatchOnTouchEvent->onIntentceptTouchEvent->dispatchOnTouchEvent->onIntentceptTouchEvent->onTouchEvent(return true) 循环执行
 
+dispatchOnTouchEvent->onIntentceptTouchEvent->dispatchOnTouchEvent->onIntentceptTouchEvent->onTouchEvent(return false) 这些执行一次，循环执行Activity的onTouchEvent
 
+dispatchOnTouchEvent->onIntentceptTouchEvent->dispatchOnTouchEvent->onIntentceptTouchEvent（return true）->onTouchEvent(return true) 循环执行其中第二个onIntentceptTouchEvent只执行一次
 
+dispatchOnTouchEvent->onIntentceptTouchEvent->onTouchEvent(return true)，循环执行其中onIntentceptTouchEvent只执行一次
 
+8. **自定义view**
 
+默认wrap_content处理，padding处理，动画处理，事件处理
 
+直接继承View的控件，如果不对wrap_content处理那么久相当于使用的是match_parent，当为wrap_content模式时需要制定一个默认的宽高,绘制的时候也要处理padding，否则外部设置padding没有效果
 
-
-
-
-
-
-
-
-
-
-
+自定义属性，attr.xml里面定义属性集合，布局里使用头部要添加xmlns:app=".."，代码里可以读取到（先加载这个属性集合，在解析集合中的对应属性）
 
 
 

@@ -1,11 +1,3 @@
-<a href="" style="text-decoration: none;" target="\_blank"  title=""></a>
-[Desktop](https://desktop.github.com/ "点击前往")
-
-
-<img src="/assets/img/blog/jekyll/jekyll_github/blog_demo.png" height = "300px"/>
-![image]()
-
-
 apktool d -f D:\a.apk -o D:\out
 
 apktool b D:\out -o D:\out.apk

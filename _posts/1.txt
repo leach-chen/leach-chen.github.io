@@ -4,20 +4,3 @@
 
 <img src="/assets/img/blog/jekyll/jekyll_github/blog_demo.png" height = "300px"/>
 ![image]()
-
-
-apktool d -f D:\a.apk -o D:\out
-
-apktool b D:\out -o D:\out.apk
-
-jarsigner -verbose -keystore D:\test.jks  -signedjar D:\out_sign.apk D:\out.apk test
-
-adb install D:\out_sign.apk
-
-adb uninstall cn.dxy.idxyer
-
-adb shell am start -D -n cn.dxy.idxyer/.common.StartupActivity
-
-adb forward tcp:8700 jdwp:7697
-
-apktool d -f D:\app-release.apk -o D:\out

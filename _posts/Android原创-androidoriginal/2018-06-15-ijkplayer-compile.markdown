@@ -24,8 +24,8 @@ Ijkplayer 官方网址:<a href="https://github.com/Bilibili/ijkplayer" style="te
 9. sh compile-ffmpeg.sh clean
 10. cd ..
 11. cd ..
-12. ./init-ios.sh
-13. ./init-ios-openssl.sh
+12. ./init-android.sh
+13. ./init-android-openssl.sh
 14. cd android/contrib
 15. ./compile-openssl.sh clean
 16. ./compile-openssl.sh all //编译OpenSSL

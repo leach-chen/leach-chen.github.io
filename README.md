@@ -15,7 +15,7 @@ The main page would look like this:
 
 The post page would look like this:
 
-![Post page preview](https://github.com/artemsheludko/adam-blog/blob/master/assets/img/adam-post-example.jpg?raw=true)
+![Post page preview](https://leach-chen.github.io/other/img/articpage.png)
 
 ## Features
 

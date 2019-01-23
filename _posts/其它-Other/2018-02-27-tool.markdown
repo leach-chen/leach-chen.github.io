@@ -17,6 +17,8 @@ other: true
 
 - **LICEcap**	录制动态图片
 
+- **FSCapture**	可截取长图
+
 - **WinSCP**	windows下连接linux系统文件管理软件
 
 - **IObit Unlocker**	解锁占用文件的进程

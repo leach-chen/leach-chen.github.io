@@ -176,7 +176,7 @@ intensedebate_identifier: 1ce8d80a5f6d373a46f4ceaf3dff8859，intensedebate_ident
 **4. 添加文章访问量功能：**<br>
 在_includes目录下的head.html中添加
 
-    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 在_includes目录下的footer.html中添加如下代码，这样文章底部有了统计访问量功能
 

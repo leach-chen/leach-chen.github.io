@@ -13,7 +13,7 @@
 
 The main page would look like this:
 
-![Main page preview](https://leach-chen.github.io/other/img/mainpage.png)
+![Main page preview](https://leach-chen.github.io/other/img/homepage.png)
 
 The post page would look like this:
 

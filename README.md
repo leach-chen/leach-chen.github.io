@@ -1,9 +1,8 @@
 
+# Leach chen Blog is a minimal clear theme for Jekyll
 ![Adam Blog - Imac](https://github.com/artemsheludko/adam-blog/blob/master/assets/img/adam-blog-imac.jpg?raw=true)
 
 ## Demo
-
-# Leach chen Blog is a minimal clear theme for Jekyll
 [博客出处（转载勿更改，尊重劳动成果）](https://github.com/leach-chen/leach-chen.github.io/)
 
 [参考来源](https://github.com/artemsheludko/adam-blog)

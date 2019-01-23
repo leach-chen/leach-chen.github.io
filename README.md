@@ -3,9 +3,11 @@
 ![Leach Chen Blog - Imac](https://github.com/artemsheludko/adam-blog/blob/master/assets/img/adam-blog-imac.jpg?raw=true)
 
 ## Demo
-[博客出处（转载勿更改，尊重劳动成果）](https://github.com/leach-chen/leach-chen.github.io/)
+[网站出处（转载勿更改，尊重劳动成果）](https://github.com/leach-chen/leach-chen.github.io/)
 
-[参考来源](https://github.com/artemsheludko/adam-blog)
+[网站参考来源](https://github.com/artemsheludko/adam-blog)
+
+[网站搭建教程](https://leach-chen.github.io/jekyll-github-blog/)
 
 [网站效果预览](https://leach-chen.github.io/)
 
@@ -15,7 +17,7 @@ The main page would look like this:
 
 The post page would look like this:
 
-![Post page preview](https://leach-chen.github.io/other/img/articpage.png)
+![Post page preview](https://leach-chen.github.io/other/img/articlepage.png)
 
 ## Features
 

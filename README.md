@@ -1,5 +1,9 @@
 # Adam Blog is a minimal clear theme for Jekyll
 
+![博客出处（勿更改，尊重劳动成果）](https://leach-chen.github.io/)
+
+![参考的博客](https://github.com/artemsheludko/adam-blog)
+
 ![Adam Blog - Imac](https://github.com/artemsheludko/adam-blog/blob/master/assets/img/adam-blog-imac.jpg?raw=true)
 
 ## Demo

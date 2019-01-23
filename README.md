@@ -7,7 +7,7 @@
 
 ## Demo
 
-Check the theme in action [Demo](https://leach-chen.github.io/)
+网站效果预览 [Demo](https://leach-chen.github.io/)
 
 The main page would look like this:
 

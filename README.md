@@ -9,7 +9,7 @@
 
 [网站搭建教程](https://leach-chen.github.io/jekyll-github-blog/)
 
-[网站效果预览](https://leach-chen.github.io/)
+[网站效果预览（点击预览）](https://leach-chen.github.io/)
 
 The main page would look like this:
 

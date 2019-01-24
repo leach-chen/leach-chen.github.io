@@ -17,7 +17,7 @@ The main page would look like this:
 
 The post page would look like this:
 
-![Post page preview](https://leach-chen.github.io/other/img/articlepage.png)
+![Post page preview](https://leach-chen.github.io/other/img/postpage.png)
 
 ## Features
 

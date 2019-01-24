@@ -9,6 +9,8 @@ author: # Add name author (optional)
 other: true
 ---
 
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 
 吉安县成达考场科目三新规标准操作方法和注意事项
 

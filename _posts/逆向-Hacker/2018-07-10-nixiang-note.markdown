@@ -9,6 +9,9 @@ author: # Add name author (optional)
 hacker: true
 ---
 
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
+
 **概念**  <br>
 ```
 反编译后生成smali格式的反编译代码，然后阅读smali文件的代码来理解程序的运行机制，找到突破口，进行修改，最后使用APKTool重新编译生成APK文件，并签名。

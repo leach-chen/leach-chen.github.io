@@ -9,6 +9,9 @@ author: # Add name author (optional)
 other: true
 ---
 
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
+
 该协议信息包括 GGA 位置测定系统的定位资料、GSV 导航卫星资料、RMC 导航卫星特定精简资料、VTG 方向及速度等相关资料。这里以接收 GGA 数据为例，给出的格式如下：<br>
 ＄GPGGA，hhmmss,dddmm.mmmm,a,dddmm.mmmm,a,x,xx,x.x,x.x,M,,M,x.x,xxxx\*CS
 

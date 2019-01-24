@@ -75,6 +75,9 @@ links:
 #2：在_includes里面headr.html中添加对应内容
 #3：在根目录blog文件中创建对应内容
 
+label1: <span style="font-size:12px">Publish by
+label2:  </span>
+
 
 links1:
   - name:         所有

@@ -8,6 +8,9 @@ tags: [Ijkplayer]
 author: # Add name author (optional)
 androidoriginal: true
 ---
+
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 Ijkplayer 官方网址:<a href="https://github.com/Bilibili/ijkplayer" style="text-decoration: none;" target="\_blank"  title="点击前往">https://github.com/Bilibili/ijkplayer</a>
 
 ## 编译 ##

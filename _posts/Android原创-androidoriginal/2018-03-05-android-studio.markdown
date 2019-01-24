@@ -8,6 +8,9 @@ tags: [Android,tools]
 author: # Add name author (optional)
 androidoriginal: true
 ---
+
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 ## **配置** ##
 
 **1. 修改项目module名称**<br>

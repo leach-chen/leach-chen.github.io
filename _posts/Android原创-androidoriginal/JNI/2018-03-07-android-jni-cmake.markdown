@@ -8,4 +8,7 @@ tags: [Android,JNI]
 author: # Add name author (optional)
 androidoriginal: true
 ---
+
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 敬请期待............

@@ -8,6 +8,9 @@ tags: [jmeter]
 author: # Add name author (optional)
 abouttest: true
 ---
+
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 JMeter是Apache组织开发的基于Java的压力测试工具,下面主要记录下jmeter的安装过程及安装过程中遇到的问题。<br><br>
 
 **安装过程**<br><br>

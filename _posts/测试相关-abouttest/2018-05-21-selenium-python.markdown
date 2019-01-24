@@ -9,6 +9,9 @@ author: # Add name author (optional)
 abouttest: true
 ---
 
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
+
 ## 概念 ##
 Selenium主要是用来做自动化测试，支持多种浏览器
 

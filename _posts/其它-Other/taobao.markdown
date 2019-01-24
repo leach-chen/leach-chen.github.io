@@ -8,6 +8,9 @@ tags: [微信群]
 author: # Add name author (optional)
 other: true
 ---
+
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 ## 淘宝天猫优惠券微信群##
 
 欢迎加入淘宝天猫优惠券微信群,群里定期推出淘宝天猫有较给力的优惠券的商品，也可向群主要你想要的有优惠券的商品。优惠券直接在购买页面领取不到，若直接在商品界面领取店铺优惠券，需要满多少钱才可使用哦

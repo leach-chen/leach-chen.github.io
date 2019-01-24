@@ -8,6 +8,9 @@ tags: [Android]
 author: # Add name author (optional)
 androidoriginal: true
 ---
+
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 1. **Activity生命周期**
 
  onCreate(Activity正在被创建，此时可以做些初始化工作，如加载布局，初始化数据)

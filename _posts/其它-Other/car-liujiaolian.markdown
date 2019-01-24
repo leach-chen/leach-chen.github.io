@@ -8,6 +8,9 @@ tags: [Other]
 author: # Add name author (optional)
 other: true
 ---
+
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 成达科三注意事项和先后顺序流程表 <br>
 **1，** 起步 <br>
 **2，** 通过公共汽车站(不会报指令，接近站台点刹完成) <br>

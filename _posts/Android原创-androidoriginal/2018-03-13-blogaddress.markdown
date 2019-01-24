@@ -8,6 +8,9 @@ tags: [Android,Blog]
 author: # Add name author (optional)
 androidoriginal: true
 ---
+
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 优秀Blog网址，持续更新..........
 
 **郭林**<br>

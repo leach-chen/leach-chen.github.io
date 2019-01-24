@@ -8,6 +8,9 @@ tags: [逆向]
 author: # Add name author (optional)
 hacker: true
 ---
+
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 动态调试Smali有多种方式，可以用IDA Pro，Eclipse或者Android Studio等，IDA Pro折腾了下没弄好，于是就折腾Android Studio，因为主要用android studio开发，用起来比较顺手，下面记录下Android Studio的动态调试Smali的主要过程。
 
 **1.APK 反汇编及回编**

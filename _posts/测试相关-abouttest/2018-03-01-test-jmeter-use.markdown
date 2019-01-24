@@ -8,6 +8,9 @@ tags: [测试,jmeter]
 author: # Add name author (optional)
 abouttest: true
 ---
+
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 下面将记录下jmeter调用https方式的**登录接口**依赖**授权接口**返回值的调用过程
 
 **1.添加线程组**

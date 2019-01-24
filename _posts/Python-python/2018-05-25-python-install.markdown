@@ -9,6 +9,8 @@ author: # Add name author (optional)
 python: true
 ---
 
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 ## Python下载配置 ##
 
 **python**, 下载地址：https://www.python.org/， 下载2.X 的版本(Windows x86-64 MSI installer),假设安装至D盘，D:\Software\Python27,配置环境变量： <br>

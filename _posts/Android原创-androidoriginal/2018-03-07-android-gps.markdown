@@ -9,6 +9,8 @@ author: # Add name author (optional)
 androidoriginal: true
 ---
 
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 在做轨迹相关功能时经常需要GPS解析，从GPS文件中我们可以提取出经纬度信息，速度，方向，时间等信息。<br>
 GPS格式可阅读[这篇博客](https://leach-chen.github.io/GPS-file/ "点击前往")。
 把GPS文件中的经纬度信息提取出来，我们就可以在地图上绘制轨迹信息了。这里有个GPS格式文件的[解析库](https://github.com/eantoranz/gps-parser "点击前往")，可解析出**经纬度，速度，方向，时间**等信息，具体用法可以在看文章底部提供的源码。

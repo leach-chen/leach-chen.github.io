@@ -8,6 +8,9 @@ tags: [Android]
 author: # Add name author (optional)
 androidoriginal: true
 ---
+
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 最近项目里需要做国外的第三方分享，登入，之前项目好好的，库都能加载下来，用的是如下配置。
 ```
 repositories {

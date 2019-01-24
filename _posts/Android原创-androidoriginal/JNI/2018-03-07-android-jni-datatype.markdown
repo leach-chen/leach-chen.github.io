@@ -8,6 +8,9 @@ tags: [Android,JNI]
 author: # Add name author (optional)
 androidoriginal: true
 ---
+
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 本节主要介绍下JNI的**函数命名及参数说明，数据类型对应关系，描述符及对JNI的理解**。
 
 JNI Java Native Interface（Java本地接口）。做JAVA或者Android的朋友可能会接触到JNI的开发，特别是涉及到音视频、与硬件设备有交互的时候、封装一些复杂逻辑或者算法、上层处理性能跟不上等情况下。JNI开发偏底层开发，编译出来的库的后缀为.so，它也更安全更难破解。JNI开发需要懂C/C++，可基于Android Studio、Eclipse，VS等开发工具进行开发，一般由C/C++开发者进行开发并且支持Android，IOS平台。若你又精通Android上层开发，又精通JNI底层开发,那你的级别又将上升一个档次。

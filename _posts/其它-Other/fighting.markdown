@@ -9,6 +9,8 @@ author: # Add name author (optional)
 other: true
 ---
 
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 
 1. 接单：
 做个自己的网站，我们去各大平台推广，引流，等别人找我们

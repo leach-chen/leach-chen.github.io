@@ -9,6 +9,8 @@ author: # Add name author (optional)
 hacker: true
 ---
 
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 **主要摘记Smali相关语法**  <br>
 
 分两篇博客来记录，第一篇是比较全面的介绍，第二篇主要记录与smali操作相关的指令

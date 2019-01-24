@@ -9,6 +9,8 @@ author: # Add name author (optional)
 python: true
 ---
 
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 ## 数据库操作 ##
 ```
 #!/usr/bin/python

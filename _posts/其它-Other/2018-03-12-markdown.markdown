@@ -8,6 +8,9 @@ tags: [Markdown]
 author: # Add name author (optional)
 other: true
 ---
+
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 主要记录在用markdown写博客时用到的语法，持续更新...
 
 ### **1. <a href="https://www.zhihu.com/question/30425128" style="text-decoration: none;" target="\_blank"  title="点击前往">引用代码不被解析,标记为代码段</a>** ###

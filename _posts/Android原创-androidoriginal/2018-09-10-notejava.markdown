@@ -9,6 +9,8 @@ author: # Add name author (optional)
 androidoriginal: true
 ---
 
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 ## Java内存分配 ##
 
 静态变量方法加载时机，参数传递，局部变量成员变量存放在堆还是栈，内存区域。。。待完善

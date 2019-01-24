@@ -9,6 +9,9 @@ author: # Add name author (optional)
 hacker: true
 ---
 
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
+
 **主要记录预防破解的一些思路**  <br>
 
 持续更新...

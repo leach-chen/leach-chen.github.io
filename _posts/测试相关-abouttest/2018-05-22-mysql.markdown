@@ -9,6 +9,9 @@ author: # Add name author (optional)
 abouttest: true
 ---
 
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
+
 ## MySql安装 ##
 **1.下载** <br>
 <a href="http://www.jb51.net/article/89224.htm" style="text-decoration: none;" target="\_blank"  title="">MySql下载地址</a>：https://dev.mysql.com/downloads/mysql/ 选择 Windows (x86, 64-bit), ZIP Archive  (mysql-5.7.22-winx64.zip)版本进行下载 <br>

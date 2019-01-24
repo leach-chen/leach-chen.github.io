@@ -9,6 +9,9 @@ author: # Add name author (optional)
 hacker: true
 ---
 
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
+
 在吾爱破解里，看到<a href="https://www.52pojie.cn/forum.php?mod=viewthread&tid=745128&fromguid=hot&extra=&mobile=2" style="text-decoration: none;" target="\_blank"  title="">一个帖子</a>写了某兔子游戏破解，于是自己也实战了一下，成功操作，下面记录下破解过程，我破解的时候用的是1.0.1版本的APK，不保证后期版本会对这块进行修改。
 
 1.**dex转成jar**

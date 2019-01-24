@@ -9,6 +9,9 @@ author: # Add name author (optional)
 hacker: true
 ---
 
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
+
 主要记录常用的一些adb shell 命令，持续更新...
 
 1. **显示当前任务栈中的Activity**
@@ -19,4 +22,4 @@ adb shell dumpsys activity
 
 adb shell ps | grep 包名
 
-3. 
+3.

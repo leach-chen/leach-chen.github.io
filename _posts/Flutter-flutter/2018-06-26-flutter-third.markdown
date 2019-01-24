@@ -8,6 +8,9 @@ tags: [Flutter]
 author: # Add name author (optional)
 flutter: true
 ---
+
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
 记录用Flutter开发的客户端项目,持续更新...
 
 Android Studio 导入Flutter第三方项目时，选择File->Open,找到项目打开,如果有问题，可以先在Flutter根目录运行一下命令：flutter run来完善项目环境，然后重新导入。

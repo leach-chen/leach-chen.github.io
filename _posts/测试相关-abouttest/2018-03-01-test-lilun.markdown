@@ -9,6 +9,9 @@ author: # Add name author (optional)
 abouttest: true
 ---
 
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
+
 测试用例主要从**功能，性能，稳定性，UI，兼容性，场景**去考虑
 
 **编写测试用例的常用方法：**

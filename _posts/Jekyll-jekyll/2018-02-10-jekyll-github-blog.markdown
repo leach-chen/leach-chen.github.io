@@ -143,7 +143,7 @@ jekyll是将分散在各个目录下的html文件拼接起来运行。<br>
 
 1. **yml文件中permalink: ':categories/:title/'  文章中categories : jekyll**访问路径
 
-1. **{% if page.url contains 'essays' %}**<a href="http://ju.outofmemory.cn/entry/149459" style="text-decoration: none;" target="_blank"  title="点击前往">判断是否包含字符串</a>
+1. **% if page.url contains 'essays' %**<a href="http://ju.outofmemory.cn/entry/149459" style="text-decoration: none;" target="_blank"  title="点击前往">判断是否包含字符串</a>
 
 
 

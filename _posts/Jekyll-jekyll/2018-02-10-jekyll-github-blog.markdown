@@ -141,6 +141,9 @@ jekyll是将分散在各个目录下的html文件拼接起来运行。<br>
 
 1. **\{\{** post.url | prepend: site.baseurl **\}\}**要访问的文章的url
 
+1. **yml文件中permalink: ':categories/:title/'  文章中categories : jekyll**访问路径
+
+
 
 ## **第六步 修改博客模板**<br> ##
 

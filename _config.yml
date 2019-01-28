@@ -3,7 +3,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-permalink: ':title/'
+permalink: ':categories/:title/'
 #baseurl: "/adam-blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -79,53 +79,56 @@ label1: <span style="font-size:12px">Publish by
 label2:  </span>
 
 
+
+
+categories1: blog    #第一个分类,文章里面的分类要对应上则取值要与该值对应,type和blog_的值对应
 links1:
   - name:         所有
-    url:          /
+    url:          /category/blog
     type:         recent
     external:     false
   - name:         随笔
-    url:          /blog/essays
+    url:          /category/blog/essays
     type:         essays
     external:     false
   - name:         Jekyll
-    url:          /blog/jekyll
+    url:          /category/blog/jekyll
     type:         jekyll
     external:     false
   - name:         Android
-    url:          /blog/android
+    url:          /category/blog/android
     type:         androidoriginal
     external:     false
   - name:         逆向笔记
-    url:          /blog/hacker
+    url:          /category/blog/hacker
     type:         hacker
     external:     false
   - name:         Flutter
-    url:          /blog/flutter
+    url:          /category/blog/flutter
     type:         flutter
     external:     false
   - name:         FFmpeg
-    url:          /blog/ffmpeg
+    url:          /category/blog/ffmpeg
     type:         ffmpeg
     external:     false
   - name:         OpenGL
-    url:          /blog/opengl
+    url:          /category/blog/opengl
     type:         opengl
     external:     false
   - name:         Python
-    url:          /blog/python
+    url:          /category/blog/python
     type:         python
     external:     false
   - name:         测试相关
-    url:          /blog/abouttest
+    url:          /category/blog/abouttest
     type:         abouttest
     external:     false
   - name:         股票
-    url:          /blog/stock
+    url:          /category/blog/stock
     type:         stock
     external:     false
   - name:         其它
-    url:          /blog/other
+    url:          /category/blog/other
     type:         other
     external:     false
 blog_1:    recent
@@ -144,6 +147,21 @@ blog_13:
 blog_14:
 blog_15:
 blog_16:
+
+
+categories2:  github    #第二个分类
+githublink:
+  - name:         所有
+    url:           /category/github
+    type:         recent
+    external:     false
+  - name:         Android
+    url:           /category/github/android
+    type:         android
+    external:     false
+github_1:    recent
+github_2:    android
+
 
 
 #permalink: /:year/:month/:day/:title.html

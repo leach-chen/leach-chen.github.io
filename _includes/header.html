@@ -8,11 +8,15 @@
         <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
         <!--<ul style="height:800px;overflow-y:scroll;overflow-y:auto;"> -->
         <ul>
+    {% if page.url contains site.categories1 %}
+
 		 {% for link in site.links1 %}
 			 {% assign count = 0 %}
 			 {% if link.type == site.blog_1 %}
 				 {% for post in site.posts %}
-				   {% assign count = count | plus: 1 %}
+           {% if post.category == site.categories1 %}
+				       {% assign count = count | plus: 1 %}
+           {% endif %}
 				 {% endfor %}
 			 {% endif %}
 
@@ -103,10 +107,42 @@
            {% endif %}
          {% endfor %}
        {% endif %}
-       
+
 			 <li><a  href="{{ link.url }}"  data-hover="{{link.name}}">{{ link.name }}({{count}})</a></li>
 		 {% endfor %}
           <!--<li style="margin-bottom:200px;"><a href="{{site.baseurl}}/about">About({{count}})</a></li>-->
+
+    {% endif %}
+
+
+    {% if page.url contains site.categories2 %}
+
+     {% for link in site.githublink %}
+       {% assign count = 0 %}
+       {% if link.type == site.github_1 %}
+
+         {% for post in site.posts %}
+
+            {% if post.category == site.categories2 %}
+
+              {% assign count = count | plus: 1 %}
+            {% endif %}
+         {% endfor %}
+       {% endif %}
+
+       {% if link.type == site.github_2 %}
+         {% for post in site.posts %}
+           {% if post.githubandroid%}
+            {% assign count = count | plus: 1 %}
+           {% endif %}
+         {% endfor %}
+       {% endif %}
+
+        <li><a  href="{{ link.url }}"  data-hover="{{link.name}}">{{ link.name }}({{count}})</a></li>
+       {% endfor %}
+
+      {% endif %}
+
         </ul>
       </nav>
       <p class="logo"><a href="{{site.baseurl}}/">{{ site.author }}</a></p>

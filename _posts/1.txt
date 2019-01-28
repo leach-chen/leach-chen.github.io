@@ -4,3 +4,11 @@
 
 <img src="/assets/img/blog/jekyll/jekyll_github/blog_demo.png" height = "300px"/>
 ![image]()
+
+该目录下文件名为categories 文章里的分类名称，可以不和文章里的categories 值命名一致
+
+
+添加网站类别分类：
+1：在yml里面添加一组categories（该值与文章中定义的category值相同）githublink、github_1（这两个值同以前添加文章分组方式）
+2：在category目录下添加一组categories，命名与yml里面githublink定义的路径对应
+3：在header.html中添加组判断

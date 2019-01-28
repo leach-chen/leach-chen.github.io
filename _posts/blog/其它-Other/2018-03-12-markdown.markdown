@@ -1,0 +1,147 @@
+---
+layout: post
+title: Markdown语法摘记
+date:  2018-03-12 12:00:00 +0900  
+description: Markdown语法摘记
+img: post-1.jpg # Add image post (optional)
+tags: [Markdown]
+author: # Add name author (optional)
+other: true
+category: blog
+---
+
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
+主要记录在用markdown写博客时用到的语法，持续更新...
+
+### **1. <a href="https://www.zhihu.com/question/30425128" style="text-decoration: none;" target="\_blank"  title="点击前往">引用代码不被解析,标记为代码段</a>** ###
+键盘左上角那个不常用的\`，按三下加语言，即\`\`\`html，写完代码再 \`\`\`裹起来，就可以实现代码着色。
+
+### **2. 标题大小** ###
+```
+# 标题1 #             相当于<h1>标题1</h1>
+## 标题2 ##           相当于<h2>标题2</h2>
+### 标题3 ###         相当于<h3>标题3</h3>
+#### 标题4 ####       相当于<h4>标题4</h4>
+##### 标题5 #####     相当于<h5>标题5</h5>
+```
+# 标题1 #
+## 标题2 ##
+### 标题3 ###
+#### 标题4 ####
+##### 标题5 #####
+
+### **3. 链接** ###
+```
+[测试链接](https://leach-chen.github.io/ "点击前往")     相当于
+<a href="https://leach-chen.github.io/" style="text-decoration: none;" target="_blank"  title="点击前往">测试链接</a>
+```
+[测试链接](https://leach-chen.github.io/ "点击前往")
+
+### **4. 图片** ###
+```
+![](/assets/img/leach-face.jpg)        相当于
+<img src="/assets/img/leach-face.jpg" height="100%"/>
+```
+![](/assets/img/leach-face.jpg)
+
+### **5. 加粗** ###
+```
+**加粗**
+```
+**加粗**
+
+### **6. 有序编号** ###
+```
+1. 编号1
+1. 编号2
+注意：点后面有个空格
+```
+1. 编号1
+
+1. 编号2
+
+### **7. 点编号** ###
+```
+- 编号1
+- 编号2
+注意：-后面有个空格
+```
+- 编号1
+
+- 编号2
+
+### **8. 块标记** ###
+```
+>测试标记
+>
+>测试标记
+>
+>测试标记
+>
+>测试标记
+```
+>测试标记
+>
+>测试标记
+>
+>测试标记
+>
+>测试标记
+
+
+### **9. 分隔线** ###
+ ```
+ ---
+ ```
+<br>
+
+ ---
+
+### **10. <a href="http://blog.csdn.net/tuxingchen6/article/details/55222951" style="text-decoration: none;" target="\_blank"  title="点击前往">创建表格</a>** ###
+```
+Name | Academy | score
+- | :-: | -:      //-靠左对齐，:-:居中对齐，-:靠右对齐
+Harry Potter | Gryffindor| 90
+Hermione Granger | Gryffindor | 100
+Draco Malfoy | Slytherin | 90
+```
+
+Name | Academy | score
+- | :-: | -:
+Harry Potter | Gryffindor| 90
+Hermione Granger | Gryffindor | 100
+Draco Malfoy | Slytherin | 90
+
+<br>
+
+```
+| Name | Academy | score |
+| - | :-: | -: |
+| Harry Potter | Gryffindor| 90 |
+| Hermione Granger | Gryffindor | 100 |
+| Draco Malfoy | Slytherin | 90 |
+```
+
+| Name | Academy | score |
+| - | :-: | -: |
+| Harry Potter | Gryffindor| 90 |
+| Hermione Granger | Gryffindor | 100 |
+| Draco Malfoy | Slytherin | 90 |
+
+<a href="http://ask.csdn.net/questions/259502" style="text-decoration: none;" target="\_blank"  title="点击前往">创建的表格没有横线？</a><br>
+
+  在css里面添加如下代码:
+  ```
+    table{
+        border-left:1px solid #000000;border-top:1px solid #000000;
+        width: 100%;
+        word-wrap:break-word; word-break:break-all;
+      }
+      table th{
+      text-align:center;
+      }
+      table th,td{
+        border-right:1px solid #000000;border-bottom:1px solid #000000;
+    }
+  ```

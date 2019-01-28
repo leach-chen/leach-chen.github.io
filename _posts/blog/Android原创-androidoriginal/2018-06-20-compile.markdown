@@ -1,0 +1,36 @@
+---
+layout: post
+title: 不翻墙轻松搞定Android Studio Google库加载不下来的问题
+date:  2018-06-20 12:02:00 +0900  
+description: 不翻墙轻松搞定Android Studio Google库加载不下来的问题
+img: post-1.jpg # Add image post (optional)
+tags: [Android]
+author: # Add name author (optional)
+androidoriginal: true
+category: blog
+---
+
+{{site.label1}} <a href="https://github.com/leach-chen/leach-chen.github.io/" target="\_blank">Leach Chen</a> {{site.label2}}
+
+最近项目里需要做国外的第三方分享，登入，之前项目好好的，库都能加载下来，用的是如下配置。
+```
+repositories {
+    jcenter()
+    maven { url 'https://dl.google.com/dl/android/maven2/' }
+    mavenLocal()
+    /*  maven {
+        url 'https://maven.google.com/'
+        name 'Google'
+    }*/
+}
+```
+突然今天使用的时候，项目报错，提示类似 **Gradle failed to resolve com.google.android.gms:play-services-auth:11.6.0** 这类错误，而且引发一连串各种问题，显示国内的一些库都加载不下来，于是各种google，百度，各种修改项目目录下的build.gradle配置，都没有效果。其实就是https://dl.google.com这个访问不到，我用的是asstrill翻墙工具，还是不行。其实我们可以给dl.google.com设置个代理，然后库都能正常加载下来了。步骤如下：
+
+1. 打开站长工具网站，<a href="http://ping.chinaz.com/dl.google.com" style="text-decoration: none;" target="\_blank"  title="点击前往">http://ping.chinaz.com/dl.google.com</a><br>
+1. 找到 ping测试，输入dl.google.com，执行ping测试
+<img src="/assets/img/blog/androidoriginal/compile/1.jpg" height = "200px"/><br>
+1. 网页往下翻，随便拿到个ip地址，如203.208.41.70
+<img src="/assets/img/blog/androidoriginal/compile/2.jpg" height = "200px"/><br>
+1. 修改host文件，windows进入C:\Windows\System32\drivers\etc，打开host文件，在文件最末尾加入203.208.41.70 dl.google.com<br>
+
+此时进入项目重新同步下，库就可以正常加载下来了

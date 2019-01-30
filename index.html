@@ -1,1 +1,44 @@
-<h1>welcome to leachchen homepage</h1>
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery炫酷水波涟漪特效插件|DEMO_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+</head>
+<body>
+	<div class="htmleaf-container">
+		<header class="htmleaf-header">
+			<h1>jQuery炫酷水波涟漪特效插件 <span>A Water ripples effect in javascript</span></h1>
+			<div class="htmleaf-links">
+				<a class="htmleaf-icon icon-htmleaf-home-outline" href="http://www.htmleaf.com/" title="jQuery之家" target="_blank"><span> jQuery之家</span></a>
+				<a class="htmleaf-icon icon-htmleaf-arrow-forward-outline" href="http://www.htmleaf.com/jQuery/Image-Effects/201505031771.html" title="返回下载页" target="_blank"><span> 返回下载页</span></a>
+			</div>
+		</header>
+		<div class="htmleaf-content bgcolor-8">
+			<img id="rplimg" src="img/rain.jpg" />
+		</div>
+		<div class="related">
+		    <h3>如果你喜欢这个插件，那么你可能也喜欢:</h3>
+		    <a href="http://www.htmleaf.com/jQuery/Image-Effects/201504121667.html">
+			  <img src="http://img.htmleaf.com/1504/201504121803.jpg" width="300" alt="基于WebGL的炫酷元素背景水波涟漪jQuery特效"/>
+			  <h3>基于WebGL的炫酷元素背景水波涟漪jQuery特效</h3>
+			</a>
+			<a href="http://www.htmleaf.com/html5/html5-canvas/201502061336.html">
+			  <img src="http://img.htmleaf.com/1502/201502061655.jpg" width="300" alt="HTML5 canvas制作逼真的下雨雨滴效果js插件"/>
+			  <h3>HTML5 canvas制作逼真的下雨雨滴效果js插件</h3>
+			</a>
+		</div>
+	</div>
+	
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/ripple.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+	    jQuery('#rplimg').waterripple({onclick: true});
+	});
+	</script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+body {
+	color: #000;
+	font-family: "Open Sans", Helvetica Neue, Sans-serif;
+}
+
+a {
+	color: #008ed6;
+	text-decoration: none;
+	-webkit-transition: all ease 0.25s;
+	transition: all ease 0.25s;
+}
+
+a:hover {
+	color: #008ed6;
+	text-decoration: none;
+}
+
+a:focus {
+	outline: 1px dotted #008ed6;
+	text-decoration: none;
+}
+
+/* HEADINGS */
+h1,
+h2 {
+	font-family: "Cabin", Helvetica Neue, Sans-serif;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 40px;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 34px;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 28px;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+h4 {
+	font-size: 18px;
+	line-height: 22px;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+h5 {
+	font-size: 14px;
+	line-height: 18px;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+
+hr {
+	height: 1px;
+	margin-bottom: 1.5em;
+	border: 0;
+	background-color: #ccc;
+}
+
+ul,
+ol {
+	margin: 0 0 1.5em 0;
+	padding-left: 20px;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	vertical-align: middle;
+}
+
+table {
+	width: 100%;
+	margin: 0 0 1.5em;
+}
+
+table,
+th,
+td {
+	border: 1px solid #eaeaea;
+}
+
+th,
+td {
+	padding: 0.4em;
+}
+
+p {
+	margin: 0 0 10px;
+	color: #666;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 0 20px;
+	margin-bottom: 1.5em;
+	padding: 15px 20px;
+	border-left: 5px solid #eee;
+	font-size: 17.5px;
+	font-weight: 300;
+	line-height: 24px;
+}
+
+blockquote p {
+	color: #313131;
+	font-weight: 300;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	overflow: auto;
+	max-width: 100%;
+	margin-bottom: 1.6em;
+	padding: 1.6em;
+	border: 1px solid #e7e7e7;
+	background: #eee;
+	background: #fafafa;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	padding: 10px 30px 10px 30px;
+	border: none;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	background-color: #00a5f9;
+	background-image: url(images/tr-btn.png);
+	background-repeat: repeat-x;
+	background-size: contain;
+	text-shadow: none;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 1.6;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	-webkit-transition: none;
+	transition: none;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	border-color: inherit;
+	background: #008ed6;
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	border-color: #aaa #bbb #bbb;
+	-webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="week"],
+input[type="month"],
+input[type="datetime-local"],
+input[type="datetime"],
+input[type="date"],
+input[type="color"],
+textarea,
+select {
+	padding: 5px;
+	border: 1px solid #dedede;
+	border-radius: 3px;
+	color: #666;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+	color: #111;
+}
+
+textarea {
+	width: 100%;
+	height: auto;
+	min-height: 150px;
+	padding: 10px;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+	line-height: normal;
+}
+
+label {
+	padding-right: 5px;
+	vertical-align: middle;
+}
+
+code {
+	padding: 2px 4px;
+	border-radius: 4px;
+	color: #c7254e;
+	background-color: #f9f2f4;
+	font-size: 90%;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}

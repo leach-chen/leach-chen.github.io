@@ -1,0 +1,1890 @@
+# Copyright (C) 2017 ThemeIsle
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Parallax One 2.1.3\n"
+"Report-Msgid-Bugs-To: https://github.com/Codeinwp/Parallax-One/issues\n"
+"POT-Creation-Date: 2017-01-12 15:31:47+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Themeisle Translate Team <friends@themeisle.com>\n"
+"Language-Team: Themeisle Translate <friends@themeisle.com>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#: class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:335 functions.php:439
+msgid "Install Plugins"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:337 functions.php:440
+#. translators: %s: plugin name.
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:339
+#. translators: %s: plugin name.
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:340 functions.php:441
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:377 functions.php:450
+#. translators: 1: plugin name(s).
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: class-tgm-plugin-activation.php:382
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: class-tgm-plugin-activation.php:387 functions.php:451
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: class-tgm-plugin-activation.php:392 functions.php:452
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:393 class-tgm-plugin-activation.php:920
+#: class-tgm-plugin-activation.php:2626 class-tgm-plugin-activation.php:3673
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:394 class-tgm-plugin-activation.php:3252
+#: functions.php:453
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:395 class-tgm-plugin-activation.php:3045
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:397
+#. translators: 1: plugin name.
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:399
+#. translators: 1: plugin name.
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:401
+#. translators: 1: dashboard link.
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:725
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:1027
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:1027 class-tgm-plugin-activation.php:1030
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:1030
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2075
+#. translators: %s: version number
+msgid "TGMPA v%s"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2366
+msgid "Required"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2369
+msgid "Recommended"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2385
+msgid "WordPress Repository"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2388
+msgid "External Source"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2391
+msgid "Pre-Packaged"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2408
+msgid "Not Installed"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2412
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2414
+msgid "Active"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2420
+msgid "Required Update not Available"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2423
+msgid "Requires Update"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2426
+msgid "Update recommended"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2485
+#. translators: 1: number of plugins.
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: class-tgm-plugin-activation.php:2489
+#. translators: 1: number of plugins.
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: class-tgm-plugin-activation.php:2493
+#. translators: 1: number of plugins.
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: class-tgm-plugin-activation.php:2583
+msgid "Installed version:"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2591
+msgid "Minimum required version:"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2603
+msgid "Available version:"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2626
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2640
+msgid "Plugin"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2641
+msgid "Source"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2642
+msgid "Type"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2646
+msgid "Version"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2647
+msgid "Status"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2696
+#. translators: %2$s: plugin name in screen reader markup
+msgid "Install %2$s"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2701
+#. translators: %2$s: plugin name in screen reader markup
+msgid "Update %2$s"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2707
+#. translators: %2$s: plugin name in screen reader markup
+msgid "Activate %2$s"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2777
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2810
+msgid "Install"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2816
+msgid "Update"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2819
+msgid "Activate"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2850
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2852
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2893
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2895
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3001
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3027
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3251
+msgid "Plugin activation failed."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3591
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3594
+#. translators: 1: plugin name, 2: error message.
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3596
+#. translators: 1: plugin name.
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation and activation process is starting. This process may take "
+"a while on some hosts, so please be patient."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3602
+#. translators: 1: plugin name.
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3602 class-tgm-plugin-activation.php:3610
+msgid "Show Details"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3602 class-tgm-plugin-activation.php:3610
+msgid "Hide Details"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3603
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3605
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3608
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3610
+#. translators: 1: plugin name.
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3611
+msgid "All installations have been completed."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3613
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: comments.php:51 comments.php:73
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:54 comments.php:76
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:55 comments.php:77
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:89
+msgid "Comments are closed."
+msgstr ""
+
+#: content-contact.php:39 content-page-no-title.php:16 content-page.php:33
+#: inc/template-tags.php:98
+msgid "Edit"
+msgstr ""
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: content-page.php:26 content-search.php:91 content-single-download.php:30
+#: content-single.php:34 content.php:99
+msgid "Pages:"
+msgstr ""
+
+#: content-search.php:53 content.php:70 inc/template-tags.php:80
+#: inc/template-tags.php:86
+#. translators: used between list items, there is a space after the comma
+msgid ", "
+msgstr ""
+
+#: content-search.php:59
+msgid "Posted in "
+msgstr ""
+
+#: content-search.php:72 content-single.php:25 content.php:80
+msgid "No comments"
+msgstr ""
+
+#: content-search.php:72 content-single.php:25 content.php:80
+msgid "One comment"
+msgstr ""
+
+#: content-search.php:72 content-single.php:25 content.php:80
+msgid "% comments"
+msgstr ""
+
+#: content.php:9
+msgid "Blog post: %s"
+msgstr ""
+
+#: content.php:50
+msgid "Rating"
+msgstr ""
+
+#: content.php:92
+msgid "Read more %s ..."
+msgstr ""
+
+#: content.php:92
+msgid "about "
+msgstr ""
+
+#: footer.php:14
+msgid "Widgets Area 1"
+msgstr ""
+
+#: footer.php:22
+msgid "Widgets Area 2"
+msgstr ""
+
+#: footer.php:30
+msgid "Widgets Area 3"
+msgstr ""
+
+#: footer.php:38
+msgid "Widgets Area 4"
+msgstr ""
+
+#: footer.php:58 footer.php:59
+msgid "Secondary Menu"
+msgstr ""
+
+#: footer.php:128
+msgid "powered by "
+msgstr ""
+
+#: footer.php:128
+msgid "WordPress"
+msgstr ""
+
+#: functions.php:45 header.php:144
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:46
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:144
+msgid "Parallax One Team Member"
+msgstr ""
+
+#: functions.php:145
+msgid "Parallax One Services"
+msgstr ""
+
+#: functions.php:146
+msgid "Parallax One Testimonials"
+msgstr ""
+
+#: functions.php:160
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:172
+msgid "Footer area %d"
+msgstr ""
+
+#: functions.php:279
+msgid "expand child menu"
+msgstr ""
+
+#: functions.php:280
+msgid "collapse child menu"
+msgstr ""
+
+#: functions.php:438
+msgid "Install Recommended Plugins"
+msgstr ""
+
+#: functions.php:442
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:443
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:444
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:445
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:446
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:447
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:448
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:449
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:454
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: functions.php:691
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: functions.php:695
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the "
+"links below or a search?"
+msgstr ""
+
+#: header.php:30
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:89
+msgid "Toggle Menu"
+msgstr ""
+
+#: header.php:90
+msgid "Toggle navigation"
+msgstr ""
+
+#: inc/admin/class-remote-notification-client.php:193
+msgid "The server response was invalid (code %s)"
+msgstr ""
+
+#: inc/admin/class-remote-notification-client.php:199
+msgid "The server response is empty"
+msgstr ""
+
+#: inc/admin/class-remote-notification-client.php:205
+msgid "Cannot decode the response content"
+msgstr ""
+
+#: inc/admin/class-remote-notification-client.php:441
+msgid "Dismiss notification"
+msgstr ""
+
+#: inc/admin/class-remote-notification-client.php:443
+msgid "Dismiss"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:21 inc/customizer.php:287
+msgid "Parallax effect"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:22
+msgid "Smooth, catchy and easy scrolling experience."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:29
+msgid "Default frontpage sections"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:30
+msgid ""
+"Header, Services, About, Team, Testimonial, Ribbon, Latest news and Contact "
+"sections are available on frontpage."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:37
+msgid "Mobile friendly"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:38
+msgid "Responsive layout. Works on every device."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:45
+msgid "Unlimited color option"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:46
+msgid "You can change the colors of each section. You have unlimited options."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:53
+msgid "Shop section"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:54
+msgid "Ready for e-commerce. You can build an online store here."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:61 inc/customizer.php:940
+msgid "Portfolio section"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:62
+msgid "Showcase your best projects in the portfolio section."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:69
+msgid "Shortcodes section"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:70
+msgid "Easily use shortcodes to integrate the plugins you need."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:77
+msgid "Features ribbon section"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:78
+msgid "Put your best skills in the spotlight in the features ribbon section."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:85
+msgid "Sections order/ Hiding sections"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:86
+msgid "Arrange the sections by your priorities."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:93
+msgid "Change the layout of the header"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:94
+msgid "Select the best looking layout for your site's top header."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:101
+#: inc/class/parallax-one-info.php:45
+msgid "Support"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:102
+msgid "You will benefit of our full support for any issues you have with the theme."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/free_pro.php:109
+msgid "Get Parallax One Plus now!"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:18
+msgid "Welcome to %1$s!"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:26
+msgid ""
+"Our most elegant and professional one-page theme, which turns your "
+"scrolling into a smooth and pleasant experience."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:27
+msgid ""
+"We want to make sure you have the best experience using Parallax One and "
+"that is why we gathered here all the necessary informations for you. We "
+"hope you will enjoy using Parallax One, as much as we enjoy creating great "
+"products."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:35
+#: inc/admin/welcome-screen/welcome-screen.php:81
+msgid "Getting started"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:37
+msgid "Customize everything in a single place."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:38
+msgid ""
+"Using the WordPress Customizer you can easily customize every aspect of the "
+"theme."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:39
+msgid "Go to Customizer"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:47
+msgid "FAQ"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:57
+msgid "Create a child theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:58
+msgid ""
+"If you want to make changes to the theme's files, those changes are likely "
+"to be overwritten when you next update the theme. In order to prevent that "
+"from happening, you need to create a child theme. For this, please follow "
+"the documentation below."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:59
+#: inc/admin/welcome-screen/sections/getting-started.php:65
+#: inc/admin/welcome-screen/sections/getting-started.php:71
+#: inc/admin/welcome-screen/sections/getting-started.php:77
+#: inc/admin/welcome-screen/sections/getting-started.php:83
+#: inc/admin/welcome-screen/sections/getting-started.php:92
+#: inc/admin/welcome-screen/sections/getting-started.php:98
+#: inc/admin/welcome-screen/sections/getting-started.php:104
+#: inc/admin/welcome-screen/sections/getting-started.php:110
+msgid "View how to do this"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:63
+msgid "How to Internationalize Your Website"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:64
+msgid ""
+"Although English is the most used language on the internet, you should "
+"consider all your web users as well. Find out what it takes to make your "
+"website ready for foreign markets from this document."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:69
+msgid "Change dimensions for footer social icons"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:70
+msgid ""
+"In the below documentation you will find an easy way to change the default "
+"dimensions for you social icons."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:75
+msgid "Change customizer in a child theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:76
+msgid ""
+"If you want to add or remove customizer controls, check out our "
+"documentation to find out how."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:81
+msgid "Build a landing page with a drag-and-drop content builder"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:82
+msgid ""
+"In the below documentation you will find an easy way to build a great "
+"looking landing page using a drag-and-drop content builder plugin."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:90
+msgid "Speed up your site"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:91
+msgid ""
+"If you find yourself in the situation where everything on your site is "
+"running very slow, you might consider having a look at the below "
+"documentation where you will find the most common issues causing this and "
+"possible solutions for each of the issues."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:96
+msgid "Link Menu to sections"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:97
+msgid ""
+"Linking the frontpage sections with the top menu is very simple, all you "
+"need to do is assign section anchors to the menu. In the below "
+"documentation you will find a nice tutorial about this."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:102
+msgid "Change anchors"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:103
+msgid ""
+"To better suit your site's needs, you can change each section's anchor to "
+"what you want. The entire process is described below."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:108
+msgid "Slider in big title section"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:109
+msgid ""
+"If you are in the position where you want to change the default appearance "
+"of the big title section, you may want to replace it with a nice looking "
+"slider. This can be accomplished by following the documention below."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:120
+msgid "View full documentation"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:121
+msgid ""
+"Need more details? Please check our full documentation for detailed "
+"information on how to use Parallax One."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:122
+msgid "Read full documentation"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:129
+msgid "Recommended plugins"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:135
+msgid "Intergeo Maps - Google Maps Plugin"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:136
+msgid ""
+"The Intergeo Google Maps plugin is a simple, easy and in the same time "
+"quite powerful tool for handling Google Maps in your website. The plugin "
+"allows users to create new maps by using powerful UI builder."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:140
+#: inc/admin/welcome-screen/sections/getting-started.php:161
+#: inc/admin/welcome-screen/sections/getting-started.php:184
+#: inc/admin/welcome-screen/sections/getting-started.php:209
+#: inc/admin/welcome-screen/sections/getting-started.php:230
+#: inc/admin/welcome-screen/sections/getting-started.php:252
+msgid "Already activated"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:146
+msgid "Install Intergeo Maps"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:157
+msgid "Adblock Notify by b*web"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:167
+msgid "Install Adblock Notify"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:179
+msgid "Page Builder by SiteOrigin"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:180
+msgid ""
+"Build responsive page layouts using the widgets you know and love using "
+"this simple drag and drop page builder."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:190
+msgid "Install Page Builder by SiteOrigin"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:204
+msgid "Pirate Forms"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:205
+msgid ""
+"Makes your contact page more engaging by creating a good-looking contact "
+"form on your website. The interaction with your visitors was never easier."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:215
+msgid "Install Pirate Forms"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:226
+msgid "FEEDZY RSS Feeds"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:236
+msgid "Install FEEDZY RSS Feeds"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:247
+msgid "Easy Content Types"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:248
+msgid "Custom Post Types, Taxonomies and Metaboxes in Minutes"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/getting-started.php:258
+msgid "Download Easy Content Types"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/github.php:9
+msgid "Can I Contribute?"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/github.php:11
+msgid "Found a bug?"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/github.php:12
+msgid "Want to contribute with a fix or create a new feature?"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/github.php:13
+msgid "GitHub is the place to go!"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/github.php:16
+msgid "Parallax One on GitHub"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/github.php:21
+msgid "Do you have some suggestions for us?"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/github.php:22
+msgid "Your opinion matter!"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/github.php:25
+msgid "Tell us your thoughts"
+msgstr ""
+
+#: inc/admin/welcome-screen/welcome-screen.php:53
+msgid ""
+"Welcome! Thank you for choosing Parallax One! To fully take advantage of "
+"the best our theme can offer please make sure you visit our %swelcome "
+"page%s."
+msgstr ""
+
+#: inc/admin/welcome-screen/welcome-screen.php:54
+msgid "Get started with Parallax One"
+msgstr ""
+
+#: inc/admin/welcome-screen/welcome-screen.php:82
+msgid "Contribute"
+msgstr ""
+
+#: inc/admin/welcome-screen/welcome-screen.php:83
+msgid "Changelog"
+msgstr ""
+
+#: inc/admin/welcome-screen/welcome-screen.php:84
+msgid "Free VS PRO"
+msgstr ""
+
+#: inc/class/parallax-one-general-control.php:153
+msgid "Add new field"
+msgstr ""
+
+#: inc/class/parallax-one-general-control.php:182
+#: inc/class/parallax-one-general-control.php:221
+msgid "Icon"
+msgstr ""
+
+#: inc/class/parallax-one-general-control.php:202
+#: inc/class/parallax-one-general-control.php:222 inc/customizer.php:465
+msgid "Image"
+msgstr ""
+
+#: inc/class/parallax-one-general-control.php:205
+msgid "Upload Image"
+msgstr ""
+
+#: inc/class/parallax-one-general-control.php:218
+msgid "Image type"
+msgstr ""
+
+#: inc/class/parallax-one-general-control.php:223
+msgid "None"
+msgstr ""
+
+#: inc/class/parallax-one-general-control.php:256
+msgid "Social icons"
+msgstr ""
+
+#: inc/class/parallax-one-general-control.php:270
+#: inc/class/parallax-one-general-control.php:291
+#: inc/class/parallax-one-general-control.php:399
+#: inc/class/parallax-one-general-control.php:465
+msgid "Link"
+msgstr ""
+
+#: inc/class/parallax-one-general-control.php:273
+#: inc/class/parallax-one-general-control.php:302
+msgid "X"
+msgstr ""
+
+#: inc/class/parallax-one-general-control.php:278
+#: inc/class/parallax-one-general-control.php:310
+msgid "Add icon"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Parallax One"
+msgstr ""
+
+#: inc/class/parallax-one-general-control.php:377
+#: inc/class/parallax-one-general-control.php:443
+msgid "Title"
+msgstr ""
+
+#: inc/class/parallax-one-general-control.php:384
+#: inc/class/parallax-one-general-control.php:450 inc/customizer.php:211
+#: inc/customizer.php:394 inc/customizer.php:499 inc/customizer.php:567
+msgid "Subtitle"
+msgstr ""
+
+#: inc/class/parallax-one-general-control.php:391
+#: inc/class/parallax-one-general-control.php:457
+msgid "Text"
+msgstr ""
+
+#: inc/class/parallax-one-general-control.php:407
+#: inc/class/parallax-one-general-control.php:472
+msgid "Shortcode"
+msgstr ""
+
+#: inc/class/parallax-one-general-control.php:416
+#: inc/class/parallax-one-general-control.php:483
+msgid "Delete field"
+msgstr ""
+
+#: inc/class/parallax-one-info.php:41
+msgid "Documentation"
+msgstr ""
+
+#: inc/class/parallax-one-info.php:49
+msgid "View Theme Info"
+msgstr ""
+
+#: inc/customizer-info/class/class-singleton-customizer-info-section.php:78
+msgid "View PRO version"
+msgstr ""
+
+#: inc/customizer-info/class/class-singleton-customizer-info-section.php:80
+msgid "Get it"
+msgstr ""
+
+#: inc/customizer.php:24
+msgid ""
+"<span class=\"customize-control-title\">Choose the character sets you "
+"want</span>"
+msgstr ""
+
+#: inc/customizer.php:42
+msgid "Theme info"
+msgstr ""
+
+#: inc/customizer.php:62
+msgid "Appearance"
+msgstr ""
+
+#: inc/customizer.php:75
+msgid "Text color"
+msgstr ""
+
+#: inc/customizer.php:92
+msgid "Title color"
+msgstr ""
+
+#: inc/customizer.php:100
+msgid "General options"
+msgstr ""
+
+#: inc/customizer.php:102
+msgid "Parallax One theme general appearance options"
+msgstr ""
+
+#: inc/customizer.php:116 sections/parallax_one_logos_section.php:56
+#: sections/parallax_one_logos_section.php:60
+msgid "Logo"
+msgstr ""
+
+#: inc/customizer.php:131
+msgid "Header visibility"
+msgstr ""
+
+#: inc/customizer.php:132
+msgid "If this box is checked, the header will toggle on frontpage."
+msgstr ""
+
+#: inc/customizer.php:147
+msgid "Change the template to Full width for all the pages?"
+msgstr ""
+
+#: inc/customizer.php:161
+msgid "Header section"
+msgstr ""
+
+#: inc/customizer.php:168 inc/customizer.php:452
+msgid "Content"
+msgstr ""
+
+#: inc/customizer.php:183
+msgid "Header Logo"
+msgstr ""
+
+#: inc/customizer.php:192 sections/parallax_one_header_section.php:9
+msgid "Simple, Reliable and Awesome."
+msgstr ""
+
+#: inc/customizer.php:197 inc/customizer.php:379 inc/customizer.php:438
+#: inc/customizer.php:486 inc/customizer.php:554 inc/customizer.php:622
+#: inc/customizer.php:665
+msgid "Main title"
+msgstr ""
+
+#: inc/customizer.php:206 inc/customizer.php:388 inc/customizer.php:493
+#: inc/customizer.php:616 sections/parallax_one_our_services_section.php:9
+#: sections/parallax_one_our_team_section.php:9
+#: sections/parallax_one_ribbon_section.php:9
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+msgstr ""
+
+#: inc/customizer.php:220 inc/customizer.php:628
+#: sections/parallax_one_header_section.php:11
+#: sections/parallax_one_ribbon_section.php:10
+msgid "GET STARTED"
+msgstr ""
+
+#: inc/customizer.php:225 inc/customizer.php:633
+msgid "Button label"
+msgstr ""
+
+#: inc/customizer.php:231 inc/customizer.php:639
+msgid "#"
+msgstr ""
+
+#: inc/customizer.php:236 inc/customizer.php:644
+msgid "Button link"
+msgstr ""
+
+#: inc/customizer.php:245
+msgid "Logos Bar"
+msgstr ""
+
+#: inc/customizer.php:267 inc/customizer.php:787
+msgid "Add new social icon"
+msgstr ""
+
+#: inc/customizer.php:277
+msgid "Background"
+msgstr ""
+
+#: inc/customizer.php:288
+msgid "If this box is checked, the parallax effect is enabled."
+msgstr ""
+
+#: inc/customizer.php:303
+msgid "First layer"
+msgstr ""
+
+#: inc/customizer.php:317
+msgid "Second layer"
+msgstr ""
+
+#: inc/customizer.php:337
+msgid "Overlay color and transparency"
+msgstr ""
+
+#: inc/customizer.php:349
+msgid "Services section"
+msgstr ""
+
+#: inc/customizer.php:362 inc/customizer.php:540
+msgid "Use pinterest layout?"
+msgstr ""
+
+#: inc/customizer.php:363
+msgid ""
+"If this box is checked, the Services section will use pinterest-style "
+"layout."
+msgstr ""
+
+#: inc/customizer.php:374 sections/parallax_one_our_services_section.php:8
+msgid "Our Services"
+msgstr ""
+
+#: inc/customizer.php:405 inc/customizer.php:406 inc/customizer.php:407
+#: sections/parallax_one_our_services_section.php:11
+#: sections/parallax_one_our_services_section.php:12
+#: sections/parallax_one_our_services_section.php:13
+msgid "Lorem Ipsum"
+msgstr ""
+
+#: inc/customizer.php:405 inc/customizer.php:406 inc/customizer.php:407
+#: sections/parallax_one_our_services_section.php:11
+#: sections/parallax_one_our_services_section.php:12
+#: sections/parallax_one_our_services_section.php:13
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus "
+"feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel "
+"eros sit amet arcu vestibulum accumsan in in leo."
+msgstr ""
+
+#: inc/customizer.php:412
+msgid "Add new service box"
+msgstr ""
+
+#: inc/customizer.php:426
+msgid "About section"
+msgstr ""
+
+#: inc/customizer.php:433 sections/parallax_one_our_story_section.php:9
+msgid "Our Story"
+msgstr ""
+
+#: inc/customizer.php:445 sections/parallax_one_our_story_section.php:10
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim "
+"veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea "
+"commodo consequat."
+msgstr ""
+
+#: inc/customizer.php:455
+msgid "Allowed html: p,br,em,strong,a,button,ul,li"
+msgstr ""
+
+#: inc/customizer.php:474
+msgid "Team section"
+msgstr ""
+
+#: inc/customizer.php:481 sections/parallax_one_our_team_section.php:8
+msgid "Our Team"
+msgstr ""
+
+#: inc/customizer.php:508 sections/parallax_one_our_team_section.php:11
+msgid "Albert Jacobs"
+msgstr ""
+
+#: inc/customizer.php:508 sections/parallax_one_our_team_section.php:11
+msgid "Founder & CEO"
+msgstr ""
+
+#: inc/customizer.php:509 sections/parallax_one_our_team_section.php:12
+msgid "Tonya Garcia"
+msgstr ""
+
+#: inc/customizer.php:509 sections/parallax_one_our_team_section.php:12
+msgid "Account Manager"
+msgstr ""
+
+#: inc/customizer.php:510 sections/parallax_one_our_team_section.php:13
+msgid "Linda Guthrie"
+msgstr ""
+
+#: inc/customizer.php:510 sections/parallax_one_our_team_section.php:13
+msgid "Business Development"
+msgstr ""
+
+#: inc/customizer.php:514
+msgid "Add new team member"
+msgstr ""
+
+#: inc/customizer.php:527
+msgid "Testimonial section"
+msgstr ""
+
+#: inc/customizer.php:541
+msgid ""
+"If this box is checked, the Testimonials section will use pinterest-style "
+"layout."
+msgstr ""
+
+#: inc/customizer.php:549 sections/parallax_one_happy_customers_section.php:8
+msgid "Happy Customers"
+msgstr ""
+
+#: inc/customizer.php:561 sections/parallax_one_happy_customers_section.php:9
+msgid "Cloud computing subscription model out of the box proactive solution."
+msgstr ""
+
+#: inc/customizer.php:577 inc/customizer.php:578 inc/customizer.php:579
+#: sections/parallax_one_happy_customers_section.php:11
+#: sections/parallax_one_happy_customers_section.php:12
+#: sections/parallax_one_happy_customers_section.php:13
+msgid "Happy Customer"
+msgstr ""
+
+#: inc/customizer.php:577 inc/customizer.php:578 inc/customizer.php:579
+#: sections/parallax_one_happy_customers_section.php:11
+#: sections/parallax_one_happy_customers_section.php:12
+#: sections/parallax_one_happy_customers_section.php:13
+msgid "Lorem ipsum"
+msgstr ""
+
+#: inc/customizer.php:577 inc/customizer.php:578 inc/customizer.php:579
+#: sections/parallax_one_happy_customers_section.php:11
+#: sections/parallax_one_happy_customers_section.php:12
+#: sections/parallax_one_happy_customers_section.php:13
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus "
+"feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel "
+"eros sit amet arcu vestibulum accumsan in in leo. Fusce malesuada vulputate "
+"faucibus. Integer in hendrerit nisi. Praesent a hendrerit urna. In non "
+"imperdiet elit, sed molestie odio. Fusce ac metus non purus sollicitudin "
+"laoreet."
+msgstr ""
+
+#: inc/customizer.php:584
+msgid "Add new testimonial"
+msgstr ""
+
+#: inc/customizer.php:598
+msgid "Ribbon section"
+msgstr ""
+
+#: inc/customizer.php:610
+msgid "Ribbon Background"
+msgstr ""
+
+#: inc/customizer.php:654
+msgid "Latest news section"
+msgstr ""
+
+#: inc/customizer.php:660 sections/parallax_one_latest_news_section.php:20
+msgid "Latest news"
+msgstr ""
+
+#: inc/customizer.php:675
+msgid "Contact section"
+msgstr ""
+
+#: inc/customizer.php:691
+msgid "Add new contact field"
+msgstr ""
+
+#: inc/customizer.php:706 inc/customizer.php:739
+msgid "Map shortcode"
+msgstr ""
+
+#: inc/customizer.php:707
+msgid ""
+"To use this section please install <a "
+"href=\"https://wordpress.org/plugins/intergeo-maps/\">Intergeo Maps</a> "
+"plugin then use it to create a map and paste here the shortcode generated"
+msgstr ""
+
+#: inc/customizer.php:716
+msgid "Contact page"
+msgstr ""
+
+#: inc/customizer.php:727
+msgid "Contact form shortcode"
+msgstr ""
+
+#: inc/customizer.php:728
+msgid ""
+"Create a form, copy the shortcode generated and paste it here. We recommend "
+"<a href=\"http://themeisle.com/plugins/pirate-forms\" "
+"target=\"_blank\">Pirate Forms</a> but you can use any plugin you like."
+msgstr ""
+
+#: inc/customizer.php:740
+msgid ""
+"To use this section please install <a "
+"href=\"https://wordpress.org/plugins/intergeo-maps/\" "
+"target=\"_blank\">Intergeo Maps</a> plugin then use it to create a map and "
+"paste here the shortcode generated"
+msgstr ""
+
+#: inc/customizer.php:750
+msgid "Footer options"
+msgstr ""
+
+#: inc/customizer.php:752
+msgid ""
+"The main content of this section is customizable in: Customize -> Widgets "
+"-> Footer area. "
+msgstr ""
+
+#: inc/customizer.php:768
+msgid "Copyright"
+msgstr ""
+
+#: inc/customizer.php:801
+msgid "Advanced options"
+msgstr ""
+
+#: inc/customizer.php:803
+msgid "Parallax One theme general options"
+msgstr ""
+
+#: inc/customizer.php:854
+msgid "Disable preloader?"
+msgstr ""
+
+#: inc/customizer.php:855
+msgid "If this box is checked, the preloader will be disabled from homepage."
+msgstr ""
+
+#: inc/customizer.php:871
+msgid "Enable animations on front page?"
+msgstr ""
+
+#: inc/customizer.php:872
+msgid "If this box is checked, scroll animations will be enabled on the front page."
+msgstr ""
+
+#: inc/customizer.php:891
+msgid "Cyrillic"
+msgstr ""
+
+#: inc/customizer.php:901
+msgid "Vietnamese"
+msgstr ""
+
+#: inc/customizer.php:911
+msgid "Greek"
+msgstr ""
+
+#: inc/customizer.php:922 inc/customizer.php:932
+msgid "Sections management"
+msgstr ""
+
+#: inc/customizer.php:935
+msgid ""
+"Check out the <a "
+"href=\"http://themeisle.com/plugins/parallax-one-plus/\">PRO version</a> "
+"for full control over the frontpage SECTIONS ORDER!"
+msgstr ""
+
+#: inc/customizer.php:950
+msgid "Portfolio"
+msgstr ""
+
+#: inc/customizer.php:953
+msgid ""
+"Check out the <a "
+"href=\"http://themeisle.com/plugins/parallax-one-plus/\">PRO version</a> "
+"for full control over the NEW PORTFOLIO SECTION!"
+msgstr ""
+
+#: inc/customizer.php:958
+msgid "New Features"
+msgstr ""
+
+#: inc/customizer.php:968
+msgid "Header Layout"
+msgstr ""
+
+#: inc/customizer.php:971
+msgid ""
+"Check out the <a "
+"href=\"http://themeisle.com/plugins/parallax-one-plus/\">PRO version</a> "
+"for full control over the HEADER'S LAYOUT SECTION!"
+msgstr ""
+
+#: inc/customizer.php:981
+msgid "Color scheme"
+msgstr ""
+
+#: inc/customizer.php:984
+msgid ""
+"Check out the <a "
+"href=\"http://themeisle.com/plugins/parallax-one-plus/\">PRO version</a> "
+"for full control over the COLOR SCHEME!"
+msgstr ""
+
+#: inc/customizer.php:994
+msgid "Preloader"
+msgstr ""
+
+#: inc/customizer.php:997
+msgid ""
+"Check out the <a "
+"href=\"http://themeisle.com/plugins/parallax-one-plus/\">PRO version</a> "
+"for full control over the PRELOADER IMAGE!"
+msgstr ""
+
+#: inc/customizer.php:1007
+msgid "Opacity"
+msgstr ""
+
+#: inc/customizer.php:1010
+msgid ""
+"Check out the <a "
+"href=\"http://themeisle.com/plugins/parallax-one-plus/\">PRO version</a> "
+"for full control over the background opacity and color of each section!"
+msgstr ""
+
+#: inc/extras.php:52
+msgid "Page %s"
+msgstr ""
+
+#: inc/template-tags.php:26
+msgid "Older posts"
+msgstr ""
+
+#: inc/template-tags.php:30
+msgid "Newer posts"
+msgstr ""
+
+#: inc/template-tags.php:82
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:88
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:94
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:94
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:94
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:115
+msgid "Category: %s"
+msgstr ""
+
+#: inc/template-tags.php:117
+msgid "Tag: %s"
+msgstr ""
+
+#: inc/template-tags.php:119
+msgid "Author: %s"
+msgstr ""
+
+#: inc/template-tags.php:121
+msgid "Year: %s"
+msgstr ""
+
+#: inc/template-tags.php:123
+msgid "Month: %s"
+msgstr ""
+
+#: inc/template-tags.php:125
+msgid "Day: %s"
+msgstr ""
+
+#: inc/template-tags.php:147
+msgid "Archives: %s"
+msgstr ""
+
+#: inc/template-tags.php:151
+#. translators: 1: Taxonomy singular name, 2: Current taxonomy term
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: inc/template-tags.php:153
+msgid "Archives"
+msgstr ""
+
+#: search.php:29
+msgid "Search Results for: %s"
+msgstr ""
+
+#: sections/parallax_one_contact_info_section.php:21
+msgid "Contact Info"
+msgstr ""
+
+#: sections/parallax_one_happy_customers_section.php:21
+#: sections/parallax_one_happy_customers_section.php:157
+msgid "Testimonials"
+msgstr ""
+
+#: sections/parallax_one_header_section.php:92
+#: sections/parallax_one_ribbon_section.php:61
+msgid "Header button label:"
+msgstr ""
+
+#: sections/parallax_one_latest_news_section.php:24
+msgid "Latest blog posts"
+msgstr ""
+
+#: sections/parallax_one_latest_news_section.php:41
+msgid "Post slider navigation: Down"
+msgstr ""
+
+#: sections/parallax_one_latest_news_section.php:42
+msgid "Post slider navigation: Up"
+msgstr ""
+
+#: sections/parallax_one_latest_news_section.php:65
+msgid "Latest News: %s"
+msgstr ""
+
+#: sections/parallax_one_latest_news_section.php:96
+msgid "by"
+msgstr ""
+
+#: sections/parallax_one_latest_news_section.php:106
+msgid "Read more %s"
+msgstr ""
+
+#: sections/parallax_one_logos_section.php:21
+msgid " Affiliates Logos"
+msgstr ""
+
+#: sections/parallax_one_our_services_section.php:21
+#: sections/parallax_one_our_services_section.php:165
+msgid "Services"
+msgstr ""
+
+#: sections/parallax_one_our_story_section.php:16
+#: sections/parallax_one_our_story_section.php:39
+#: sections/parallax_one_our_story_section.php:98
+msgid "About"
+msgstr ""
+
+#: sections/parallax_one_our_team_section.php:19
+#: sections/parallax_one_our_team_section.php:169
+msgid "Team"
+msgstr ""
+
+#: sections/parallax_one_our_team_section.php:90
+#: sections/parallax_one_our_team_section.php:94
+msgid "Avatar"
+msgstr ""
+
+#: sections/parallax_one_ribbon_section.php:23
+#: sections/parallax_one_ribbon_section.php:28
+msgid "Ribbon"
+msgstr ""
+
+#: sidebar.php:13
+msgid "Main sidebar"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://themeisle.com/themes/parallax-one/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Parallax One is a free and elegant one page theme that can be used for web "
+"agency business,corporate business,personal and parallax business "
+"portfolio, photography sites and freelancer . It comes with a clean and "
+"beautiful design, completed by the parallax effect, which makes it run "
+"smoothly and easily. You can simply modify everything, as the theme comes "
+"with a complex and user-friendly set of customization options. Parallax One "
+"is ecommerce (WooCommerce) Compatible, WPML and SEO Friendly and is one of "
+"the best business themes."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "ThemeIsle"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://themeisle.com/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Blog"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Contact"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full width, no title (SiteOrigin Page builder Template)"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full Width"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:1214 class-tgm-plugin-activation.php:3041
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2435
+#. translators: 1: install status, 2: update status
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2481
+#. translators: 1: number of plugins.
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: class-tgm-plugin-activation.php:2575
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: comments.php:31
+#. translators: %s: post title
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#: comments.php:35
+#. translators: 1: number of comments, 2: post title
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:222
+#. Translators: If there are characters in your language that are not supported
+#. by Lora, translate this to 'off'. Do not translate into your own language.
+msgctxt "Cabin font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:229
+#. Translators: If there are characters in your language that are not supported
+#. by Open Sans, translate this to 'off'. Do not translate into your own
+#. language.
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/template-tags.php:58
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:63
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:121
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/template-tags.php:123
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: inc/template-tags.php:125
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: inc/template-tags.php:128
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr ""
+
+#: inc/template-tags.php:130
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr ""
+
+#: inc/template-tags.php:132
+msgctxt "post format archive title"
+msgid "Images"
+msgstr ""
+
+#: inc/template-tags.php:134
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr ""
+
+#: inc/template-tags.php:136
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr ""
+
+#: inc/template-tags.php:138
+msgctxt "post format archive title"
+msgid "Links"
+msgstr ""
+
+#: inc/template-tags.php:140
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr ""
+
+#: inc/template-tags.php:142
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr ""
+
+#: inc/template-tags.php:144
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr ""
+
+#: sections/parallax_one_latest_news_section.php:69
+#: sections/parallax_one_latest_news_section.php:93
+msgctxt "post time format"
+msgid "l, F j, Y, g:i a"
+msgstr ""

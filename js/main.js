@@ -62,7 +62,7 @@ jQuery(document).ready(function($) {
           $(".overlay-menu").toggleClass("open");
         });
 
-				$('.videoplay')[0].addEventListener('progress',function(){
+				$('.videoplay')[0].addEventListener('canplay',function(){
 						$('.videobk').css('display','none')
 				})
 

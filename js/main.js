@@ -64,6 +64,7 @@ jQuery(document).ready(function($) {
 
 				$('.videoplay')[0].addEventListener('loadstart',function(){
 						$('.videobk').css('display','none')
+						alert("aa")
 				})
 
 });

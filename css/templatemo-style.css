@@ -534,7 +534,7 @@ nav {
   100% {
     top: 0%;
     opacity: 1;
-  }  
+  }
 }
 
 @keyframes totop-out {
@@ -545,7 +545,7 @@ nav {
   100% {
     top: -100%;
     opacity: 0;
-  }  
+  }
 }
 
 
@@ -1182,11 +1182,11 @@ footer a:hover {
 }
 
 .archives ul li, .categories ul li {
-  margin-bottom: 12px; 
+  margin-bottom: 12px;
 }
 
 .archives ul li:last-child, .categories ul li:last-child {
-  margin-bottom: 0px; 
+  margin-bottom: 0px;
 }
 
 .archives ul li a, .categories ul li a {

@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/light-box.css">
         <link rel="stylesheet" href="css/templatemo-style.css">
 
+        <link rel="stylesheet" href="css/main.css">
         <!--<link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet"> -->
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -31,21 +32,25 @@
       </div>
     </nav>
 
-    <div id="video-container">
-        <div class="video-overlay"></div>
-        <div class="video-content">
-            <div class="inner">
-              <h1>Hope miracle appear</em></h1>
-              <p>Click Find More Fun Stuff</p>
-                <div class="scroll-icon">
-                    <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="img/scroll-icon.png" alt=""></a>
-                </div>
-            </div>
-        </div>
-        <video autoplay loop muted>
-        	<source src="highway-loop.mp4" type="video/mp4" />
-        </video>
-    </div>
+
+      <div id="video-container">
+          <div class="video-overlay"></div>
+          <div class="video-content">
+              <div class="inner">
+                <h1>Hope miracle appear</em></h1>
+                <p>Click Find More Fun Stuff</p>
+                  <div class="scroll-icon">
+                      <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="img/scroll-icon.png" alt=""></a>
+                  </div>
+              </div>
+          </div>
+          <video autoplay loop muted class="videoplay">
+          	<source src="highway-loop.mp4" type="video/mp4" />
+          </video>
+
+          <div class="videobk" id="videobk_id"></div>
+      </div>
+
 
 
     <div class="full-screen-portfolio" id="portfolio">
@@ -270,7 +275,7 @@
                       <a href="single-post.html">Single Post</a>
                   </li>
               </ul>
-    
+
           </div>
         </div>
       </div>

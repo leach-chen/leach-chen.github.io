@@ -9,3 +9,73 @@ position: absolute;
 z-index: 99998;
 display: block;
 }
+
+.showtext {
+width: 100%;
+height: 100%;
+overflow: hidden;
+background-size:100% 100%;
+position: absolute;
+z-index: 99998;
+display: block;
+padding-top: 100px;
+padding-left: 50px;
+opacity:0.5;
+}
+
+.showtext p{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  text-align: left;
+  padding: 0px 30px;
+}
+
+
+.box
+{
+  float: right;
+  margin-right: 80px;
+}
+.box ul
+{
+  margin:0 auto;
+}
+.box ul li
+{
+padding: 8px 15px;
+float: left;
+list-style: none;
+}
+
+.box ul li a
+{
+color:#fff;
+font-size:16px;
+text-decoration:none;
+line-height: 80px;
+font-weight: bold;
+}
+
+.box ul li a:hover
+{
+color:#6195FF;
+}
+
+.menu-icon
+{
+    display: none;
+}
+
+@media(max-width:650px){
+  .menu-icon
+  {
+    display: block;
+  }
+
+  .box
+  {
+    display: none;
+  }
+}

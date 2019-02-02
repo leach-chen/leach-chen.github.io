@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  		<title>Leach Chen</title>
+  		  <title>Leach Chen</title>
 
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,6 +27,21 @@
         <div class="logo">
             <a href="index.html">Leach Chen</a>
         </div>
+
+        <div class="box">
+
+          <ul>
+            <li><a href="index.html">主页</a></li>
+            <li><a href="https://leach-chen.github.io/blog">博客</a></li>
+            <li><a href="#Github">GitHub</a></li>
+            <li><a href="#services">游戏</a></li>
+            <li><a href="#portfolio">网站模板</a></li>
+            <li><a href="#team">图片</a></li>
+            <li><a href="#contact">工具</a></li>
+            <li><a href="discuss.html">留言 </a></li>
+          </ul>
+        </div>
+
         <div class="menu-icon">
         <span></span>
       </div>
@@ -49,7 +64,24 @@
           </video>
 
           <div class="videobk" id="videobk_id"></div>
-      </div>
+
+            <div class = "showtext">
+                <p id="show_text"></p>
+                <!--在这里，或许有你想要的内容。里面，有技术的博客，有GitHub上收集的优秀的Android Demo，有众多酷炫的H5网站，亦有好玩的小游戏，还有众多实用的工具，还有很多漂亮的壁纸，还有众多电源网站地址。可谓应有尽有-->
+                <p style="display:none" id="hide_text">
+                  路漫漫其修远兮,吾将上下而求索
+                </p>
+
+                <script language="javascript">
+                  var index=0;
+                  var word=document.getElementById("hide_text").innerHTML;
+                  function type(){
+                      document.getElementById("show_text").innerText = word.substring(0,index++);
+                  }
+                  setInterval(type, 200);
+                </script>
+              </div>
+          </div>
 
 
 
@@ -288,6 +320,8 @@
 
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+
 
 
 </body>

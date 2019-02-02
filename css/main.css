@@ -33,10 +33,16 @@ opacity:0.5;
 }
 
 
+
+
+
+
+
 .box
 {
   float: right;
   margin-right: 80px;
+  display: none;
 }
 .box ul
 {
@@ -63,6 +69,8 @@ font-weight: bold;
 color:#6195FF;
 }
 
+
+
 .menu-icon
 {
     display: none;
@@ -78,4 +86,72 @@ color:#6195FF;
   {
     display: none;
   }
+}
+
+
+
+
+.dropdownmenu
+{
+  float: right;
+  margin-right: 80px;
+  margin-top: 40px;
+}
+
+
+
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0;
+	padding: 0;
+}
+.dropdownmenu ul {
+	background: gray;
+	list-style: none;
+	width: 100%;
+}
+.dropdownmenu li {
+	float: left;
+	position: relative;
+	width:auto;
+}
+.dropdownmenu a {
+	color: #FFFFFF;
+	display: block;
+	font: bold 12px/20px sans-serif;
+	padding: 8px 20px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+  font-size: 16px;
+}
+.dropdownmenu li:hover a {
+	background: #8CC7B5;
+}
+#submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 1;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 40px;	/* adjust this as per top nav padding top & bottom comes */
+	visibility: visible;
+}
+#submenu li {
+	float: none;
+	width: 100%;
+}
+#submenu a:hover {
+	background: #D6D5B7;
+}
+#submenu a {
+	background-color:#1A666666;
+  font-size: 14px;
 }

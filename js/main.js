@@ -62,9 +62,8 @@ jQuery(document).ready(function($) {
           $(".overlay-menu").toggleClass("open");
         });
 
-				$('.videoplay')[0].addEventListener('loadstart',function(){
+				$('.videoplay')[0].addEventListener('progress',function(){
 						$('.videobk').css('display','none')
-						alert("aa")
 				})
 
 });

@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Android JNI—项目配置及用法 - Blog - Leach Chen</title>
+	<meta name="description" content="Android JNI—项目配置及用法">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#311e3e">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#311e3e">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#311e3e">
+	
+	
+	
+	
+	<!-- Google Fonts 1
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">-->
+	
+	
+	
+	
+	
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>  
+	
+	
+	<!--百度统计-->
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?56385150d223d3a72bebe8a0d4a94e19";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	<!--谷歌统计-->
+	<!-- Global site tag (gtag.js) - Google Analytics 
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113644888-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-113644888-1');
+	</script>-->
+
+</head>
+
+<body>
+  <div class="flex-container">
+  <header class="main-header">
+  <div class="wrapper">
+    <div class="header-flex">
+      <div class="menu-icon-container">
+        <span class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </div>
+      <nav class="main-nav">
+        <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <ul style="height:800px;overflow-y:scroll;overflow-y:auto;">
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+			 <li><a  href="/"  data-hover="所有">所有(23)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+			 <li><a  href="/blog/essays"  data-hover="随笔">随笔(1)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+			 <li><a  href="/blog/jekyll"  data-hover="Jekyll">Jekyll(1)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+			 <li><a  href="/blog/android"  data-hover="Android">Android(13)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+			 <li><a  href="/blog/abouttest"  data-hover="测试相关">测试相关(3)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+			 <li><a  href="/blog/other"  data-hover="其它">其它(5)</a></li>
+		 
+          <!--<li style="margin-bottom:200px;"><a href="/about">About(5)</a></li>-->
+        </ul>
+      </nav>
+      <p class="logo"><a href="/">Leach Chen</a></p>
+
+
+		<div class="navbar-container">
+
+		<div class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></div>
+
+			<div class="navbar-menu">
+			   
+				<a href="/"  data-hover="Home">Home</a>  <!--title="访问 Home"-->
+				<!--<a href="/">Home</a>-->
+					
+				<a href="/about"  data-hover="About">About</a>  <!--title="访问 About"-->
+				<!--<a href="/about">About</a>-->
+					
+			</div>
+
+
+			<div class="navbar-mobile-menu" onclick="">
+				<span class="icon-menu cross"><span class="middle"></span></span>
+				<ul>
+				   
+					 <li><a href="/"data-hover="Home">Home</a></li>  <!--title="访问 Home"-->
+					 <!--<li><a href="/">Home</a></li>-->
+				   
+					 <li><a href="/about"data-hover="About">About</a></li>  <!--title="访问 About"-->
+					 <!--<li><a href="/about">About</a></li>-->
+				   
+				</ul>
+			</div>
+
+
+
+		</div>
+
+    <!--  <div class="search-icon-container">
+	    <a href="/" style="text-decoration: none; color: inherit;margin-right:20px;">Home</a>
+		<a href="/about" style=" text-decoration: none; color: inherit;margin-right:20px;">About</a>
+        <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
+      </div> -->
+
+
+    </div>
+  </div>
+</header> <!-- End Header -->
+
+  <article class="article-page">
+    <div class="page-image">
+      <div class="cover-image" style="background: url(/assets/img/post-1.jpg) center no-repeat; background-size: cover;"></div>
+    </div>
+    <div class="wrapper">
+      <div class="page-content">
+        <div class="header-page">
+          <h1 class="page-title">Android JNI—项目配置及用法</h1>
+          <div class="page-date"><time datetime="2018-03-07 17:18:00 +0800">2018, Mar 07</time>
+		  <span id="busuanzi_container_page_pv"> | 访问量：<span id="busuanzi_value_page_pv"></span> 次</span>
+		  </div>
+        </div>
+        <p>主要记录下Android Studio下JNI项目搭建<strong>配置方法、C++支持方式、函数静态动态注册,打印LOG到控制台</strong>。</p>
+
+<p>Google官方JNI Demo <a href="https://github.com/googlesamples/android-ndk/tree/master/other-builds/ndkbuild" style="text-decoration: none;" target="\_blank" title="点击前往">Android.mk方式</a>,JNI Demo <a href="https://github.com/googlesamples/android-ndk" style="text-decoration: none;" target="\_blank" title="点击前往">CMakeLists.txt方式</a>,目前NDK支持Android.mk,CMakeLists.txt编译方式，CMakeLists.txt是谷歌后面推出的编译方式，也是谷歌目前推荐的编译方式。我们先以Android.mk方式讲解学习，后面再介绍CMakeLists.txt方式。</p>
+
+<h2 id="项目支持jni配置">项目支持JNI配置</h2>
+
+<p>首先我们新建一个Android 项目，命名为TestJni,默认我们创建的项目不支持JNI，我们需要进一步配置：</p>
+
+<ol>
+  <li>在项目src/main目录下新建jni文件夹;<br /></li>
+  <li>在jni目录下新建一个testjni.c的文件，再新建一个Android.mk的文件，mk文件里输入如下内容：<br />
+    <blockquote>
+      <p>LOCAL_PATH := $(call my-dir)<br />
+include $(CLEAR_VARS)<br />
+LOCAL_MODULE:= testjni<br />
+LOCAL_LDLIBS += -llog -lz -landroid<br />
+LOCAL_SRC_FILES := testjni.c<br />
+include $(BUILD_SHARED_LIBRARY)<br /></p>
+    </blockquote>
+  </li>
+  <li>在项目目录下的build.gradle，android模块里面加入：
+    <blockquote>
+      <p>externalNativeBuild {<br />
+    ndkBuild {<br />
+      path “src/main/jni/Android.mk”<br />
+    }<br />
+}<br />
+<img src="/assets/img/blog/androidoriginal/jni/jniconfig/build_config.jpg" alt="" /><br />
+这样项目便支持JNI了，如果编写jni代码时，没有代码提示，尝试选择build-&gt;Refresh Linked C++ Projects</p>
+    </blockquote>
+  </li>
+  <li>创建对应的native方法，可以用命令行方式去创建也可以直接鼠标放在native方法上按下alt+enter(eclipse快捷键方式)
+    <blockquote>
+      <p><img src="/assets/img/blog/androidoriginal/jni/jniconfig/method_create.jpg" alt="" /></p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="项目配置支持c">项目配置支持C++</h2>
+<ol>
+  <li>默认JNI支持的是C方式，JNI里面C方式代码如下：
+    <blockquote>
+      <p><img src="/assets/img/blog/androidoriginal/jni/jniconfig/c_part.jpg" alt="" /></p>
+    </blockquote>
+  </li>
+  <li>C里面有很多C++没有的函数，我们如果想JNI支持C++，那我们新建一个testjni.cpp的文件，新建一个Application.mk文件，在里面添加：<br />
+    <blockquote>
+      <p><strong>APP_STL := gnustl_static<br /></strong>
+<strong>APP_CPPFLAGS := -frtti -fexceptions</strong><br /><br />
+重新Clean Project-&gt;Rebuild Project,C++方式写法如下：
+<img src="/assets/img/blog/androidoriginal/jni/jniconfig/c_part1.jpg" alt="" /></p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="函数静态动态注册">函数静态动态注册</h2>
+
+<p><strong>静态注册方式</strong>(函数名为JAVA_包名_类名_方法名组成):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>JNIEXPORT jstring JNICALL Java_com_leachchen_testjni_MainActivity_testMethod(JNIEnv *env, jobject instance, jstring name_) {
+	const char *name = (*env)-&gt;GetStringUTFChars(env, name_, 0);
+	char buff[128] = {0};
+	sprintf(buff,"I am from C part String and get java part String:%s",name);
+	(*env)-&gt;ReleaseStringUTFChars(env, name_, name);
+
+	return (*env)-&gt;NewStringUTF(env, buff);
+}
+</code></pre></div></div>
+
+<p><strong>动态注册方式</strong>(指定包名路径，然后可以自定义函数名称与native名称映射):</p>
+
+<p>1: 指定java里面的native方法所在类的路径#define CLASS_PATH_NAME	 “com/leachchen/testjni/MainActivity”;<br />
+2: 重写JNI_OnLoad方法:<br />
+3: 在JNINativeMethod里面将java里面的native方法及jni里面的方法映射;<br />
+4: 实现java要调用的方法jstring testJniMethod(JNIEnv *env, jobject instance, jstring name_)；</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//testjni.cpp
+#include &lt;stdio.h&gt;
+#include &lt;jni.h&gt;
+#include &lt;iostream&gt;
+using namespace std;
+
+#define CLASS_PATH_NAME	 "com/leachchen/testjni/MainActivity"
+
+/**
+ * 静态注册方式
+ */
+/*extern "C" JNIEXPORT jstring JNICALL
+Java_com_leachchen_testjni_MainActivity_testMethod(JNIEnv *env, jobject instance, jstring name_) {
+	const char *name = env-&gt;GetStringUTFChars(name_, 0);
+	char buff[128] = {0};
+	sprintf(buff,"I am from C part String and get java part String:%s",name);
+	env-&gt;ReleaseStringUTFChars(name_, name);
+
+	return env-&gt;NewStringUTF(buff);
+}*/
+
+/**
+ * 动态注册方式
+ */
+jstring testJniMethod(JNIEnv *env, jobject instance, jstring name_) {
+	const char *name = env-&gt;GetStringUTFChars(name_, 0);
+	char buff[128] = {0};
+	sprintf(buff,"I am from C part String and get java part String:%s",name);
+	env-&gt;ReleaseStringUTFChars(name_, name);
+
+	return env-&gt;NewStringUTF(buff);
+}
+
+
+//注册Java端的方法以及本地相对应的方法
+JNINativeMethod method[]={
+	{
+		  "testMethod", //Java中native函数的函数名
+		  "(Ljava/lang/String;)Ljava/lang/String;", // Java中的native对应的native签名
+		  (void *)testJniMethod //native 中的方法指针
+	 }
+};
+
+//注册相应的类以及方法
+jint registerNativeMeth(JNIEnv *env){
+	jclass cl=env-&gt;FindClass(CLASS_PATH_NAME);
+	if((env-&gt;RegisterNatives(cl,method,sizeof(method)/sizeof(method[0])))&lt;0){
+		return -1;
+	}
+	return 0;
+}
+
+//实现jni_onload 动态注册方法
+jint JNI_OnLoad(JavaVM* vm, void* reserved) {
+	JNIEnv* env = NULL;
+	if (vm-&gt;GetEnv((void**) &amp;env, JNI_VERSION_1_4) != JNI_OK) {
+		return -1;
+	}
+	if(registerNativeMeth(env)!=JNI_OK){//注册方法
+		return -1;
+	}
+	return JNI_VERSION_1_4;//必须返回这个值
+}
+</code></pre></div></div>
+
+<h2 id="打印log到控制台">打印LOG到控制台</h2>
+
+<ol>
+  <li>首先在Android要加上LOCAL_LDLIBS += -llog -lz -landroid，log支持库
+    <blockquote>
+      <p><img src="/assets/img/blog/androidoriginal/jni/jniconfig/log_config.jpg" alt="" /></p>
+    </blockquote>
+  </li>
+  <li>定义如下宏定义，可定义在c,cpp或者.h头文件里
+    <blockquote>
+      <p>#include &lt;android/log.h&gt;<br />
+#define TAG “MYFFMPEG” // 这个是自定义的LOG的标识<br />
+#define LOGD(…) <strong>android_log_print(ANDROID_LOG_DEBUG,TAG ,__VA_ARGS</strong>) // 定义LOGD类型<br />
+#define LOGI(…) <strong>android_log_print(ANDROID_LOG_INFO,TAG ,__VA_ARGS</strong>) // 定义LOGI类型<br />
+#define LOGW(…) <strong>android_log_print(ANDROID_LOG_WARN,TAG ,__VA_ARGS</strong>) // 定义LOGW类型<br />
+#define LOGE(…) <strong>android_log_print(ANDROID_LOG_ERROR,TAG ,__VA_ARGS</strong>) // 定义LOGE类型<br />
+#define LOGF(…) <strong>android_log_print(ANDROID_LOG_FATAL,TAG ,__VA_ARGS</strong>) // 定义LOGF类型<br /></p>
+    </blockquote>
+  </li>
+  <li>调用方式: LOGE(“get java value:%s”,value);</li>
+</ol>
+
+<p>源码参考samples里面的TestJni</p>
+<h1><a href="https://github.com/leach-chen/TestProject/tree/master/samples/TestJni" style="text-decoration: none;" target="_blank" title="源码下载">源码下载</a>
+<h1>
+</h1></h1>
+
+        <div class="page-footer">
+          <div class="page-tag">
+            <span>Tags:</span>
+            
+            <a href="/tags#Android" class="tag">| Android</a>
+            
+            <a href="/tags#JNI" class="tag">| JNI</a>
+            
+          </div><!-- End Tags -->
+          <div class="page-share">
+            <span>Share:</span>
+            <a href="https://twitter.com/intent/tweet?text=Android JNI—项目配置及用法&url=http://localhost:4000/android-jni-config/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://facebook.com/sharer.php?u=http://localhost:4000/android-jni-config/" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://plus.google.com/share?url=http://localhost:4000/android-jni-config/" title="Share on Google+" rel="nofollow" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+						
+			<!-- JiaThis Button BEGIN -->
+			<div class="jiathis_style_32x32">
+				<a class="jiathis_button_weixin"></a>
+				<a class="jiathis_button_tsina"></a>
+				<!--<a class="jiathis_button_tqq"></a>
+				<a class="jiathis_button_qzone"></a>
+				<a class="jiathis_button_renren"></a>-->
+				<a href="http://www.jiathis.com/share?uid=2157296" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+				<a class="jiathis_counter_style"></a>
+			</div>
+			<script type="text/javascript">var jiathis_config = {data_track_clickback:'true'};</script>
+			<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2157296" charset="utf-8"></script>
+			<!-- JiaThis Button END -->
+          </div><!-- End Share -->
+		  
+		
+		  
+		  <section>
+			<!--<div style="background:#000;border-bottom: 1px solid #d9d9d9;"></div> -->
+
+            <div class="content-play">
+              <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang" title="打赏，支持一下">打赏一下呗</a></p>
+              <div class="hide_box-play"></div>
+              <div class="shang_box-play">
+                <a class="shang_close-play" href="javascript:void(0)" onclick="dashangToggle()" title="关闭"><img src="/assets/img/close.jpg" alt="取消" /></a>
+                <div class="shang_tit-play">
+                  <p>对你有帮助，那就打赏一下吧</p>
+                </div>
+				
+				<div class="shang_payimg">    
+                    <img src="/assets/img/wechatimg.jpg" alt="扫码支持" title="扫一扫"/>
+                </div>
+				
+				 <div class="pay_item" data-id="weipay">
+                    <span class="pay_logo"><img src="/assets/img/wechat.jpg" alt="微信" /></span>
+                  </div>
+				
+                <div class="shang_payimg">
+                    <img src="/assets/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+                </div>
+				
+				 <div class="pay_item checked" data-id="alipay">
+                    <span class="pay_logo"><img src="/assets/img/alipay.jpg" alt="支付宝" /></span>
+                  </div>
+				
+                <div class="pay_explain">扫码打赏,金额随意</div>
+               
+              </div>
+            </div>
+            <script type="text/javascript">
+            function dashangToggle(){
+              $(".hide_box-play").fadeToggle();
+              $(".shang_box-play").fadeToggle();
+            }
+            </script>
+
+            <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';"></div>
+
+            <style type="text/css">
+              .content-play{width:100%;margin-top: 20px;margin-bottom: 10px;height:40px;text-align:center;}
+              .hide_box-play{z-index:999;filter:alpha(opacity=50);background:#666;opacity: 0.5;-moz-opacity: 0.5;left:0;top:0;height:99%;width:100%;position:fixed;display:none;}
+              .shang_box-play{width:100%;height:540px;padding:10px;background-color:#fff;border-radius:10px;position:fixed;z-index:1000;left:0%;top:50%;margin-left:0px;margin-top:-280px;border:1px dotted #dedede;display:none;}
+              .shang_box-play img{border:none;border-width:0;}
+              .dashang{width:100px;margin:5px auto;height:25px;line-height:25px;padding:10px;background-color:#E74851;color:#fff;text-align:center;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;}
+              .dashang:hover{opacity:0.8;padding:15px;font-size:18px;}
+              .shang_close-play{float:right;display:inline-block;
+                margin-right: 10px;margin-top: 20px;
+              }
+              .shang_logo{display:block;text-align:center;margin:20px auto;}
+              .shang_tit-play{width: 100%;height: 75px;text-align: center;line-height: 66px;color: #a3a3a3;font-size: 16px;background: url('/images/payimg/cy-reward-title-bg.jpg');font-family: 'Microsoft YaHei';margin-top: 7px;margin-right:2px;}
+              .shang_tit-play p{color:#a3a3a3;text-align:center;font-size:16px;}
+              .shang_payimg{padding:10px;/*border:6px solid #EA5F00;**/margin:0 auto;border-radius:3px;height:140px;display:inline-block;}
+              .shang_payimg img{display:inline-block;margin-right:10px;float:left;text-align:center;width:140px;height:140px; }
+              .pay_explain{text-align:center;margin:10px auto;font-size:12px;color:#545454;}
+              .shang_payselect{text-align:center;margin:0 auto;margin-top:40px;cursor:pointer;height:60px;width:500px;margin-left:110px;}
+              .shang_payselect .pay_item{display:inline-block;margin-right:140px;float:left;}
+              .shang_info-play{clear:both;}
+              .shang_info-play p,.shang_info-play a{color:#C3C3C3;text-align:center;font-size:12px;text-decoration:none;line-height:2em;}
+            </style>
+
+       <ul class="pager">
+	    
+        <li class="previous">
+            <a href="/android-jni-mk/" data-toggle="tooltip" data-placement="top" title="Android JNI—Android.mk详解">上一篇：  <span>Android JNI—Android.mk详解</span>
+            </a>
+        </li>
+		
+		<br><br>
+		
+        
+        
+        <li class="next">
+            <a href="/android-gps/" data-toggle="tooltip" data-placement="top" title="Android GPS解析">下一篇：  <span>Android GPS解析</span>
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+        </div>
+		
+		
+        <section class="author-box">
+  <img src="/assets/img/leach-face.jpg" alt="Leach Chen" class="author-img">
+  <div class="author-desc">
+    <h2>Leach Chen</h2>
+    <p>I will add description latter.</p>
+    <ul>
+      
+        <li class="email"><a href="mailto:leach.chen@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+      
+      
+        <li class="phone"><a href="tel:0"><i class="fa fa-phone"></i></a></li>
+      
+      <!--
+        <li class="website"><a href="https://artemsheludko.github.io" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="twitter"><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      -->
+    </ul>
+  </div>
+</section>
+
+        <div class="recent-box">
+  <h2 class="recent-title">Recent post</h2>
+  <div class="recent-list">
+    
+      
+        <a href="/3d/" class="recent-item" style="background: url(/assets/img/post-8.jpg) center no-repeat; background-size: cover;"><span>3D相关摘记</span></a>
+      
+    
+      
+        <a href="/website/" class="recent-item" style="background: url(/assets/img/post-8.jpg) center no-repeat; background-size: cover;"><span>网址摘记</span></a>
+      
+    
+      
+        <a href="/blogaddress/" class="recent-item" style="background: url(/assets/img/post-7.jpg) center no-repeat; background-size: cover;"><span>Android优秀Blog网址</span></a>
+      
+    
+      
+        <a href="/android-jni-method/" class="recent-item" style="background: url(/assets/img/post-10.jpg) center no-repeat; background-size: cover;"><span>Android JNI—函数用法</span></a>
+      
+    
+  </div>
+</div> <!-- End Recent-Box -->
+
+        <div class="newsletter" id="mc_embed_signup" style="display:none">
+  <h2 class="newsletter-title">Newsletter</h2>
+  <div class="form-container">
+    <p>Subscribe here to get our latest updates</p>
+    <form action="//" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <label class="screen-reader-text" for="mce-EMAIL">Email Address</label>
+      <div class="newsletter-box" id="mc_embed_signup_scroll">
+        <input type="email" name="EMAIL" placeholder="Email address" class="email-input" id="mce-EMAIL" required>
+        <input type="submit" value="Subscribe" name="subscribe" class="subscribe-btn" id="mc-embedded-subscribe">
+      </div>
+    </form>
+  </div>
+</div> <!-- End Newsletter -->
+
+        <section class="comment-area">
+  <div class="comment-wrapper">
+   
+	  <div id="disqus_thread" class="article-comments"></div>
+	    <script>
+			var idcomments_acct = '1ce8d80a5f6d373a46f4ceaf3dff8859';
+			var idcomments_post_id;
+			var idcomments_post_url;
+		</script>
+		<span id="IDCommentsPostTitle" style="display:none"></span>
+		<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+	
+  </div>
+</section>
+      </div>
+    </div> <!-- End Wrapper -->
+  </article>
+  <div class="search-box">
+  <div class="wrapper">
+    <div class="search-grid">
+      <form class="search-form">
+        <div id="search-container">
+          <input type="text" id="search-input" class="search" placeholder="Search">
+        </div>
+      </form>
+      <ul id="results-container" class="results-search"  style="height:400px;overflow-y:scroll;overflow-y:auto;"></ul>
+      <div class="icon-close-container">
+        <span class="search-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="main-footer">
+	<div class="footer-social">
+		<div class="footer-container clearfix">
+			<div class="social-list">
+				<a class="social github" target="blank" href="https://github.com/leach-chen">GitHub</a>
+				<a class="social github" target="blank" href="https://www.jianshu.com/users/5cc3aae52717/timeline">简书</a>
+				<a class="social github" target="blank" href="https://juejin.im/user/581b4a3e2e958a0054d47b57/collections">掘金</a>
+				<a class="social github" target="blank" href="http://blog.csdn.net/chenliqiang12345678">Csdn</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="copyright">
+		<p>2018 &copy; Leach Chen</p>
+		
+			
+	<div style="font-size:12px;color:#B3B3B3;padding-right:30px;float:right"> 
+		<iframe
+                style="margin-left: 2px; margin-bottom:-5px;"
+                frameborder="0" scrolling="0" width="91px" height="20px"
+                src="https://ghbtns.com/github-btn.html?user=leach-chen&repo=leach-chen.github.io&type=star&count=true" >
+            </iframe>
+		<span id="busuanzi_container_site_pv">本站总访问量：<span id="busuanzi_value_site_pv"></span>次</span>
+	</div>
+	</div>
+
+</footer> <!-- End Footer -->
+
+</div>
+
+  
+  
+<div class="top" title="Top"><i class="fa fa-chevron-up" aria-hidden="true"></i></div> <!-- End Top Scroll -->
+  <!-- JS -->
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/jekyll-search.js"></script>
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    fuzzy: false,
+    exclude: ['Welcome']
+  });
+</script>
+<script src="/assets/js/main.js"></script>
+
+  <!--<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>

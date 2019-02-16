@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Android自定义View—API - Blog - Leach Chen</title>
+	<meta name="description" content="Android自定义View之API">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#311e3e">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#311e3e">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#311e3e">
+	
+	
+	
+	
+	<!-- Google Fonts 1
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">-->
+	
+	
+	
+	
+	
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>  
+	
+	
+	<!--百度统计-->
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?56385150d223d3a72bebe8a0d4a94e19";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	<!--谷歌统计-->
+	<!-- Global site tag (gtag.js) - Google Analytics 
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113644888-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-113644888-1');
+	</script>-->
+
+</head>
+
+<body>
+  <div class="flex-container">
+  <header class="main-header">
+  <div class="wrapper">
+    <div class="header-flex">
+      <div class="menu-icon-container">
+        <span class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </div>
+      <nav class="main-nav">
+        <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <ul style="height:800px;overflow-y:scroll;overflow-y:auto;">
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+			 <li><a  href="/"  data-hover="所有">所有(23)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+			 <li><a  href="/blog/essays"  data-hover="随笔">随笔(1)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+			 <li><a  href="/blog/jekyll"  data-hover="Jekyll">Jekyll(1)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+			 <li><a  href="/blog/android"  data-hover="Android">Android(13)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+			 <li><a  href="/blog/abouttest"  data-hover="测试相关">测试相关(3)</a></li>
+		 
+			 
+			 
+
+			 
+
+			 
+
+			 
+
+			 
+
+       
+
+			 <li><a  href="/blog/other"  data-hover="其它">其它(5)</a></li>
+		 
+          <!--<li style="margin-bottom:200px;"><a href="/about">About(5)</a></li>-->
+        </ul>
+      </nav>
+      <p class="logo"><a href="/">Leach Chen</a></p>
+
+
+		<div class="navbar-container">
+
+		<div class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></div>
+
+			<div class="navbar-menu">
+			   
+				<a href="/"  data-hover="Home">Home</a>  <!--title="访问 Home"-->
+				<!--<a href="/">Home</a>-->
+					
+				<a href="/about"  data-hover="About">About</a>  <!--title="访问 About"-->
+				<!--<a href="/about">About</a>-->
+					
+			</div>
+
+
+			<div class="navbar-mobile-menu" onclick="">
+				<span class="icon-menu cross"><span class="middle"></span></span>
+				<ul>
+				   
+					 <li><a href="/"data-hover="Home">Home</a></li>  <!--title="访问 Home"-->
+					 <!--<li><a href="/">Home</a></li>-->
+				   
+					 <li><a href="/about"data-hover="About">About</a></li>  <!--title="访问 About"-->
+					 <!--<li><a href="/about">About</a></li>-->
+				   
+				</ul>
+			</div>
+
+
+
+		</div>
+
+    <!--  <div class="search-icon-container">
+	    <a href="/" style="text-decoration: none; color: inherit;margin-right:20px;">Home</a>
+		<a href="/about" style=" text-decoration: none; color: inherit;margin-right:20px;">About</a>
+        <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
+      </div> -->
+
+
+    </div>
+  </div>
+</header> <!-- End Header -->
+
+  <article class="article-page">
+    <div class="page-image">
+      <div class="cover-image" style="background: url(/assets/img/post-3.jpg) center no-repeat; background-size: cover;"></div>
+    </div>
+    <div class="wrapper">
+      <div class="page-content">
+        <div class="header-page">
+          <h1 class="page-title">Android自定义View—API</h1>
+          <div class="page-date"><time datetime="2018-02-26 15:35:00 +0800">2018, Feb 26</time>
+		  <span id="busuanzi_container_page_pv"> | 访问量：<span id="busuanzi_value_page_pv"></span> 次</span>
+		  </div>
+        </div>
+        <h2 id="paint"><strong>Paint</strong></h2>
+
+<ol>
+  <li>
+    <p><strong>reset()</strong>	<br />
+重置Paint。</p>
+  </li>
+  <li>
+    <p><strong>setFlags(int flags)</strong> <br />
+设置一些标志，比如抗锯齿，下划线等等。</p>
+  </li>
+  <li>
+    <p><strong>setAntiAlias(boolean aa)</strong> <br />
+设置抗锯齿，如果不设置，加载位图的时候可能会出现锯齿状的边界，如果设置，边界就会变的稍微有点模糊，锯齿就看不到了</p>
+  </li>
+  <li>
+    <p><strong>setDither(boolean dither)</strong> <br />
+设置是否抖动，如果不设置感觉就会有一些僵硬的线条，如果设置图像就会看的更柔和一些，</p>
+  </li>
+  <li>
+    <p><strong>setLinearText(boolean linearText)</strong> <br />
+这个是文本缓存，设置线性文本，如果设置为true就不需要缓存</p>
+  </li>
+  <li>
+    <p><strong>setSubpixelText(boolean subpixelText)</strong> <br />
+设置亚像素，是对文本的一种优化设置，可以让文字看起来更加清晰明显，可以参考一下PC端的控制面板-外观和个性化-调整ClearType文本</p>
+  </li>
+  <li>
+    <p><strong>setUnderlineText(boolean underlineText)</strong> <br />
+设置文本的下划线</p>
+  </li>
+  <li>
+    <p><strong>setUnderlineText(boolean underlineText)</strong> <br />
+设置文本的下划线</p>
+  </li>
+  <li>
+    <p><strong>setStrikeThruText(boolean strikeThruText)</strong>  <br />
+设置文本的删除线</p>
+  </li>
+  <li>
+    <p><strong>setFakeBoldText(boolean fakeBoldText)</strong>  <br />
+设置文本粗体</p>
+  </li>
+  <li>
+    <p><strong>setFilterBitmap(boolean filter)</strong>  <br />
+对位图进行滤波处理，如果该项设置为true，则图像在动画进行中会滤掉对Bitmap图像的优化操作，加快显示</p>
+  </li>
+  <li>
+    <p><strong>setColor(int color)</strong>  <br />
+设置画笔颜色</p>
+  </li>
+  <li>
+    <p><strong>setAlpha(int a)</strong>  <br />
+设置画笔的透明度[0-255]，0是完全透明，255是完全不透明</p>
+  </li>
+  <li>
+    <p><strong>setARGB(int a, int r, int g, int b)</strong> <br />
+设置画笔颜色，argb形式alpha，red，green，blue每个范围都是[0-255],</p>
+  </li>
+  <li>
+    <p><strong>setStrokeWidth(float width)</strong> <br />
+画笔样式为空心时，设置空心画笔的宽度</p>
+  </li>
+  <li>
+    <p><strong>setStrokeMiter(float miter)</strong> <br />
+当style为Stroke或StrokeAndFill时设置连接处的倾斜度，这个值必须大于0，看一下演示结果</p>
+  </li>
+  <li>
+    <p><strong>setShader(Shader shader)</strong> <br />
+设置着色器，用来给图像着色的，绘制出各种渐变效果，有BitmapShader，ComposeShader，LinearGradient，RadialGradient，SweepGradient几种</p>
+  </li>
+  <li>
+    <p><strong>setColorFilter(ColorFilter filter)</strong> <br />
+设置画笔颜色过滤器，有ColorMatrixColorFilter，LightingColorFilter，PorterDuffColorFilter几种，这个以后再单独分析</p>
+  </li>
+  <li>
+    <p><strong>setXfermode(Xfermode xfermode)</strong> <br />
+设置图形重叠时的显示方式</p>
+  </li>
+  <li>
+    <p><strong>setPathEffect(PathEffect effect)</strong> <br />
+设置绘制路径的效果，有ComposePathEffect，CornerPathEffect，DashPathEffect，DiscretePathEffect，PathDashPathEffect，SumPathEffect几种，以后在单独分析</p>
+  </li>
+  <li>
+    <p><strong>setMaskFilter(MaskFilter maskfilter)</strong> <br />
+对图像进行一定的处理，实现滤镜的效果，如滤化，立体等,有BlurMaskFilter，EmbossMaskFilter几种</p>
+  </li>
+  <li>
+    <p><strong>setTypeface(Typeface typeface)</strong> <br />
+设置字体样式，可以是Typeface设置的样式，也可以通过Typeface的createFromAsset(AssetManager mgr, String path)方法加载样式</p>
+  </li>
+  <li>
+    <p><strong>setShadowLayer(float radius, float dx, float dy, int shadowColor)</strong> <br />
+设置阴影效果，radius为阴影角度，dx和dy为阴影在x轴和y轴上的距离，color为阴影的颜色</p>
+  </li>
+  <li>
+    <p><strong>setTextLocale(Locale locale)</strong> <br />
+设置地理位置，比如显示中文，日文，韩文等，默认的显示Locale.getDefault()即可，</p>
+  </li>
+  <li>
+    <p><strong>setElegantTextHeight(boolean elegant)</strong> <br />
+设置优雅的文字高度，这个设置可能会对FontMetrics产生影响</p>
+  </li>
+  <li>
+    <p><strong>setTextSize(float textSize)</strong> <br />
+设置字体大小</p>
+  </li>
+  <li>
+    <p><strong>setTextScaleX(float scaleX)</strong> <br />
+设置字体的水平方向的缩放因子，默认值为1，大于1时会沿X轴水平放大，小于1时会沿X轴水平缩小</p>
+  </li>
+  <li>
+    <p><strong>setTextSkewX(float skewX)</strong> <br />
+设置文本在水平方向上的倾斜，默认值为0，推荐的值为-0.25，</p>
+  </li>
+  <li>
+    <p><strong>setLetterSpacing(float letterSpacing)</strong> <br />
+设置行的间距，默认值是0，负值行间距会收缩</p>
+  </li>
+  <li>
+    <p><strong>setFontFeatureSettings(String settings)</strong> <br />
+设置字体样式，可以设置CSS样式</p>
+  </li>
+  <li>
+    <p><strong>measureText(char[] text, int index, int count)，measureText(String text, int start, int end)，measureText(String text)，measureText(CharSequence text, int start, int end)</strong> <br />
+测量字体的长度</p>
+  </li>
+  <li>
+    <p><strong>breakText(char[] text, int index, int count,float maxWidth, float[] measuredWidth)，breakText(CharSequence text, int start, int end,boolean measureForwards,  floatmaxWidth, float[] measuredWidth)，breakText(String text, boolean measureForwards,float maxWidth, float[] measuredWidth)</strong> <br />
+剪切显示，就是大于maxWidth的时候只截取指定长度的显示</p>
+  </li>
+  <li>
+    <p><strong>getTextWidths(char[] text, int index, int count,float[] widths)，getTextWidths(CharSequence text, int start, int end, float[] widths)，getTextWidths(String text, int start, int end, float[] widths)，getTextWidths(String text, float[] widths)</strong> <br />
+提取指定范围内的字符串，保存到widths中</p>
+  </li>
+  <li>
+    <p><strong>getTextPath(char[] text, int index, int count, float x, float y, Path path)，getTextPath(String text, int start, int end, float x, float y, Path path)</strong> <br />
+获取文本绘制的路径，提取到Path中</p>
+  </li>
+  <li>
+    <p><strong>getTextBounds(String text, int start, int end, Rect bounds) ，getTextBounds(char[] text, int index, int count, Rect bounds)</strong> <br />
+得到文本的边界，上下左右，提取到bounds中，可以通过这计算文本的宽和高</p>
+  </li>
+  <li>
+    <p><a href="http://blog.csdn.net/abcdef314159/article/details/51720686" style="text-decoration: none;" target="_blank">参考</a></p>
+  </li>
+</ol>
+
+<h2 id="canvas"><strong>Canvas</strong></h2>
+
+<ol>
+  <li>
+    <p><strong>translate(100, 50) <span style="color:#033FA1">平移</span></strong><br />
+ 参数1: 向X轴方向移动100距离 <br />
+ 参数2: 向Y轴方向移动50距离  <br /></p>
+  </li>
+  <li>
+    <p><strong>canvas.scale(2, 4) <span style="color:#033FA1">缩放</span></strong> <br />
+在X轴方向放大为原来2倍，Y轴方向方大为原来的4倍 <br />
+参数1: X轴的放大倍数 <br />
+参数2: Y轴的放大倍数 <br />
+<strong>canvas.scale(2, 4，100,100)</strong><br />
+在X轴方向放大为原来2倍，Y轴方向方大为原来的4倍 <br />
+参数1: X轴的放大倍数 <br />
+参数2: Y轴的放大倍数 <br />
+参数3: 原点X坐标<br />
+参数4: 原点Y坐标<br /></p>
+  </li>
+  <li>
+    <p><strong>canvas.rotate(30) <span style="color:#033FA1">旋转</span></strong> <br />
+原点为中心，旋转30度（顺时针方向为正方向 ）<br />
+参数: 旋转角度 <br />
+<strong>canvas.rotate(30,100,100)</strong><br />
+以（100,100）为中心，旋转30度，顺时针方向为正方向 <br />
+参数: 旋转角度<br /></p>
+  </li>
+  <li>
+    <p><strong>canvas.drawText(“开始写字了！”,50, 50, p) <span style="color:#033FA1">画文字</span></strong> <br />
+参数2：文本的x轴的开始位置 <br />
+参数2：文本Y轴的结束位置 <br />
+参数3：画笔对象 <br />
+<strong>canvas.drawText(“开始写字了！”,2,5, 50, 50, p)</strong><br />
+参数2：要从第几个字开始绘制 <br />
+参数3：要绘制到第几个文字 <br />
+参数4：文本的x轴的开始位置 <br />
+参数5：文本Y轴的结束位置 <br />
+参数6：画笔对象 <br />
+<strong>canvas.drawTextOnPath(“1234567890101123123”, path, 0, -50, p)</strong><br />
+参数2：路径 <br />
+参数3：距离路径开始位置的偏移量 <br />
+参数4：距离路径上下的偏移量（可以为负数） <br />
+参数5：画笔对象 <br /></p>
+  </li>
+  <li>
+    <p><strong>canvas.drawCircle(200, 200, 100, p) <span style="color:#033FA1">画圆</span></strong><br />
+参数1：圆心X <br />
+参数2：圆心Y <br />
+参数3：半径R <br />
+参数4：画笔对象<br /></p>
+  </li>
+  <li>
+    <p><strong>canvas.drawLine(100, 100, 300, 300, p) <span style="color:#033FA1">画线</span></strong>  <br />
+参数1：startX <br />
+参数2：startY <br />
+参数3：stopX <br />
+参数4：stopY <br />
+参数5：画笔对象   <br />
+<strong>canvas.drawLines(new float[]{100,100,200,200,200,100,300,100}, p)</strong> <br />
+同时绘制多条线。  <br />
+参数1：float数组：每四个一组为一条线。最后不足四个，就忽略那些值。  <br />
+参数2：画笔对象 <br /></p>
+  </li>
+  <li>
+    <p><strong>RectF oval = new RectF(150, 200, 500, 400); canvas.drawOval(oval, p) <span style="color:#033FA1">画椭圆</span></strong> <br />
+参数1：float left <br />
+参数2：float top <br />
+参数3：float right <br />
+参数4：float bottom <br /></p>
+  </li>
+  <li>
+    <p><strong>canvas.drawArc(oval, 20, 180, false, p) <span style="color:#033FA1">画弧度</span></strong> <br />
+参数1：RectF对象。 <br />
+参数2：开始的角度。（水平向右为0度顺时针反向为正方向） <br />
+参数3：扫过的角度 <br />
+参数4：是否和中心连线 <br />
+参数5：画笔对象 <br /></p>
+  </li>
+  <li>
+    <p><strong>canvas.drawRect(100,100, 200, 200, p) <span style="color:#033FA1">画矩形</span></strong> <br />
+参数1：float left  <br />
+参数2：float top <br />
+参数3：float right <br />
+参数4：float bottom <br />
+<strong>canvas.drawRoundRect(oval3, 20, 5, p) 画圆角矩形</strong>  <br />
+RectF oval3 = new RectF(80, 260, 200, 300);// 设置个新的长方形  <br />
+canvas.drawRoundRect(oval3, 20, 5, p);//第二个参数是x半径，第三个参数是y半径</p>
+  </li>
+  <li>
+    <p><strong>canvas.drawPath(path, p) <span style="color:#033FA1">画多边形</span></strong>  <br />
+Path类封装复合(多轮廓几何图形的路径 由直线段*、二次曲线,和三次方曲线，也可画以油画。drawPath(路径、油漆),要么已填充的或抚摸(基于油漆的风格),或者可以用于剪断或画画的文本在路径。<br />
+Path path = new Path();  路径对象  <br />
+path.moveTo(80, 200);	此点为多边形的起点    <br />
+path.lineTo(120, 250);  <br />
+path.lineTo(80, 250);  <br />
+//….  可以添加多个点。构成多边形  <br />
+path.close(); // 使终点和起点链接，构成封闭图形   <br />
+canvas.drawPath(path, p);<br /></p>
+  </li>
+  <li>
+    <p><strong>canvas.drawPath(path2, p) <span style="color:#033FA1">画贝塞尔曲线</span></strong> <br />
+p.setStyle(Style.STROKE);  <br />
+Path path2=new Path();     <br />
+path2.moveTo(100, 100);//设置Path的起点    <br />
+path2.quadTo(300, 100, 400, 400); //设置贝塞尔曲线的控制点坐标和终点坐标。<br /> 参数1、2：x1，y1为控制点的坐标值，参数3、4：x2，y2为终点的坐标值<br />
+path2.quadTo(500, 700, 800, 800);   <br />
+canvas.drawPath(path2, p);//画出贝塞尔曲线  <br /></p>
+  </li>
+  <li>
+    <p><strong>canvas.drawPoint(60, 390, p) <span style="color:#033FA1">画一个点</span></strong><br />
+参数1、2：点的x、y坐标 <br />
+<strong>canvas.drawPoints(new float[]{60,400,65,400,70,400}, p) 画多个点</strong><br />
+参数1：多个点，每两个值为一个点。最后个数不够两个的值，忽略。<br /></p>
+  </li>
+  <li>
+    <p><strong>canvas.drawBitmap(bitmap, 200,300, p) <span style="color:#033FA1">画图片</span></strong> <br />
+Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher);   <br />
+canvas.drawBitmap(bitmap, 200,300, p); <br />
+参数1：bitmap对象 <br />
+参数2：图像左边坐标点 <br />
+参数3：图像上边坐标点 <br /></p>
+  </li>
+  <li>
+    <p><a href="https://www.jianshu.com/p/f69873371763" style="text-decoration: none;" target="_blank">参考</a></p>
+  </li>
+</ol>
+
+<h2 id="path"><strong>Path</strong></h2>
+<ol>
+  <li>
+    <p><strong>moveTo</strong> <br />
+moveTo表示将绘制点移动到某一个坐标处，该方法并不会进行绘制，主要是用来移动画笔。默认情况下起始坐标位于（0，0）点，我们可以手动调整默认位置。</p>
+  </li>
+  <li>
+    <p><strong>lineTo</strong>  <br />
+lineTo表示绘制一条直线，参数表示目标坐标如下： <br />
+Path path = new Path();   <br />
+path.lineTo(getResources().getDimensionPixelSize(R.dimen.dot1x),
+getResources().getDimensionPixelSize(R.dimen.dot1x));   <br />
+canvas.drawPath(path, paint);   <br /></p>
+  </li>
+  <li>
+    <p><strong>quadTo</strong> <br />
+quadTo可以用来绘制一个带控制点的曲线，说白了，其实就是贝塞尔曲线。如下：<br />
+Path path = new Path();  <br />
+path.moveTo(0, 300);  <br />
+path.quadTo(150, 0, 300, 300);  <br />
+canvas.drawPath(path, paint); <br /></p>
+  </li>
+  <li>
+    <p><strong>cubicTo</strong> <br />
+cubicTo可以用来绘制具有两个控制点的贝塞尔曲线，代码如下：
+Path path = new Path();  <br />
+path.moveTo(300, 0);  <br />
+path.cubicTo(0, 150, 300, 450, 0, 600);  <br />
+canvas.drawPath(path, paint);  <br /></p>
+  </li>
+  <li>
+    <p><strong>arcTo</strong> <br />
+artTo用来绘制一段圆弧，实际上是截取圆或者椭圆的一部分，比如下面一段代码：<br />
+Path path = new Path();  <br />
+RectF oval = new RectF(0, 0, 300, 300);  <br />
+path.arcTo(oval, 0, 90);  <br />
+canvas.drawPath(path, paint);  <br /></p>
+  </li>
+  <li>
+    <p><strong>addArc、addRoundRect、addOval、addRect、addCircle</strong> <br />
+addArc，添加一个圆弧到路径中，这个圆弧实为圆或者椭圆的一部分，如下一段代码： <br />
+Path path = new Path();   <br />
+RectF oval = new RectF(0, 200, 300, 500);   <br />
+path.addArc(oval, 0, 180);   <br />
+canvas.drawPath(path, paint);   <br />
+<br /><br />
+Path path = new Path();  <br />
+RectF oval = new RectF(50, 50, 150, 150);  <br />
+path.addRoundRect(oval,25,25, Path.Direction.CCW);  <br />
+RectF oval2 = new RectF(50, 200, 250, 300);  <br />
+path.addOval(oval2, Path.Direction.CCW);  <br />
+RectF oval3 = new RectF(50, 350, 150, 450);  <br />
+path.addRect(oval3, Path.Direction.CCW);  <br />
+path.addCircle(100, 550, 50, Path.Direction.CCW);  <br />
+canvas.drawPath(path, paint);  <br /></p>
+  </li>
+  <li>
+    <p><strong>Path.Op</strong> <br />
+Path.Op.DIFFERENCE表示从path中去除path2的部分，保留path的部分。如下案例：<br />
+Path path = new Path();  <br />
+Path path2 = new Path();  <br />
+path.addCircle(200, 200, 100, Path.Direction.CCW);  <br />
+path2.addRect(200, 200, 300, 300, Path.Direction.CCW);  <br />
+path.op(path2, Path.Op.DIFFERENCE);  <br />
+canvas.drawPath(path, paint);  <br /></p>
+  </li>
+  <li>
+    <p><strong>Path.Op.INTERSECT</strong> <br />
+Path.Op.INTERSECT表示取path和path2相交的部分显示出来，如下：<br />
+Path path = new Path();  <br />
+Path path2 = new Path();  <br />
+path.addCircle(200, 200, 100, Path.Direction.CCW);  <br />
+path2.addRect(200, 200, 300, 300, Path.Direction.CCW);  <br />
+path.op(path2, Path.Op.INTERSECT);  <br />
+canvas.drawPath(path, paint);  <br /></p>
+  </li>
+  <li>
+    <p><strong>Path.Op.REVERSE_DIFFERENCE</strong>  <br />
+Path.Op.REVERSE_DIFFERENCE表示除去path的部分，只显示path2的部分，如下：<br />
+Path path = new Path();   <br />
+Path path2 = new Path();   <br />
+path.addCircle(200, 200, 100, Path.Direction.CCW);   <br />
+path2.addRect(200, 200, 300, 300, Path.Direction.CCW);   <br />
+path.op(path2, Path.Op.REVERSE_DIFFERENCE);   <br />
+canvas.drawPath(path, paint);   <br /></p>
+  </li>
+  <li>
+    <p><strong>Path.Op.UNION</strong> <br />
+Path.Op.UNION表示path和path2的部分都要显示出来，如下： <br />
+Path path = new Path();  <br />
+Path path2 = new Path();  <br />
+path.addCircle(200, 200, 100, Path.Direction.CCW);  <br />
+path2.addRect(200, 200, 300, 300, Path.Direction.CCW);  <br />
+path.op(path2, Path.Op.UNION);  <br />
+canvas.drawPath(path, paint);  <br /></p>
+  </li>
+  <li>
+    <p><strong>Path.Op.XOR</strong> <br />
+Path.Op.XOR表示显示path和path2但是不包含二者的交集。如下：<br />
+Path path = new Path();  <br />
+Path path2 = new Path();  <br />
+path.addCircle(200, 200, 100, Path.Direction.CCW);  <br />
+path2.addRect(200, 200, 300, 300, Path.Direction.CCW);  <br />
+path.op(path2, Path.Op.XOR);  <br />
+canvas.drawPath(path, paint);  <br /></p>
+  </li>
+  <li>
+    <p><a href="http://blog.csdn.net/u012702547/article/details/52454406" style="text-decoration: none;" target="_blank">参考</a></p>
+  </li>
+</ol>
+
+        <div class="page-footer">
+          <div class="page-tag">
+            <span>Tags:</span>
+            
+            <a href="/tags#Android" class="tag">| Android</a>
+            
+            <a href="/tags#自定义view" class="tag">| 自定义view</a>
+            
+          </div><!-- End Tags -->
+          <div class="page-share">
+            <span>Share:</span>
+            <a href="https://twitter.com/intent/tweet?text=Android自定义View—API&url=http://localhost:4000/android-view-api/" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://facebook.com/sharer.php?u=http://localhost:4000/android-view-api/" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://plus.google.com/share?url=http://localhost:4000/android-view-api/" title="Share on Google+" rel="nofollow" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+						
+			<!-- JiaThis Button BEGIN -->
+			<div class="jiathis_style_32x32">
+				<a class="jiathis_button_weixin"></a>
+				<a class="jiathis_button_tsina"></a>
+				<!--<a class="jiathis_button_tqq"></a>
+				<a class="jiathis_button_qzone"></a>
+				<a class="jiathis_button_renren"></a>-->
+				<a href="http://www.jiathis.com/share?uid=2157296" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+				<a class="jiathis_counter_style"></a>
+			</div>
+			<script type="text/javascript">var jiathis_config = {data_track_clickback:'true'};</script>
+			<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2157296" charset="utf-8"></script>
+			<!-- JiaThis Button END -->
+          </div><!-- End Share -->
+		  
+		
+		  
+		  <section>
+			<!--<div style="background:#000;border-bottom: 1px solid #d9d9d9;"></div> -->
+
+            <div class="content-play">
+              <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang" title="打赏，支持一下">打赏一下呗</a></p>
+              <div class="hide_box-play"></div>
+              <div class="shang_box-play">
+                <a class="shang_close-play" href="javascript:void(0)" onclick="dashangToggle()" title="关闭"><img src="/assets/img/close.jpg" alt="取消" /></a>
+                <div class="shang_tit-play">
+                  <p>对你有帮助，那就打赏一下吧</p>
+                </div>
+				
+				<div class="shang_payimg">    
+                    <img src="/assets/img/wechatimg.jpg" alt="扫码支持" title="扫一扫"/>
+                </div>
+				
+				 <div class="pay_item" data-id="weipay">
+                    <span class="pay_logo"><img src="/assets/img/wechat.jpg" alt="微信" /></span>
+                  </div>
+				
+                <div class="shang_payimg">
+                    <img src="/assets/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+                </div>
+				
+				 <div class="pay_item checked" data-id="alipay">
+                    <span class="pay_logo"><img src="/assets/img/alipay.jpg" alt="支付宝" /></span>
+                  </div>
+				
+                <div class="pay_explain">扫码打赏,金额随意</div>
+               
+              </div>
+            </div>
+            <script type="text/javascript">
+            function dashangToggle(){
+              $(".hide_box-play").fadeToggle();
+              $(".shang_box-play").fadeToggle();
+            }
+            </script>
+
+            <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';"></div>
+
+            <style type="text/css">
+              .content-play{width:100%;margin-top: 20px;margin-bottom: 10px;height:40px;text-align:center;}
+              .hide_box-play{z-index:999;filter:alpha(opacity=50);background:#666;opacity: 0.5;-moz-opacity: 0.5;left:0;top:0;height:99%;width:100%;position:fixed;display:none;}
+              .shang_box-play{width:100%;height:540px;padding:10px;background-color:#fff;border-radius:10px;position:fixed;z-index:1000;left:0%;top:50%;margin-left:0px;margin-top:-280px;border:1px dotted #dedede;display:none;}
+              .shang_box-play img{border:none;border-width:0;}
+              .dashang{width:100px;margin:5px auto;height:25px;line-height:25px;padding:10px;background-color:#E74851;color:#fff;text-align:center;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;}
+              .dashang:hover{opacity:0.8;padding:15px;font-size:18px;}
+              .shang_close-play{float:right;display:inline-block;
+                margin-right: 10px;margin-top: 20px;
+              }
+              .shang_logo{display:block;text-align:center;margin:20px auto;}
+              .shang_tit-play{width: 100%;height: 75px;text-align: center;line-height: 66px;color: #a3a3a3;font-size: 16px;background: url('/images/payimg/cy-reward-title-bg.jpg');font-family: 'Microsoft YaHei';margin-top: 7px;margin-right:2px;}
+              .shang_tit-play p{color:#a3a3a3;text-align:center;font-size:16px;}
+              .shang_payimg{padding:10px;/*border:6px solid #EA5F00;**/margin:0 auto;border-radius:3px;height:140px;display:inline-block;}
+              .shang_payimg img{display:inline-block;margin-right:10px;float:left;text-align:center;width:140px;height:140px; }
+              .pay_explain{text-align:center;margin:10px auto;font-size:12px;color:#545454;}
+              .shang_payselect{text-align:center;margin:0 auto;margin-top:40px;cursor:pointer;height:60px;width:500px;margin-left:110px;}
+              .shang_payselect .pay_item{display:inline-block;margin-right:140px;float:left;}
+              .shang_info-play{clear:both;}
+              .shang_info-play p,.shang_info-play a{color:#C3C3C3;text-align:center;font-size:12px;text-decoration:none;line-height:2em;}
+            </style>
+
+       <ul class="pager">
+	    
+        <li class="previous">
+            <a href="/android-view-draw/" data-toggle="tooltip" data-placement="top" title="Android自定义View—基本绘制">上一篇：  <span>Android自定义View—基本绘制</span>
+            </a>
+        </li>
+		
+		<br><br>
+		
+        
+        
+        <li class="next">
+            <a href="/car/" data-toggle="tooltip" data-placement="top" title="驾考摘记">下一篇：  <span>驾考摘记</span>
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+        </div>
+		
+		
+        <section class="author-box">
+  <img src="/assets/img/leach-face.jpg" alt="Leach Chen" class="author-img">
+  <div class="author-desc">
+    <h2>Leach Chen</h2>
+    <p>I will add description latter.</p>
+    <ul>
+      
+        <li class="email"><a href="mailto:leach.chen@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+      
+      
+        <li class="phone"><a href="tel:0"><i class="fa fa-phone"></i></a></li>
+      
+      <!--
+        <li class="website"><a href="https://artemsheludko.github.io" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+      
+      
+        <li class="twitter"><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      -->
+    </ul>
+  </div>
+</section>
+
+        <div class="recent-box">
+  <h2 class="recent-title">Recent post</h2>
+  <div class="recent-list">
+    
+      
+        <a href="/3d/" class="recent-item" style="background: url(/assets/img/post-8.jpg) center no-repeat; background-size: cover;"><span>3D相关摘记</span></a>
+      
+    
+      
+        <a href="/website/" class="recent-item" style="background: url(/assets/img/post-8.jpg) center no-repeat; background-size: cover;"><span>网址摘记</span></a>
+      
+    
+      
+        <a href="/blogaddress/" class="recent-item" style="background: url(/assets/img/post-7.jpg) center no-repeat; background-size: cover;"><span>Android优秀Blog网址</span></a>
+      
+    
+      
+        <a href="/android-jni-method/" class="recent-item" style="background: url(/assets/img/post-10.jpg) center no-repeat; background-size: cover;"><span>Android JNI—函数用法</span></a>
+      
+    
+  </div>
+</div> <!-- End Recent-Box -->
+
+        <div class="newsletter" id="mc_embed_signup" style="display:none">
+  <h2 class="newsletter-title">Newsletter</h2>
+  <div class="form-container">
+    <p>Subscribe here to get our latest updates</p>
+    <form action="//" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <label class="screen-reader-text" for="mce-EMAIL">Email Address</label>
+      <div class="newsletter-box" id="mc_embed_signup_scroll">
+        <input type="email" name="EMAIL" placeholder="Email address" class="email-input" id="mce-EMAIL" required>
+        <input type="submit" value="Subscribe" name="subscribe" class="subscribe-btn" id="mc-embedded-subscribe">
+      </div>
+    </form>
+  </div>
+</div> <!-- End Newsletter -->
+
+        <section class="comment-area">
+  <div class="comment-wrapper">
+   
+	  <div id="disqus_thread" class="article-comments"></div>
+	    <script>
+			var idcomments_acct = '1ce8d80a5f6d373a46f4ceaf3dff8859';
+			var idcomments_post_id;
+			var idcomments_post_url;
+		</script>
+		<span id="IDCommentsPostTitle" style="display:none"></span>
+		<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+	
+  </div>
+</section>
+      </div>
+    </div> <!-- End Wrapper -->
+  </article>
+  <div class="search-box">
+  <div class="wrapper">
+    <div class="search-grid">
+      <form class="search-form">
+        <div id="search-container">
+          <input type="text" id="search-input" class="search" placeholder="Search">
+        </div>
+      </form>
+      <ul id="results-container" class="results-search"  style="height:400px;overflow-y:scroll;overflow-y:auto;"></ul>
+      <div class="icon-close-container">
+        <span class="search-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer class="main-footer">
+	<div class="footer-social">
+		<div class="footer-container clearfix">
+			<div class="social-list">
+				<a class="social github" target="blank" href="https://github.com/leach-chen">GitHub</a>
+				<a class="social github" target="blank" href="https://www.jianshu.com/users/5cc3aae52717/timeline">简书</a>
+				<a class="social github" target="blank" href="https://juejin.im/user/581b4a3e2e958a0054d47b57/collections">掘金</a>
+				<a class="social github" target="blank" href="http://blog.csdn.net/chenliqiang12345678">Csdn</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="copyright">
+		<p>2018 &copy; Leach Chen</p>
+		
+			
+	<div style="font-size:12px;color:#B3B3B3;padding-right:30px;float:right"> 
+		<iframe
+                style="margin-left: 2px; margin-bottom:-5px;"
+                frameborder="0" scrolling="0" width="91px" height="20px"
+                src="https://ghbtns.com/github-btn.html?user=leach-chen&repo=leach-chen.github.io&type=star&count=true" >
+            </iframe>
+		<span id="busuanzi_container_site_pv">本站总访问量：<span id="busuanzi_value_site_pv"></span>次</span>
+	</div>
+	</div>
+
+</footer> <!-- End Footer -->
+
+</div>
+
+  
+  
+<div class="top" title="Top"><i class="fa fa-chevron-up" aria-hidden="true"></i></div> <!-- End Top Scroll -->
+  <!-- JS -->
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/jekyll-search.js"></script>
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    fuzzy: false,
+    exclude: ['Welcome']
+  });
+</script>
+<script src="/assets/js/main.js"></script>
+
+  <!--<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>

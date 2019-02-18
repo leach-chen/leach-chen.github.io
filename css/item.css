@@ -1,0 +1,108 @@
+
+.box-card
+{
+    width: 29%;
+    float: left;
+    margin: 10px;
+
+    
+}
+
+/* 相对布局相对其第一个relative的父布局进行定位，设置其bottom：0属性，父布局的高度由其它非相对定位布局的子元素决定*/
+
+.imgfloatcontent
+{
+    overflow: hidden;
+    position: relative;
+}
+
+.imgfloatdiv
+{
+  position: absolute;
+  bottom:0px;
+  padding:0px;
+  margin:0px;
+}
+
+.imgfloatdiv p
+{
+  /* position:absolute;
+  bottom:0px;
+  padding:0px;
+  margin:0px */
+  color: aliceblue;
+  font-size: 14px;
+  margin-left: 10px;
+  
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+
+}
+
+.btncontent
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.btncontent button
+{
+    flex-grow:1;
+    font-size: 15px;
+    color: #fff;
+    background-color: #409EFF;
+    border-color: #409EFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    cursor:pointer;
+}
+
+/* :active，元素被点击时变色，但颜色在点击后消失
+:focus， 元素被点击后变色，且颜色在点击后不消失 */
+
+.btncontent button:hover
+{
+    opacity:0.8;
+}
+
+.btncontent button:active
+{
+    opacity:1;
+}
+
+.btn1
+{
+    
+    margin-right:10px; 
+}
+
+.btn2
+{
+    
+    margin-left:10px; 
+}
+
+
+@media only screen and (max-width: 768px) {
+    .box-card
+    {
+        width: 100%;
+    }
+}
+
+
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .clearfix::before {
+    clear: both;
+  }

@@ -106,3 +106,9 @@
   .clearfix::before {
     clear: both;
   }
+
+
+  
+.content:not(.custom) {
+    max-width: 100%;
+}

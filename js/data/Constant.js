@@ -47,6 +47,14 @@ var GAME_T_SHOOT ="game_t_shoot"
 var TOOL_T_FULL ="tool_t_full"
 
 
+/*********************************From 定义**********************/
+var FROM_DEFAULT ="from_default"
+var FROM_GITHUB ="from_github"
+
+
+
+
+
 export{
     /*********************************Path定义**********************/
 PATH_ANDROID_ALL ,
@@ -93,5 +101,9 @@ GAME_T_SHOOT,
 
 /*********************************Tool type 定义**********************/
 TOOL_T_FULL,
+
+/*********************************From 定义**********************/
+FROM_DEFAULT,
+FROM_GITHUB
 
 }

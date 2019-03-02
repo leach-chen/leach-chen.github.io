@@ -14,6 +14,18 @@
 {
     overflow: hidden;
     position: relative;
+    height: 160px;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-size: 100% 100%;
+}
+
+.imgcover
+{
+    width:100%;
+    height:160px;
+    background-color:#000;
+    opacity:0.5;
 }
 
 .imgfloatdiv
@@ -22,6 +34,7 @@
   bottom:0px;
   padding:0px;
   margin:0px;
+  width: 100%;
 }
 
 .imgfloatdiv p
@@ -30,14 +43,23 @@
   bottom:0px;
   padding:0px;
   margin:0px */
-  color: aliceblue;
+  color: #fff;
   font-size: 14px;
   margin-left: 10px;
   
   overflow: hidden;
-  text-overflow:ellipsis;
-  white-space: nowrap;
+  /* text-overflow:ellipsis;
+  white-space: nowrap; 一行 */
+  font-weight: bold;
 
+
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .btncontent
@@ -46,6 +68,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
+    margin-top: 10px;
 }
 
 .btncontent button
@@ -111,4 +134,8 @@
   
 .content:not(.custom) {
     max-width: 100%;
+}
+
+.imgfloatdiv a{
+    color: #fff;
 }

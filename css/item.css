@@ -26,6 +26,11 @@
     height:160px;
     background-color:#000;
     opacity:0.5;
+    position: absolute;
+}
+
+.imgfloatcontent img{
+    height:160px;
 }
 
 .imgfloatdiv

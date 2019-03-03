@@ -41,6 +41,7 @@ var H5_T_HEXO ="h5_t_hexo"
 var H5_T_PHP ="h5_t_php"
 
 /*********************************Game type 定义**********************/
+var GAME_T_DEFAULT ="game_t_default"
 var GAME_T_SHOOT ="game_t_shoot"
 
 /*********************************Tool type 定义**********************/
@@ -50,6 +51,7 @@ var TOOL_T_FULL ="tool_t_full"
 /*********************************From 定义**********************/
 var FROM_DEFAULT ="from_default"
 var FROM_GITHUB ="from_github"
+var FROM_MYGITHUB ="from_mygithub"
 
 
 
@@ -97,6 +99,7 @@ H5_T_HEXO,
 H5_T_PHP,
 
 /*********************************Game type 定义**********************/
+GAME_T_DEFAULT,
 GAME_T_SHOOT,
 
 /*********************************Tool type 定义**********************/
@@ -104,6 +107,7 @@ TOOL_T_FULL,
 
 /*********************************From 定义**********************/
 FROM_DEFAULT,
-FROM_GITHUB
+FROM_GITHUB,
+FROM_MYGITHUB
 
 }

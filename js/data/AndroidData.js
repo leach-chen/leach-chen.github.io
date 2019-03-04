@@ -1,11 +1,9 @@
-var host = "https://www.leachchen.com/h5website/"
+var hostandroid = "https://www.leachchen.com/storeandroid1/"
 
 var co= require('./Constant.js');
 
 var dataList = []
 
-var t_imagepreviewhost="https://www.leachchen.com/storeimgpre1/android/thumb/"
-var p_imagepreviewhost="https://www.leachchen.com/storeimgpre1/android/preview/"
 
 var adminname = "admin"
 var adminurl =""
@@ -14,8 +12,8 @@ var fullAndroidDataList = [
  // {thumbUrl: host+"001/thumb/demo.png",previewUrl: host+"001/source/",downloadUrl: host+"001/download/before.zip",description:"旅游风格的H5网站 Android",type:co.T_ANDROID_FULL,author:"leach-chen",authorurl:"",repo:"blog",fromauthor:"admin",fromauthorurl:"",from:co.FROM_GITHUB,sold:true},
 
   {
-    thumbUrl: t_imagepreviewhost+"t_android1_20190303.png",
-    previewUrl: p_imagepreviewhost+"p_android1_20190303.png",
+    thumbUrl: hostandroid+"1/t_android1_20190303.png",
+    previewUrl: hostandroid+"1/p_android1_20190303.png",
     downloadUrl: "https://codeload.github.com/harjot-oberai/MusicDNA/zip/master",
     description:"一款舒适的音乐播放器",
     type:co.T_ANDROID_FULL,

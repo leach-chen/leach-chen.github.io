@@ -4,8 +4,8 @@ var co= require('./Constant.js');
 
 var dataList = []
 
-var t_imagepreviewhost="http://www.leachchen.com/storeimgpre1/h5/"
-var p_imagepreviewhost="http://www.leachchen.com/storeimgpre1/h5/"
+var t_imagepreviewhost="https://www.leachchen.com/storeimgpre1/h5/"
+var p_imagepreviewhost="https://www.leachchen.com/storeimgpre1/h5/"
 
 var adminname = "admin"
 var adminurl =""

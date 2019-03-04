@@ -4,8 +4,8 @@ var co= require('./Constant.js');
 
 var dataList = []
 
-var t_imagepreviewhost="http://www.leachchen.com/storeimgpre1/flutter/thumb/"
-var p_imagepreviewhost="http://www.leachchen.com/storeimgpre1/flutter/preview/"
+var t_imagepreviewhost="https://www.leachchen.com/storeimgpre1/flutter/thumb/"
+var p_imagepreviewhost="https://www.leachchen.com/storeimgpre1/flutter/preview/"
 
 var adminname = "admin"
 var adminurl =""

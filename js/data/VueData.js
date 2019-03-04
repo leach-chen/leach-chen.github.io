@@ -4,8 +4,11 @@ var co= require('./Constant.js');
 
 var dataList = []
 
-var t_imagepreviewhost="http://www.leachchen.com/imagepreview/vue/thumb/"
-var p_imagepreviewhost="http://www.leachchen.com/imagepreview/vue/preview/"
+var t_imagepreviewhost="http://www.leachchen.com/storeimgpre1/vue/thumb/"
+var p_imagepreviewhost="http://www.leachchen.com/storeimgpre1/vue/preview/"
+
+var adminname = "admin"
+var adminurl =""
 
 var fullVueDataList = [
   {
@@ -14,12 +17,12 @@ var fullVueDataList = [
     previewUrl: "http://panjiachen.github.io/vue-element-admin",
     downloadUrl: "https://codeload.github.com/PanJiaChen/vue-element-admin/zip/master",
     description:"完整的Vue后台管理系统",
-    type:co.VUE_T_FULL,
+    type:co.T_VUE_FULL,
     author:"PanJiaChen",
     authorurl:"https://github.com/PanJiaChen/",
     repo:"vue-element-admin",
-    fromauthor:"admin",
-    fromauthorurl:adminhost,
+    fromauthor:adminname,
+    fromauthorurl:adminurl,
     from:co.FROM_GITHUB,
     sold:true
   },

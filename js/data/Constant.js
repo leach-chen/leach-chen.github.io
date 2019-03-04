@@ -26,26 +26,29 @@ var PATH_TOOL_ALL = "/tool/all/"
 var PATH_TOOL_PRACTICAL = "/tool/practical/"
 
 /*********************************Android type 定义**********************/
-var ANDROID_T_FULL ="android_t_full"
+var T_ANDROID_FULL ="T_ANDROID_FULL"
 
 /*********************************IOS type 定义**********************/
-var IOS_T_FULL ="ios_t_fullproject"
+var T_IOS_FULL ="T_IOS_FULLproject"
+
+/*********************************Flutter type 定义**********************/
+var T_FLUTTER_FULL ="T_FLUTTER_FULL"
 
 /*********************************Vue type 定义**********************/
-var VUE_T_FULL ="vue_t_fullproject"
+var T_VUE_FULL ="T_VUE_FULLproject"
 
 /*********************************H5 type 定义**********************/
-var H5_T_CSS ="h5_t_css"
-var H5_T_JEKYLL ="h5_t_jekyll"
-var H5_T_HEXO ="h5_t_hexo"
-var H5_T_PHP ="h5_t_php"
+var T_H5_CSS ="T_H5_CSS"
+var T_H5_JEKYLL ="T_H5_JEKYLL"
+var T_H5_HEXO ="T_H5_HEXO"
+var T_H5_PHP ="T_H5_PHP"
 
 /*********************************Game type 定义**********************/
-var GAME_T_DEFAULT ="game_t_default"
-var GAME_T_SHOOT ="game_t_shoot"
+var T_GAME_DEFAULT ="T_GAME_DEFAULT"
+var T_GAME_SHOOT ="T_GAME_SHOOT"
 
 /*********************************Tool type 定义**********************/
-var TOOL_T_FULL ="tool_t_full"
+var T_TOOL_FULL ="T_TOOL_FULL"
 
 
 /*********************************From 定义**********************/
@@ -83,27 +86,37 @@ PATH_GAME_SHOOT,
 PATH_TOOL_ALL,
 PATH_TOOL_PRACTICAL,
 
+
+
+
 /*********************************Android type 定义**********************/
-ANDROID_T_FULL,
+T_ANDROID_FULL,
 
 /*********************************IOS type 定义**********************/
-IOS_T_FULL,
+T_IOS_FULL,
+
+/*********************************Flutter type 定义**********************/
+T_FLUTTER_FULL,
 
 /*********************************Vue type 定义**********************/
-VUE_T_FULL,
+T_VUE_FULL,
 
 /*********************************H5 type 定义**********************/
-H5_T_CSS,
-H5_T_JEKYLL,
-H5_T_HEXO,
-H5_T_PHP,
+T_H5_CSS,
+T_H5_JEKYLL,
+T_H5_HEXO,
+T_H5_PHP,
 
 /*********************************Game type 定义**********************/
-GAME_T_DEFAULT,
-GAME_T_SHOOT,
+T_GAME_DEFAULT,
+T_GAME_SHOOT,
 
 /*********************************Tool type 定义**********************/
-TOOL_T_FULL,
+T_TOOL_FULL,
+
+
+
+
 
 /*********************************From 定义**********************/
 FROM_DEFAULT,

@@ -14,24 +14,25 @@
 {
     overflow: hidden;
     position: relative;
-    height: 160px;
+    height: 250px;
     /* background-position: center center;
     background-repeat:  no-repeat;
     background-size: 100% 100%; */
+    text-align: center;
 }
 
 .imgcover
 {
     width:100%;
-    height:160px;
+    height:250px;
     background-color:#000;
     opacity:0.5;
     position: absolute;
 }
 
 .imgfloatcontent img{
-    width: 100%;
-    height:160px;
+    
+    height:250px;
 }
 
 .imgfloatdiv

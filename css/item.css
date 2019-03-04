@@ -12,6 +12,7 @@
 
 .imgfloatcontent
 {
+    width:100%;
     overflow: hidden;
     position: relative;
     height: 250px;

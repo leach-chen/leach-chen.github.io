@@ -28,14 +28,36 @@ var fullAndroidDataList = [
 ];
 
 
+var animationAndroidDataList = [
+  // {thumbUrl: host+"001/thumb/demo.png",previewUrl: host+"001/source/",downloadUrl: host+"001/download/before.zip",description:"旅游风格的H5网站 Android",type:co.T_ANDROID_FULL,author:"leach-chen",authorurl:"",repo:"blog",fromauthor:"admin",fromauthorurl:"",from:co.FROM_GITHUB,sold:true},
+ 
+   {
+     thumbUrl: hostandroid+"2/t_android1_20190305.jpg",
+     previewUrl: hostandroid+"2/p_android1_20190305.gif",
+     downloadUrl: "https://codeload.github.com/harjot-oberai/MusicDNA/zip/master",
+     description:"airbnb的lottie酷炫动画库",
+     type:co.T_ANDROID_ANIMATION,
+     author:"Airbnb",
+     authorurl:"https://github.com/airbnb",
+     repo:"lottie-android",
+     fromauthor:adminname,
+     fromauthorurl:adminurl,
+     from:co.FROM_GITHUB,
+     sold:true
+   },
+ ];
+
+
+
 function getAndroidAllData()
 {
-  dataList = fullAndroidDataList
+  dataList = fullAndroidDataList.concat(animationAndroidDataList)
   return dataList
 }
 
 export
 {
+  getAndroidAllData,
   fullAndroidDataList,
-  getAndroidAllData
+  animationAndroidDataList
 }

@@ -2,6 +2,7 @@
 /*********************************Path定义**********************/
 var PATH_ANDROID_ALL = "/github/android/all/"
 var PATH_ANDROID_FULL = "/github/android/project/"
+var PATH_ANDROID_ANIMATION = "/github/android/animation/"
 
 var PATH_IOS_ALL = "/github/ios/all/"
 var PATH_IOS_FULL = "/github/ios/project/"
@@ -27,7 +28,7 @@ var PATH_TOOL_PRACTICAL = "/tool/practical/"
 
 /*********************************Android type 定义**********************/
 var T_ANDROID_FULL ="T_ANDROID_FULL"
-
+var T_ANDROID_ANIMATION ="T_ANDROID_ANIMATION"
 /*********************************IOS type 定义**********************/
 var T_IOS_FULL ="T_IOS_FULLproject"
 
@@ -64,6 +65,7 @@ export{
     /*********************************Path定义**********************/
 PATH_ANDROID_ALL ,
 PATH_ANDROID_FULL ,
+PATH_ANDROID_ANIMATION,
 
 PATH_IOS_ALL ,
 PATH_IOS_FULL,
@@ -91,6 +93,7 @@ PATH_TOOL_PRACTICAL,
 
 /*********************************Android type 定义**********************/
 T_ANDROID_FULL,
+T_ANDROID_ANIMATION,
 
 /*********************************IOS type 定义**********************/
 T_IOS_FULL,

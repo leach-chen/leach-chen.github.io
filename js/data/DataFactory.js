@@ -17,6 +17,11 @@ function getAndroidFullData()
     return androidData.fullAndroidDataList
 }
 
+function getAndroidAnimationData()
+{
+    return androidData.animationAndroidDataList
+}
+
 /*******************IOS数据***********************/
 function getIosAllData()
 {
@@ -106,8 +111,8 @@ export
 {
 /*******************Android数据***********************/
 getAndroidAllData,
-
 getAndroidFullData,
+getAndroidAnimationData,
 /*******************IOS数据***********************/
 getIosAllData,
 

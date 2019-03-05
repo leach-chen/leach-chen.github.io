@@ -1,0 +1,18 @@
+  
+.content:not(.custom) {
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.page-edit
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.page
+{
+    margin: 0px;
+    padding: 0px;
+}

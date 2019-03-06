@@ -1,4 +1,4 @@
-var hostflutter = "https://www.leachchen.com/storeflutter1/"
+var host = "https://www.leachchen.com/storeflutter1/"
 
 var co= require('./Constant.js');
 
@@ -12,8 +12,8 @@ var fullFlutterDataList = [
   //{thumbUrl: host+"001/thumb/demo.png",previewUrl: host+"001/source/",downloadUrl: host+"001/download/before.zip",description:"旅游风格的H5网站 Flutter",type:co.FLUTTER_T_FULL,author:"leach-chen",authorurl:"",repo:"blog",fromauthor:"admin",fromauthorurl:"",from:co.FROM_GITHUB,sold:true},
 
  {
-  thumbUrl: hostflutter+"1/storeflutter1_1_t_20190303.jpg",
-  previewUrl: hostflutter+"1/storeflutter1_1_p_20190303.gif",
+  thumbUrl: host+"1/storeflutter1_1_t_301.jpg",
+  previewUrl: host+"1/storeflutter1_1_p_301.gif",
   downloadUrl: "https://codeload.github.com/alibaba/flutter-go/zip/master",
   description:"阿里Flutter学习项目，组件丰富",
   type:co.T_FLUTTER_FULL,
@@ -22,7 +22,6 @@ var fullFlutterDataList = [
   repo:"flutter-go",
   fromauthor:adminname,
   fromauthorurl:adminurl,
-  from:co.FROM_GITHUB,
   sold:true
 },
 

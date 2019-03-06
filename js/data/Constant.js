@@ -27,37 +27,30 @@ var PATH_TOOL_ALL = "/tool/all/"
 var PATH_TOOL_PRACTICAL = "/tool/practical/"
 
 /*********************************Android type 定义**********************/
-var T_ANDROID_FULL ="T_ANDROID_FULL"
-var T_ANDROID_ANIMATION ="T_ANDROID_ANIMATION"
-/*********************************IOS type 定义**********************/
-var T_IOS_FULL ="T_IOS_FULLproject"
-
-/*********************************Flutter type 定义**********************/
-var T_FLUTTER_FULL ="T_FLUTTER_FULL"
-
-/*********************************Vue type 定义**********************/
-var T_VUE_FULL ="T_VUE_FULLproject"
-
-/*********************************H5 type 定义**********************/
-var T_H5_CSS ="T_H5_CSS"
-var T_H5_JEKYLL ="T_H5_JEKYLL"
-var T_H5_HEXO ="T_H5_HEXO"
-var T_H5_PHP ="T_H5_PHP"
-
-/*********************************Game type 定义**********************/
-var T_GAME_DEFAULT ="T_GAME_DEFAULT"
-var T_GAME_SHOOT ="T_GAME_SHOOT"
-
-/*********************************Tool type 定义**********************/
-var T_TOOL_FULL ="T_TOOL_FULL"
+var T_ANDROID_FULL ="101_T_ANDROID_FULL"
+var T_ANDROID_ANIMATION ="102_T_ANDROID_ANIMATION" //IOS type 定义
 
 
-/*********************************From 定义**********************/
-var FROM_DEFAULT ="from_default"
-var FROM_GITHUB ="from_github"
-var FROM_MYGITHUB ="from_mygithub"
+var T_IOS_FULL ="201_T_IOS_FULLproject"
 
 
+var T_FLUTTER_FULL ="301_T_FLUTTER_FULL" //Flutter type 定义
+
+
+var T_VUE_FULL ="401_T_VUE_FULLproject" //Vue type 定义
+
+
+var T_H5_CSS ="501_T_H5_CSS"
+var T_H5_JEKYLL ="502_T_H5_JEKYLL"
+var T_H5_HEXO ="503_T_H5_HEXO"
+var T_H5_PHP ="504_T_H5_PHP" //H5 type 定义
+
+
+var T_GAME_DEFAULT ="601_T_GAME_DEFAULT"
+var T_GAME_SHOOT ="602_T_GAME_SHOOT" //Game type 定义
+
+
+var T_TOOL_FULL ="701_T_TOOL_FULL" //Tool type 定义
 
 
 
@@ -116,14 +109,5 @@ T_GAME_SHOOT,
 
 /*********************************Tool type 定义**********************/
 T_TOOL_FULL,
-
-
-
-
-
-/*********************************From 定义**********************/
-FROM_DEFAULT,
-FROM_GITHUB,
-FROM_MYGITHUB
 
 }

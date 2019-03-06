@@ -1,4 +1,4 @@
-var hosth5css = "https://www.leachchen.com/storewebsite1/css/"
+var hosth5css = "https://www.leachchen.com/storewebsite1/"
 
 var co= require('./Constant.js');
 
@@ -11,9 +11,9 @@ var adminurl =""
 var cssDataList = [
     //{thumbUrl: host+"001/thumb/demo.png",previewUrl: host+"001/source/",downloadUrl: host+"001/download/before.zip",description:"旅游风格的H5网站 h5",type:co.T_H5_CSS,author:"leach-chen",authorurl:"",repo:"blog",fromauthor:"admin",fromauthorurl:"",from:co.FROM_GITHUB,sold:true},
     {
-        thumbUrl: hosth5css+"1/t_h5css1_20190304.png",
-        previewUrl: hosth5css+"1/preview",
-        downloadUrl: hosth5css+"1/highway.zip",
+        thumbUrl: hosth5css+"1/storewebsite1_1_t_20190304.png",
+        previewUrl: hosth5css+"1/storewebsite1_1_p_highway",
+        downloadUrl: hosth5css+"1/storewebsite1_1_d_highway.zip",
         description:"旅游类型的纯CSS网站",
         type:co.T_H5_CSS,
         author:"模板之家",

@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 #拉取
-git pull origin master
+#git pull origin master
 
 git add .
 

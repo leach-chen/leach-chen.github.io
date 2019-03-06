@@ -1,26 +1,28 @@
-var host = "https://www.leachchen.com/h5website/"
+var hosttool = "https://www.leachchen.com/storetool1/"
 
 var co= require('./Constant.js');
 
 var dataList = []
 
+var adminname = "admin"
+var adminurl =""
+
 var fullPracticalDataList = [
   //{thumbUrl: host+"001/thumb/demo.png",previewUrl: host+"001/source/",downloadUrl: host+"001/download/before.zip",description:"旅游风格的H5网站 Tool",type:co.T_TOOL_FULL,author:"leach-chen",authorurl:"",repo:"blog",fromauthor:"admin",fromauthorurl:"",from:co.FROM_GITHUB,sold:true},
-  
-  // {
-  //   thumbUrl: require("../../img/vue/vue00001.png"),
-  //   previewUrl: "http://panjiachen.github.io/vue-element-admin",
-  //   downloadUrl: "https://codeload.github.com/PanJiaChen/vue-element-admin/zip/master",
-  //   description:"完整的Vue后台管理系统",
-  //   type:co.T_VUE_FULL,
-  //   author:"PanJiaChen",
-  //   authorurl:"",
-  //   repo:"vue-element-admin",
-  //   fromauthor:"admin",
-  //   fromauthorurl:"",
-  //   from:co.FROM_GITHUB,
-  //   sold:true
-  // },
+  {
+    thumbUrl: hosttool+"1/t_tool1_20190306.jpg",
+    previewUrl: hosttool+"1/p_tool1_20190306.gif",
+    downloadUrl: "https://atom.io/",
+    description:"强大的ATOM编辑器，支持多种语言，插件丰富，推荐使用",
+    type:co.T_TOOL_FULL,
+    author:"atom",
+    authorurl:"https://atom.io/",
+    repo:"atom",
+    fromauthor:adminname,
+    fromauthorurl:adminurl,
+    from:co.FROM_GITHUB,
+    sold:true
+  },
 ];
 
 

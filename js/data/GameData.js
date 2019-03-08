@@ -9,7 +9,7 @@ var adminname = "admin"
 var adminurl =""
 
 var shootGameDataList = [
- // {thumbUrl: host+"001/thumb/demo.png",previewUrl: host+"001/source/",downloadUrl: host+"001/download/before.zip",description:"旅游风格的H5网站 Game",type:co.GAME_T_FULL,author:"leach-chen",authorurl:"",repo:"blog",fromauthor:"admin",fromauthorurl:"",from:co.FROM_GITHUB,sold:true},
+ // {thumbUrl: host+"001/thumb/demo.png",previewUrl: host+"001/source/",downloadUrl: host+"001/download/before.zip",description:"旅游风格的H5网站 Game",type:co.GAME_T_FULL,author:"leach-chen",authorurl:"",gitrepo:"blog",byauthor:"admin",byauthorurl:"",from:co.FROM_GITHUB,sold:true},
       {
         thumbUrl: host+"1/h5game1_1_t.jpg",
         previewUrl: host+"1/h5game1_1_p_flappy/",
@@ -19,10 +19,10 @@ var shootGameDataList = [
         type:co.T_GAME_DEFAULT,
         author:"html5tricks",
         authorurl:"https://www.html5tricks.com/",
-        repo:"",
-        fromauthor:adminname,
-        fromauthorurl:adminurl,
-        from:co.FROM_DEFAULT,
+        gitauthor:"",
+        gitrepo:"",
+        byauthor:adminname,
+        byauthorurl:adminurl,
         sold:true
       }, 
       {
@@ -34,9 +34,10 @@ var shootGameDataList = [
         type:co.T_GAME_DEFAULT,
         author:"html5tricks",
         authorurl:"https://www.html5tricks.com/",
-        repo:"",
-        fromauthor:adminname,
-        fromauthorurl:adminurl,
+        gitauthor:"",
+        gitrepo:"",
+        byauthor:adminname,
+        byauthorurl:adminurl,
         sold:true
       }, 
 ];

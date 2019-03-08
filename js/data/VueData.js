@@ -15,11 +15,12 @@ var fullVueDataList = [
     downloadUrl: "https://codeload.github.com/PanJiaChen/vue-element-admin/zip/master",
     description:"完整的Vue后台管理系统",
     type:co.T_VUE_FULL,
-    author:"PanJiaChen",
+    author:"",
     authorurl:"https://github.com/PanJiaChen/",
-    repo:"vue-element-admin",
-    fromauthor:adminname,
-    fromauthorurl:adminurl,
+    gitauthor:"PanJiaChen",
+    gitrepo:"vue-element-admin",
+    byauthor:adminname,
+    byauthorurl:adminurl,
     sold:true
   },
 ];

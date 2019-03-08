@@ -21,37 +21,10 @@ var PATH_VUE_FULL = "/github/vue/project/"
 
 
 var PATH_GAME_ALL = "/game/all/"
-var PATH_GAME_SHOOT = "/game/shoot/"
+var PATH_GAME_SYNT = "/game/synthesize/"
 
 var PATH_TOOL_ALL = "/tool/all/"
-var PATH_TOOL_PRACTICAL = "/tool/practical/"
-
-/*********************************Android type 定义**********************/
-var T_ANDROID_FULL ="T_ANDROID_FULL"
-var T_ANDROID_ANIMATION ="T_ANDROID_ANIMATION" //IOS type 定义
-
-
-var T_IOS_FULL ="T_IOS_FULLproject"
-
-
-var T_FLUTTER_FULL ="T_FLUTTER_FULL" //Flutter type 定义
-
-
-var T_VUE_FULL ="T_VUE_FULLproject" //Vue type 定义
-
-
-var T_H5_CSS ="T_H5_CSS"
-var T_H5_JEKYLL ="T_H5_JEKYLL"
-var T_H5_HEXO ="T_H5_HEXO"
-var T_H5_PHP ="T_H5_PHP" //H5 type 定义
-
-
-var T_GAME_DEFAULT ="T_GAME_DEFAULT"
-var T_GAME_SHOOT ="T_GAME_SHOOT" //Game type 定义
-
-
-var T_TOOL_FULL ="T_TOOL_FULL" //Tool type 定义
-
+var PATH_TOOL_SYNT = "/tool/synthesize/"
 
 
 export{
@@ -76,38 +49,8 @@ PATH_VUE_ALL,
 PATH_VUE_FULL,
 
 PATH_GAME_ALL,
-PATH_GAME_SHOOT,
+PATH_GAME_SYNT,
 
 PATH_TOOL_ALL,
-PATH_TOOL_PRACTICAL,
-
-
-
-
-/*********************************Android type 定义**********************/
-T_ANDROID_FULL,
-T_ANDROID_ANIMATION,
-
-/*********************************IOS type 定义**********************/
-T_IOS_FULL,
-
-/*********************************Flutter type 定义**********************/
-T_FLUTTER_FULL,
-
-/*********************************Vue type 定义**********************/
-T_VUE_FULL,
-
-/*********************************H5 type 定义**********************/
-T_H5_CSS,
-T_H5_JEKYLL,
-T_H5_HEXO,
-T_H5_PHP,
-
-/*********************************Game type 定义**********************/
-T_GAME_DEFAULT,
-T_GAME_SHOOT,
-
-/*********************************Tool type 定义**********************/
-T_TOOL_FULL,
-
+PATH_TOOL_SYNT,
 }

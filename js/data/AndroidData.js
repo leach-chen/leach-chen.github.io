@@ -9,7 +9,7 @@ var adminname = "admin"
 var adminurl =""
 
 var fullAndroidDataList = [
- // {thumbUrl: host+"001/thumb/demo.png",previewUrl: host+"001/source/",downloadUrl: host+"001/download/before.zip",description:"旅游风格的H5网站 Android",type:co.T_ANDROID_FULL,author:"leach-chen",authorurl:"",repo:"blog",fromauthor:"admin",fromauthorurl:"",from:co.FROM_GITHUB,sold:true},
+ // {thumbUrl: host+"001/thumb/demo.png",previewUrl: host+"001/source/",downloadUrl: host+"001/download/before.zip",description:"旅游风格的H5网站 Android",type:co.T_ANDROID_FULL,author:"leach-chen",authorurl:"",gitrepo:"blog",byauthor:"admin",byauthorurl:"",from:co.FROM_GITHUB,sold:true},
 
   {
     thumbUrl: host+"1/android1_1_t.png",
@@ -17,43 +17,32 @@ var fullAndroidDataList = [
     downloadUrl: "https://codeload.github.com/harjot-oberai/MusicDNA/zip/master",
     description:"一款舒适的音乐播放器",
     type:co.T_ANDROID_FULL,
-    author:"harjot-oberai",
+    author:"",
     authorurl:"https://github.com/harjot-oberai",
-    repo:"MusicDNA",
-    fromauthor:adminname,
-    fromauthorurl:adminurl,
+    gitauthor:"harjot-oberai",
+    gitrepo:"MusicDNA",
+    byauthor:adminname,
+    byauthorurl:adminurl,
     sold:true
-  },
-  {
-      thumbUrl: host+"1/android1_1_t.png",
-      previewUrl: host+"1/android1_1_p.png",
-      downloadUrl: "https://codeload.github.com/harjot-oberai/MusicDNA/zip/master",
-      description:"一款舒适的音乐播放器",
-      type:co.T_ANDROID_FULL,
-      author:"harjot-oberai",
-      authorurl:"https://github.com/harjot-oberai",
-      repo:"MusicDNA",
-      fromauthor:adminname,
-      fromauthorurl:adminurl,
-      sold:true
   },
 ];
 
 
 var animationAndroidDataList = [
-  // {thumbUrl: host+"001/thumb/demo.png",previewUrl: host+"001/source/",downloadUrl: host+"001/download/before.zip",description:"旅游风格的H5网站 Android",type:co.T_ANDROID_FULL,author:"leach-chen",authorurl:"",repo:"blog",fromauthor:"admin",fromauthorurl:"",from:co.FROM_GITHUB,sold:true},
-
+  // {thumbUrl: host+"001/thumb/demo.png",previewUrl: host+"001/source/",downloadUrl: host+"001/download/before.zip",description:"旅游风格的H5网站 Android",type:co.T_ANDROID_FULL,author:"leach-chen",authorurl:"",gitrepo:"blog",byauthor:"admin",byauthorurl:"",from:co.FROM_GITHUB,sold:true},
+ 
    {
      thumbUrl: host+"2/android1_2_t.jpg",
      previewUrl: host+"2/android1_2_p.gif",
      downloadUrl: "https://codeload.github.com/Airbnb/lottie-android/zip/master",
      description:"airbnb的lottie酷炫动画库",
      type:co.T_ANDROID_ANIMATION,
-     author:"Airbnb",
+     author:"",
      authorurl:"https://github.com/airbnb",
-     repo:"lottie-android",
-     fromauthor:adminname,
-     fromauthorurl:adminurl,
+     gitauthor:"Airbnb",
+     gitrepo:"lottie-android",
+     byauthor:adminname,
+     byauthorurl:adminurl,
      sold:true
    },
  ];

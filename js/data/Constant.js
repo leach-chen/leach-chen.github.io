@@ -4,6 +4,9 @@ var PATH_ANDROID_ALL = "/github/android/all/"
 var PATH_ANDROID_FULL = "/github/android/project/"
 var PATH_ANDROID_ANIMATION = "/github/android/animation/"
 var PATH_ANDROID_VIEW = "/github/android/view/"
+var PATH_ANDROID_SYNT = "/github/android/synthesize/"
+var PATH_ANDROID_ARCH = "/github/android/architecture/"
+
 
 var PATH_IOS_ALL = "/github/ios/all/"
 var PATH_IOS_FULL = "/github/ios/project/"
@@ -34,6 +37,8 @@ PATH_ANDROID_ALL ,
 PATH_ANDROID_FULL ,
 PATH_ANDROID_ANIMATION,
 PATH_ANDROID_VIEW,
+PATH_ANDROID_SYNT,
+PATH_ANDROID_ARCH,
 
 PATH_IOS_ALL ,
 PATH_IOS_FULL,

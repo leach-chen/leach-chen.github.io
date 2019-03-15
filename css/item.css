@@ -1,11 +1,12 @@
-
-.box-card
+.cardcontent
 {
     width: 29%;
     float: left;
     margin: 10px;
-
-    
+}
+.box-card
+{
+   width:100%;
 }
 
 /* 绝对布局相对其第一个relative的父布局进行定位，设置其bottom：0属性，父布局的高度由其它非相对定位布局的子元素决定*/
@@ -32,7 +33,7 @@
 }
 
 .imgfloatcontent img{
-    
+
     height:250px;
 }
 
@@ -54,7 +55,7 @@
   color: #fff;
   font-size: 14px;
   margin-left: 10px;
-  
+
   overflow: hidden;
   /* text-overflow:ellipsis;
   white-space: nowrap; 一行 */
@@ -109,19 +110,19 @@
 
 .btn1
 {
-    
-    margin-right:10px; 
+
+    margin-right:10px;
 }
 
 .btn2
 {
-    
-    margin-left:10px; 
+
+    margin-left:10px;
 }
 
 
 @media only screen and (max-width: 768px) {
-    .box-card
+    .cardcontent
     {
         width: 100%;
     }
@@ -133,13 +134,13 @@
     display: table;
     clear: both;
   }
-  
+
   .clearfix::before {
     clear: both;
   }
 
 
-  
+
 .content:not(.custom) {
     max-width: 100%;
 }

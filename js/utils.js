@@ -17,6 +17,7 @@ function isPhone()
     }else{
         return false;
     }
+    return false;
 }
 
 

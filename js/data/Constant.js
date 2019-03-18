@@ -11,6 +11,7 @@ var PATH_ANDROID_ARCH = "/github/android/architecture/"
 
 var PATH_IOS_ALL = "/github/ios/all/"
 var PATH_IOS_FULL = "/github/ios/project/"
+var PATH_IOS_SYNT = "/github/ios/synthesize/"
 
 var PATH_FLUTTER_ALL = "/github/flutter/all/"
 var PATH_FLUTTER_FULL = "/github/flutter/project/"
@@ -46,6 +47,7 @@ PATH_ANDROID_ARCH,
 
 PATH_IOS_ALL ,
 PATH_IOS_FULL,
+PATH_IOS_SYNT,
 
 PATH_FLUTTER_ALL,
 PATH_FLUTTER_FULL,

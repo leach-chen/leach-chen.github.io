@@ -27,6 +27,10 @@ var PATH_VUE_FULL = "/github/vue/project/"
 
 
 var PATH_GAME_ALL = "/game/all/"
+var PATH_GAME_SMART = "/game/smart/"
+var PATH_GAME_CHESSCARD = "/game/chesscard/"
+var PATH_GAME_RISK = "/game/risk/"
+var PATH_GAME_SHOOT = "/game/shoot/"
 var PATH_GAME_SYNT = "/game/synthesize/"
 
 var PATH_TOOL_ALL = "/tool/all/"
@@ -62,6 +66,10 @@ PATH_VUE_ALL,
 PATH_VUE_FULL,
 
 PATH_GAME_ALL,
+PATH_GAME_SMART,
+PATH_GAME_CHESSCARD,
+PATH_GAME_RISK,
+PATH_GAME_SHOOT,
 PATH_GAME_SYNT,
 
 PATH_TOOL_ALL,

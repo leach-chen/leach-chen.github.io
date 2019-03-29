@@ -39,6 +39,7 @@ var PATH_GAME_SYNT = "/game/synthesize/"
 
 var PATH_TOOL_ALL = "/tool/all/"
 var PATH_TOOL_SYNT = "/tool/synthesize/"
+var PATH_TOOL_IMG = "/tool/imgoperate/"
 
 var PATH_SEARCH = "/search/"
 
@@ -82,6 +83,7 @@ PATH_GAME_SYNT,
 
 PATH_TOOL_ALL,
 PATH_TOOL_SYNT,
+PATH_TOOL_IMG,
 
 PATH_SEARCH
 }

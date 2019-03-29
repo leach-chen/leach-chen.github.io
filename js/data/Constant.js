@@ -16,6 +16,10 @@ var PATH_IOS_SYNT = "/github/ios/synthesize/"
 var PATH_FLUTTER_ALL = "/github/flutter/all/"
 var PATH_FLUTTER_FULL = "/github/flutter/project/"
 
+var PATH_REACTNATIVE_ALL = "/github/reactnative/all/"
+var PATH_REACTNATIVE_FULL = "/github/reactnative/project/"
+var PATH_REACTNATIVE_SYNT = "/github/reactnative/synthesize/"
+
 var PATH_H5_ALL = "/github/h5/all/"
 var PATH_H5_CSS = "/github/h5/h5/"
 var PATH_H5_JKEYLL = "/github/h5/jekyll/"
@@ -55,6 +59,10 @@ PATH_IOS_SYNT,
 
 PATH_FLUTTER_ALL,
 PATH_FLUTTER_FULL,
+
+PATH_REACTNATIVE_ALL,
+PATH_REACTNATIVE_FULL,
+PATH_REACTNATIVE_SYNT,
 
 PATH_H5_ALL,
 PATH_H5_CSS,

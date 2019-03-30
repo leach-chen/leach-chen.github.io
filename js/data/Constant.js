@@ -28,7 +28,7 @@ var PATH_H5_PHP = "/github/h5/php/"
 
 var PATH_VUE_ALL = "/github/vue/all/"
 var PATH_VUE_FULL = "/github/vue/project/"
-
+var PATH_VUE_SYNT = "/github/vue/synthesize/"
 
 var PATH_GAME_ALL = "/game/all/"
 var PATH_GAME_SMART = "/game/smart/"
@@ -73,6 +73,7 @@ PATH_H5_PHP,
 
 PATH_VUE_ALL,
 PATH_VUE_FULL,
+PATH_VUE_SYNT,
 
 PATH_GAME_ALL,
 PATH_GAME_SMART,

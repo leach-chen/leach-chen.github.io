@@ -21,8 +21,9 @@ var PATH_REACTNATIVE_FULL = "/github/reactnative/project/"
 var PATH_REACTNATIVE_SYNT = "/github/reactnative/synthesize/"
 
 var PATH_H5_ALL = "/github/h5/all/"
-var PATH_H5_CSS = "/github/h5/h5/"
 var PATH_H5_COOLH5 = "/github/h5/coolh5/"
+var PATH_H5_ANIMATIONLIB = "/github/h5/animationlib/"
+var PATH_H5_CSS = "/github/h5/h5/"
 var PATH_H5_JKEYLL = "/github/h5/jekyll/"
 var PATH_H5_HEXO = "/github/h5/hexo/"
 var PATH_H5_PHP = "/github/h5/php/"
@@ -67,8 +68,9 @@ PATH_REACTNATIVE_FULL,
 PATH_REACTNATIVE_SYNT,
 
 PATH_H5_ALL,
-PATH_H5_CSS,
 PATH_H5_COOLH5,
+PATH_H5_ANIMATIONLIB,
+PATH_H5_CSS,
 PATH_H5_JKEYLL,
 PATH_H5_HEXO ,
 PATH_H5_PHP,

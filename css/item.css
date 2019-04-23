@@ -69,8 +69,8 @@
   -webkit-line-clamp: 3;
   line-clamp: 3;
   -webkit-box-orient: vertical;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .btncontent

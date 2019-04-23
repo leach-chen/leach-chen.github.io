@@ -46,7 +46,7 @@
   width: 100%;
 }
 
-.imgfloatdiv p
+.itemdetail
 {
   /* position:absolute;
   bottom:0px;
@@ -69,6 +69,8 @@
   -webkit-line-clamp: 3;
   line-clamp: 3;
   -webkit-box-orient: vertical;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .btncontent
@@ -148,3 +150,15 @@
 .imgfloatdiv a{
     color: #fff;
 }
+
+
+/*
+.thumbimg {
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+.imgfloatcontent:hover .thumbimg{
+   cursor: pointer;
+   transform: scale(1.4);
+}*/

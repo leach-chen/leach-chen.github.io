@@ -54,7 +54,8 @@
   margin:0px */
   color: #fff;
   font-size: 14px;
-  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   overflow: hidden;
   /* text-overflow:ellipsis;

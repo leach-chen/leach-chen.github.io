@@ -12,10 +12,13 @@ var PATH_ANDROID_ARCH = "/github/android/architecture/"
 
 var PATH_IOS_ALL = "/github/ios/all/"
 var PATH_IOS_FULL = "/github/ios/project/"
+var PATH_IOS_VIEW = "/github/ios/view/"
 var PATH_IOS_SYNT = "/github/ios/synthesize/"
 
 var PATH_FLUTTER_ALL = "/github/flutter/all/"
 var PATH_FLUTTER_FULL = "/github/flutter/project/"
+var PATH_FLUTTER_VIEW = "/github/flutter/view/"
+var PATH_FLUTTER_SYNT = "/github/flutter/synthesize/"
 
 var PATH_REACTNATIVE_ALL = "/github/reactnative/all/"
 var PATH_REACTNATIVE_FULL = "/github/reactnative/project/"
@@ -60,10 +63,13 @@ PATH_ANDROID_ARCH,
 
 PATH_IOS_ALL ,
 PATH_IOS_FULL,
+PATH_IOS_VIEW,
 PATH_IOS_SYNT,
 
 PATH_FLUTTER_ALL,
 PATH_FLUTTER_FULL,
+PATH_FLUTTER_VIEW,
+PATH_FLUTTER_SYNT,
 
 PATH_REACTNATIVE_ALL,
 PATH_REACTNATIVE_FULL,

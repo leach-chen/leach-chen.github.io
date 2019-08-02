@@ -1,4 +1,4 @@
-var host = "https://www.leachchen.com/storeflutter1/"
+var host = "https://leach-chen.github.io/storeflutter1/"
 
 var co= require('./Constant.js');
 

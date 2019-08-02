@@ -1,8 +1,8 @@
 var android_animation1 = [
   //replace
   {
-     thumbUrl:"https://www.leachchen.com/storeandroid1/2/android1_2_t.jpg",
-     previewUrl:"https://www.leachchen.com/storeandroid1/2/android1_2_p.gif",
+     thumbUrl:"https://leach-chen.github.io/storeandroid1/2/android1_2_t.jpg",
+     previewUrl:"https://leach-chen.github.io/storeandroid1/2/android1_2_p.gif",
      downloadUrl: "https://codeload.github.com/Airbnb/lottie-android/zip/master",
      description:"airbnb的lottie酷炫动画库",
      type:"android_animation_1",

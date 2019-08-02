@@ -1,4 +1,4 @@
-var host = "https://www.leachchen.com/storeandroid1/"
+var host = "https://leach-chen.github.io/storeandroid1/"
 
 var co= require('./Constant.js');
 

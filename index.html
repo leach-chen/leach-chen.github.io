@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10100f">
+  <meta name="author" content="Leach Chen">
+  <meta name="description" content="Leach Chen — 探索大语言模型、深度学习与神经网络。一个关于智能涌现的交互实验室。">
+  <meta property="og:title" content="Leach Chen — Intelligence, emerging.">
+  <meta property="og:description" content="从一个 Token，到涌现的智能。探索 LLM、深度学习与神经网络。">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Leach Chen">
+  <title>Leach Chen — Intelligence, emerging.</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+  <script src="./neural.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要内容</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <canvas id="interaction-canvas" aria-hidden="true"></canvas>
+  <div class="cursor-aura" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="#" aria-label="Leach Chen 首页"><span class="brand-symbol" aria-hidden="true">✳</span> LEACH CHEN<span class="wordmark-period">.</span><span class="brand-lab">LAB</span></a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="#work" data-nav="work">智能实验<span>01</span></a>
+      <a href="#about" data-nav="about">关于这里<span>02</span></a>
+      <a href="#contact" data-nav="contact">聊聊想法<span>03</span></a>
+    </nav>
+    <a class="header-cta" href="#contact">LET’S TALK <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="打开导航"><span></span><span></span></button>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="移动端导航" hidden>
+    <a href="#work">智能实验 <span>01</span></a>
+    <a href="#about">关于这里 <span>02</span></a>
+    <a href="#contact">聊聊想法 <span>03</span></a>
+  </nav>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true">
+        <canvas id="hero-canvas"></canvas>
+        <div class="art-coordinate art-coordinate-top"><span class="tiny-cross">+</span> NEURAL TOPOLOGY / 001</div>
+        <div class="art-coordinate art-coordinate-bottom">LATENT SPACE · CONTINUOUS EXPLORATION<span>∇</span></div>
+        <div class="art-caption"><span class="live-dot"></span> LIVE NEURAL FIELD</div>
+        <div class="neural-readout"><span>NETWORK ACTIVITY</span><strong id="neural-activity">IDLE</strong><span class="neural-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+      </div>
+      <div class="hero-copy">
+        <div class="eyebrow entrance"><span class="short-rule"></span> 大语言模型 · 深度学习 · 神经网络</div>
+        <h1 id="hero-title" class="hero-title"><span class="title-line"><span>INTELLIGENCE,</span></span><span class="title-line"><span><em>emerging.</em></span></span></h1>
+        <div class="hero-description entrance"><p>从一个 Token，<span class="warm-text">到涌现的智能。</span></p><p>在语言、数据与神经元之间，探索理解如何发生。</p></div>
+        <div class="hero-actions entrance"><a class="button button-light magnetic" href="#work">进入实验室 <span aria-hidden="true">↗</span></a></div>
+        <div class="token-stream entrance" aria-label="概念序列：curiosity、attention、understanding"><span class="token-stream-label">IDEA → TOKENS</span><span class="token">curiosity<span>01</span></span><span class="token">attention<span>02</span></span><span class="token">understanding<span>03</span></span><span class="token-caret" aria-hidden="true">▎</span></div>
+      </div>
+      <div class="hero-bottom"><a class="scroll-hint" href="#work"><span class="scroll-mouse" aria-hidden="true"></span> 移动鼠标，唤醒神经元 <span class="scroll-arrow" aria-hidden="true">↓</span></a><span class="hero-side-note">ATTENTION IS ALL YOU NEED. CURIOSITY IS WHERE IT STARTS.</span><span class="hero-index">01 <span>/</span> 04</span></div>
+    </section>
+
+    <section class="inference-flow" id="inference-flow" aria-labelledby="flow-title">
+      <div class="flow-heading"><div><span class="flow-kicker"><span class="accent-dot"></span> INSIDE THE MODEL</span><h2 id="flow-title">从语言，<span class="serif-text">到理解。</span></h2></div><div class="flow-controls"><span class="flow-hint">悬停或点击，探索每一步</span><button class="flow-toggle" type="button" aria-pressed="false" aria-label="暂停自动演示"><span aria-hidden="true">Ⅱ</span> 暂停</button><button class="flow-replay" type="button" aria-label="重新播放推理链路"><span aria-hidden="true">↺</span> 重播</button></div></div>
+      <div class="flow-track"><canvas id="pipeline-canvas" aria-hidden="true"></canvas><div class="flow-stages" role="tablist" aria-label="推理链路的五个阶段">
+        <button id="flow-tab-0" class="flow-stage is-active" type="button" role="tab" aria-selected="true" aria-controls="flow-detail" tabindex="0" data-stage="0"><span class="flow-step-number">01</span><span class="flow-stage-name">TOKENS</span><span class="flow-stage-cn">切分语言</span></button>
+        <button id="flow-tab-1" class="flow-stage" type="button" role="tab" aria-selected="false" aria-controls="flow-detail" tabindex="-1" data-stage="1"><span class="flow-step-number">02</span><span class="flow-stage-name">EMBEDDING</span><span class="flow-stage-cn">向量映射</span></button>
+        <button id="flow-tab-2" class="flow-stage" type="button" role="tab" aria-selected="false" aria-controls="flow-detail" tabindex="-1" data-stage="2"><span class="flow-step-number">03</span><span class="flow-stage-name">ATTENTION</span><span class="flow-stage-cn">关联上下文</span></button>
+        <button id="flow-tab-3" class="flow-stage" type="button" role="tab" aria-selected="false" aria-controls="flow-detail" tabindex="-1" data-stage="3"><span class="flow-step-number">04</span><span class="flow-stage-name">FFN</span><span class="flow-stage-cn">非线性变换</span></button>
+        <button id="flow-tab-4" class="flow-stage" type="button" role="tab" aria-selected="false" aria-controls="flow-detail" tabindex="-1" data-stage="4"><span class="flow-step-number">05</span><span class="flow-stage-name">OUTPUT</span><span class="flow-stage-cn">预测下一步</span></button>
+      </div></div>
+      <div class="flow-detail" id="flow-detail" role="tabpanel" aria-labelledby="flow-tab-0" tabindex="0"><div class="flow-explanation"><span class="flow-detail-index" aria-hidden="true">01 / 05</span><p id="flow-description">把一句话，拆成可以计算的片段。</p></div><div class="flow-example" aria-label="当前阶段的概念示例"><span class="flow-example-label">示意</span><div id="flow-example-tokens"><span>神经</span><span>网络</span><span>如何</span><span>理解</span><span>语言</span><span>？</span></div></div></div>
+    </section>
+
+    <section class="work section-shell" id="work" aria-labelledby="work-title">
+      <div class="section-topline reveal"><span class="section-kicker"><span class="accent-dot"></span> EXPERIMENTS IN INTELLIGENCE</span><span class="section-number">01 / LAB</span></div>
+      <div class="section-heading reveal"><h2 id="work-title">理解智能的<span class="serif-text">另一面。</span></h2><p>把抽象的概念，变成可感知的交互。<br>三个关于学习、连接与涌现的视觉实验。</p></div>
+      <div class="project-grid">
+        <button class="project-card project-large reveal" data-project="neural" aria-haspopup="dialog">
+          <div class="project-art project-art-orbit"><canvas id="project-canvas" aria-hidden="true"></canvas><div class="project-art-label">NO. 001 <span>CONNECTED INTELLIGENCE</span></div><span class="project-open" aria-hidden="true">↗</span><span class="art-bottom-label">EVERY CONNECTION CHANGES EVERYTHING.</span></div>
+          <div class="project-meta"><div><span class="project-category">NEURAL NETWORKS / INTERACTIVE STUDY</span><h3>连接的涌现 <span>Neural Field</span></h3></div><span class="project-meta-arrow" aria-hidden="true">↗</span></div>
+        </button>
+        <button class="project-card project-small reveal" data-project="latent" aria-haspopup="dialog">
+          <div class="project-art project-art-terrain"><canvas id="terrain-canvas" aria-hidden="true"></canvas><div class="project-art-label">NO. 002 <span>THE GEOMETRY OF LEARNING</span></div><span class="terrain-word" aria-hidden="true">latent<span>ℝⁿ</span></span><span class="project-open" aria-hidden="true">↗</span><span class="art-bottom-label">FOLLOW THE GRADIENT.</span></div>
+          <div class="project-meta"><div><span class="project-category">DEEP LEARNING / LOSS LANDSCAPE</span><h3>潜在空间 <span>Latent Space</span></h3></div><span class="project-meta-arrow" aria-hidden="true">↗</span></div>
+        </button>
+        <button class="project-card project-wide reveal" data-project="attention" aria-haspopup="dialog">
+          <div class="project-art project-art-signal"><div class="signal-grid" aria-hidden="true"></div><div class="project-art-label">NO. 003 <span>ATTENTION IS ALL YOU NEED</span></div><canvas id="signal-canvas" aria-hidden="true"></canvas><div class="signal-type" aria-hidden="true">EVERY<br><span>TOKEN.</span></div><span class="signal-coordinate">Q · Kᵀ / √dₖ<br>SOFTMAX → CONTEXT</span><span class="project-open" aria-hidden="true">↗</span><span class="art-bottom-label">MEANING LIVES IN THE CONNECTIONS.</span></div>
+          <div class="project-meta"><div><span class="project-category">LARGE LANGUAGE MODELS / SELF-ATTENTION</span><h3>注意力之间 <span>Attention</span></h3></div><span class="project-meta-arrow" aria-hidden="true">↗</span></div>
+        </button>
+      </div>
+      <div class="work-footnote reveal"><span><span class="accent-dot"></span> VISUAL EXPERIMENTS. INFINITE QUESTIONS.</span><p>每一次连接，都是新的可能。</p></div>
+    </section>
+
+    <section class="about section-shell" id="about" aria-labelledby="about-title">
+      <div class="section-topline reveal"><span class="section-kicker"><span class="accent-dot"></span> THE MIND BEHIND</span><span class="section-number">02 / ABOUT</span></div>
+      <div class="about-layout">
+        <div class="about-art reveal" aria-hidden="true"><canvas id="layers-canvas"></canvas><span class="about-art-top">INPUT → HIDDEN → POSSIBILITY</span><span class="about-art-bottom">从连接，到理解。<span>FIG. 02 / MLP</span></span></div>
+        <div class="about-copy"><div class="eyebrow reveal">HELLO, I’M LEACH CHEN.</div><h2 class="reveal" id="about-title">以好奇为输入，<br><span class="serif-text">以探索为输出。</span></h2><p class="about-lead reveal">语言如何成为向量，<br>连接又如何产生理解？</p><p class="about-description reveal">你好，我是 Leach Chen。这里是我关于机器智能的个人探索空间。从 Transformer 的注意力机制，到深度网络里的梯度流动，我尝试用可视化与交互，让抽象的原理变得直观。这里不急于给出答案，而是认真对待每一个值得追问的问题。</p><div class="capabilities reveal"><span>大语言模型 <i>↗</i></span><span>深度学习 <i>↗</i></span><span>神经网络 <i>↗</i></span><span>交互可视化 <i>↗</i></span></div><div class="about-note reveal"><span class="live-dot"></span> ALWAYS LEARNING. ALWAYS CONNECTING.</div></div>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
+      <div class="section-topline reveal"><span class="section-kicker"><span class="accent-dot"></span> GOOD THINGS START WITH A HELLO</span><span class="section-number">03 / CONTACT</span></div>
+      <div class="contact-body reveal"><p class="contact-eyebrow">下一个有趣的连接，会是什么？</p><h2 id="contact-title">LET’S THINK<br><span class="serif-text">beyond</span> <span class="contact-star" aria-hidden="true">✳</span><br>THE LAYERS<span class="orange-text">.</span></h2><a class="contact-circle magnetic" href="https://github.com/leach-chen" target="_blank" rel="noopener noreferrer" aria-label="前往 Leach Chen 的 GitHub 主页"><span>从一个 HELLO 开始</span><span class="contact-circle-arrow" aria-hidden="true">↗</span><span>LET’S CONNECT</span></a></div>
+      <div class="contact-bottom reveal"><p>关于模型、研究、开源，或者一个尚未成形的想法。<br><span>让好奇心，连接下一种可能。</span></p><a class="social-link" href="https://github.com/leach-chen" target="_blank" rel="noopener noreferrer">@LEACH-CHEN <span aria-hidden="true">↗</span></a><button class="copy-link" type="button">分享这个空间 <span aria-hidden="true">↗</span></button></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="wordmark footer-wordmark" href="#"><span class="brand-symbol" aria-hidden="true">✳</span> LEACH CHEN.</a><span>© Leach Chen. POWERED BY CURIOSITY.</span><a class="back-top" href="#">回到顶部 <span aria-hidden="true">↑</span></a></footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <dialog class="project-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><span class="section-kicker">LAB NOTES / CONCEPTUAL VISUALIZATION</span><button class="dialog-close" type="button" aria-label="关闭项目详情">×</button></div><div class="dialog-art" aria-hidden="true"></div><div class="dialog-content"><span class="project-category" id="dialog-category"></span><h2 id="dialog-title"></h2><p id="dialog-description"></p><div class="dialog-tags" id="dialog-tags"></div><p class="dialog-note">交互式概念可视化 · 图形用于探索原理，不代表实际模型的结构或运行数据。</p></div></dialog>
+</body>
+</html>

@@ -1,5 +1,5 @@
 
-![alt text](./show.gif)
+![alt text](./show.png)
 
 # Leach Chen — 智能交互实验室
 
